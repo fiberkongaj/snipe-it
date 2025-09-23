@@ -19,7 +19,13 @@
 
 @section('inputFields')
 
-@include ('partials.forms.edit.name', ['translated_name' => trans('general.name')])
+    <!-- Name -->
+    <x-form-row
+            :label="trans('general.name')"
+            :$item
+            :$errors
+            name="name"
+    />
 
 <!-- Label type -->
 <div class="form-group{{ $errors->has('statuslabel_types') ? ' has-error' : '' }}">
@@ -27,6 +33,7 @@
         {{ trans('admin/statuslabels/table.status_type') }}
     </label>
     <div class="col-md-7 required">
+
         <x-input.select
             name="statuslabel_types"
             :options="$statuslabel_types"
@@ -50,7 +57,16 @@
     </div>
 </div>
 
-@include ('partials.forms.edit.notes')
+    <!-- Notes -->
+    <x-form-row
+            :label="trans('general.notes')"
+            :$item
+            :$errors
+            name="notes"
+            type="textarea"
+            maxlength="65000"
+            placeholder="{{ trans('general.placeholders.notes') }}"
+    />
 
 <!-- Show in Nav -->
 <div class="form-group{{ $errors->has('notes') ? ' has-error' : '' }}">
