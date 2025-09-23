@@ -13,6 +13,7 @@
     'type' => 'text',
     'placeholder' => null,
     'maxlength' => 191,
+    'disabled' => false,
 ])
 
 <div {{ $attributes->merge(['class' => 'form-group']) }}>
@@ -42,6 +43,7 @@
                 :value="old($name, $item->{$name})"
                 :$type
                 :$maxlength
+                :$disabled
 
         />
 
