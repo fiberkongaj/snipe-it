@@ -16,18 +16,92 @@
 @section('inputFields')
 
 @include ('partials.forms.edit.company-select', ['translated_name' => trans('general.company'), 'fieldname' => 'company_id'])
-@include ('partials.forms.edit.name', ['translated_name' => trans('admin/accessories/general.accessory_name')])
+<!-- Name -->
+<x-form-row
+        :label="trans('general.name')"
+        :$item
+        :$errors
+        name="name"
+/>
 @include ('partials.forms.edit.category-select', ['translated_name' => trans('general.category'), 'fieldname' => 'category_id', 'required' => 'true','category_type' => 'accessory'])
 @include ('partials.forms.edit.supplier-select', ['translated_name' => trans('general.supplier'), 'fieldname' => 'supplier_id'])
 @include ('partials.forms.edit.manufacturer-select', ['translated_name' => trans('general.manufacturer'), 'fieldname' => 'manufacturer_id'])
 @include ('partials.forms.edit.location-select', ['translated_name' => trans('general.location'), 'fieldname' => 'location_id'])
-@include ('partials.forms.edit.model_number')
-@include ('partials.forms.edit.order_number')
-@include ('partials.forms.edit.datepicker', ['translated_name' => trans('general.purchase_date'),'fieldname' => 'purchase_date'])
-@include ('partials.forms.edit.purchase_cost', ['currency_type' => $item->location->currency ?? null, 'unit_cost' => trans('general.unit_cost')])
-@include ('partials.forms.edit.quantity')
-@include ('partials.forms.edit.minimum_quantity')
-@include ('partials.forms.edit.notes')
+
+<!-- Model Number -->
+<x-form-row
+        :label="trans('general.model_no')"
+        :$item
+        :$errors
+        name="model_number"
+/>
+<!-- Order number -->
+<x-form-row
+        :label="trans('general.order_number')"
+        :$item
+        :$errors
+        name="order_number"
+        input_div_class="col-md-5 col-sm-12"
+/>
+
+
+<!-- Purchase date -->
+<x-form-row
+        :label="trans('general.purchase_date')"
+        :$item
+        :$errors
+        name="purchase_date"
+        type="date"
+        input_div_class="col-md-4 col-sm-12"
+        :value="old('purchase_date', (($item->purchase_date && $item->purchase_date->format('Y-m-d')) ?? ''))"
+/>
+
+<!-- Purchase cost -->
+<x-form-row
+        :label="trans('general.unit_cost')"
+        :$item
+        :$errors
+        name="purchase_cost"
+        type="number"
+        maxlength="25"
+        min="0.00"
+        max="99999999999999999.000"
+        step="0.001"
+        input_div_class="col-md-4 col-sm-12"
+/>
+
+<!-- QTY -->
+<x-form-row
+        :label="trans('general.quantity')"
+        :$item
+        :$errors
+        input_div_class="col-md-2"
+        name="qty"
+/>
+
+<!-- Min Amount -->
+<x-form-row
+        :label="trans('general.min_amt')"
+        :$item
+        :$errors
+        name="min_amt"
+        input_div_class="col-md-2"
+        minlength="1"
+        maxlength="5"
+        type="number"
+        :info_tooltip_text="trans('general.min_amt_help')"
+/>
+
+<!-- Notes -->
+<x-form-row
+        :label="trans('general.notes')"
+        :$item
+        :$errors
+        name="notes"
+        type="textarea"
+        maxlength="65000"
+        placeholder="{{ trans('general.placeholders.notes') }}"
+/>
 @include ('partials.forms.edit.image-upload', ['image_path' => app('accessories_upload_path')])
 
 

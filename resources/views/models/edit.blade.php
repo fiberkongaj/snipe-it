@@ -9,12 +9,40 @@
 
 {{-- Page content --}}
 @section('inputFields')
-@include ('partials.forms.edit.name', ['translated_name' => trans('admin/models/table.name'), 'required' => 'true'])
+
+    <!-- Name -->
+    <x-form-row
+            :label="trans('general.name')"
+            :$item
+            :$errors
+            name="name"
+    />
+
 @include ('partials.forms.edit.category-select', ['translated_name' => trans('admin/categories/general.category_name'), 'fieldname' => 'category_id', 'required' => 'true', 'category_type' => 'asset'])
 @include ('partials.forms.edit.manufacturer-select', ['translated_name' => trans('general.manufacturer'), 'fieldname' => 'manufacturer_id'])
-@include ('partials.forms.edit.model_number')
+
+<!-- Model Number -->
+<x-form-row
+        :label="trans('general.model_no')"
+        :$item
+        :$errors
+        name="model_number"
+/>
+
 @include ('partials.forms.edit.depreciation')
-@include ('partials.forms.edit.minimum_quantity')
+
+    <!-- Min Amount -->
+    <x-form-row
+            :label="trans('general.min_amt')"
+            :$item
+            :$errors
+            name="min_amt"
+            input_div_class="col-md-2"
+            minlength="1"
+            maxlength="5"
+            type="number"
+            :info_tooltip_text="trans('general.min_amt_help')"
+    />
 
 <!-- require serial boolean -->
 <div class="form-group">
@@ -58,7 +86,17 @@
 <!-- If $item->id is null we are cloning the model and we need the $model_id variable -->
 @livewire('custom-field-set-default-values-for-model', ["model_id" => $item->id ?? $model_id ?? null])
 
-@include ('partials.forms.edit.notes')
+    <!-- Notes -->
+    <x-form-row
+            :label="trans('general.notes')"
+            :$item
+            :$errors
+            name="notes"
+            type="textarea"
+            maxlength="65000"
+            placeholder="{{ trans('general.placeholders.notes') }}"
+    />
+
 @include ('partials.forms.edit.requestable', ['requestable_text' => trans('admin/models/general.requestable')])
 @include ('partials.forms.edit.image-upload', ['image_path' => app('models_upload_path')])
 
