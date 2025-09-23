@@ -8,26 +8,53 @@
 
 {{-- Page content --}}
 @section('inputFields')
-@include ('partials.forms.edit.name', ['translated_name' => trans('admin/companies/table.name')])
-@include ('partials.forms.edit.phone')
-@include ('partials.forms.edit.fax')
-@include ('partials.forms.edit.email')
+    <!-- Name -->
+    <x-form-row
+            :label="trans('general.name')"
+            :$item
+            :$errors
+            name="name"
+    />
+
+    <!-- Phone -->
+    <x-form-row
+            :label="trans('general.phone')"
+            :$item
+            :$errors
+            name="phone"
+            type="tel"
+    />
+
+    <!-- Fax -->
+    <x-form-row
+            :label="trans('general.fax')"
+            :$item
+            :$errors
+            name="fax"
+            type="tel"
+    />
+
+    <!-- Email -->
+    <x-form-row
+            :label="trans('general.email')"
+            :$item
+            :$errors
+            name="fax"
+            type="tel"
+    />
+
+
 @include ('partials.forms.edit.image-upload', ['image_path' => app('companies_upload_path')])
 
-<div class="form-group{!! $errors->has('notes') ? ' has-error' : '' !!}">
-    <label for="notes" class="col-md-3 control-label">{{ trans('general.notes') }}</label>
-    <div class="col-md-8">
-
-        <x-input.textarea
-                name="notes"
-                id="notes"
-                :value="old('notes', $item->notes)"
-                placeholder="{{ trans('general.placeholders.notes') }}"
-                aria-label="notes"
-                rows="5"
-        />
-
-    </div>
-</div>
+    <!-- Notes -->
+    <x-form-row
+            :label="trans('general.notes')"
+            :$item
+            :$errors
+            name="notes"
+            type="textarea"
+            maxlength="65000"
+            placeholder="{{ trans('general.placeholders.notes') }}"
+    />
 
 @stop
