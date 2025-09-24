@@ -80,7 +80,6 @@
 
 <!-- Set as Default -->
     <x-form-row-checkbox
-            :label="trans('admin/statuslabels/table.default_label')"
             :$item
             :$errors
             :value_text="trans('general.yes')"

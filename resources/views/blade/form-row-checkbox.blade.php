@@ -19,10 +19,12 @@
 <div {{ $attributes->merge(['class' => 'form-group']) }}>
 
     <x-form-label
-            :label="$label ?? null"
+            :for="$name"
             :style="$label_style ?? null"
             class="{{ $label_class }}"
-    />
+    >
+        {{ $label ?? $value_text }}
+    </x-form-label>
 
     <div {{ $attributes->merge(['class' => $input_div_class]) }}>
 

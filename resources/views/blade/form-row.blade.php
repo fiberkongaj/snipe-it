@@ -25,11 +25,13 @@
 <div {{ $attributes->merge(['class' => 'form-group']) }}>
 
     <x-form-label
-            :$label
             :for="$name"
             :style="$label_style ?? null"
             class="{{ $label_class }}"
-    />
+    >
+        {{ $label }}
+    </x-form-label>
+    
 
     <div {{ $attributes->merge(['class' => $input_div_class]) }} {{ ($div_style) ? $attributes->merge(['style' => $div_style]):'' }}>
 
