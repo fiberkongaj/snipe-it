@@ -24,6 +24,7 @@ mix
       "./node_modules/blueimp-file-upload/css/jquery.fileupload-ui.css",
       "./node_modules/ekko-lightbox/dist/ekko-lightbox.css",
       "./node_modules/bootstrap-table/dist/bootstrap-table.css",
+      "./node_modules/easymde/dist/easymde.min.css",
       "./public/css/build/app.css",
       "./node_modules/select2/dist/css/select2.css",
       "./public/css/build/overrides.css",
@@ -70,8 +71,8 @@ mix
   .js(
     [
         "./resources/assets/js/snipeit.js",
-      "./resources/assets/js/snipeit_modals.js",
-      "./node_modules/canvas-confetti/dist/confetti.browser.js",
+        "./resources/assets/js/snipeit_modals.js",
+        "./node_modules/canvas-confetti/dist/confetti.browser.js",
         // The general direction we have been going is to pull these via require() directly
         // But this runs in only one place, is only 24k, and doesn't break the sourcemaps
         // (and it needs to run in 'immediate' mode, not in 'moar_scripts'), so let's just
@@ -141,7 +142,7 @@ mix
             './resources/assets/js/FileSaver.min.js',
             './node_modules/xlsx/dist/xlsx.core.min.js',
             './node_modules/bootstrap-table/dist/extensions/sticky-header/bootstrap-table-sticky-header.js',
-            './node_modules/bootstrap-table/dist/extensions/toolbar/bootstrap-table-toolbar.js'
+            './node_modules/bootstrap-table/dist/extensions/toolbar/bootstrap-table-toolbar.js',
         ],
         'public/js/dist/bootstrap-table.js'
  ).version();

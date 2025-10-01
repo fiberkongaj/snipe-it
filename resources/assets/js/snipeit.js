@@ -22,6 +22,8 @@ require('jquery.iframe-transport'); //probably not needed anymore, if I'm honest
 require('blueimp-file-upload')
 require('bootstrap-colorpicker')
 require('bootstrap-datepicker')
+window.EasyMDE = require('easymde');
+window.DOMPurify = require('dompurify');
 require('ekko-lightbox') //TODO - this doesn't seem jquery-ish, we might need to do something weird here
                          // it *does* require Bootstrap, which requires jquery, so maybe that's OK
                          // it seems to work...

@@ -173,7 +173,7 @@ use Carbon\Carbon;
                   {{ trans('admin/maintenances/form.notes') }}
                 </div>
                 <div class="col-md-9">
-                  {!! nl2br(Helper::parseEscapedMarkedownInline($maintenance->notes)) !!}
+                  {!! Helper::parseEscapedMarkedown($maintenance->notes) !!}
                 </div>
               </div> <!-- /row -->
               @endif
@@ -199,21 +199,6 @@ use Carbon\Carbon;
             <img src="{{ Storage::disk('public')->url(app('maintenances_path').e($maintenance->image)) }}" class="img-responsive img-thumbnail" style="width:100%" alt="{{ $maintenance->name }}">
           </div>
         @endif
-
-        <div class="col-md-12">
-
-          <ul class="list-unstyled" style="line-height: 22px; padding-bottom: 20px;">
-
-            @if ($maintenance->notes)
-              <li>
-                <strong>{{ trans('general.notes') }}</strong>:
-                {!! nl2br(Helper::parseEscapedMarkedownInline($maintenance->notes)) !!}
-              </li>
-            @endif
-
-
-          </ul>
-      </div>
 
       @can('update', $maintenance)
         <div class="col-md-12">

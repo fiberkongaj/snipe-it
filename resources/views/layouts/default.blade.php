@@ -1086,6 +1086,66 @@ dir="{{ Helper::determineLanguageDirection() }}">
 
         <script nonce="{{ csrf_token() }}">
 
+            const easymde = new EasyMDE({
+                element: document.getElementById('markdown-textarea'),
+                toolbar: [
+                    "bold",
+                    "italic",
+                    "strikethrough",
+                    "quote",
+                    "code",
+                    "|",
+                    "link",
+                    "|",
+                    "heading-1",
+                    "heading-2",
+                    "heading-3",
+                    "|",
+                    "unordered-list",
+                    "ordered-list",
+                    "|",
+                    "horizontal-rule",
+                    "|",
+                    "preview",
+                    "side-by-side",
+                    "|",
+                    "undo",
+                    "redo",
+                    "|",
+                    "guide"
+                ],
+                status: [], // Optional usage
+                promptURLs: true,
+                renderingConfig: {
+                    singleLineBreaks: false,
+                    codeSyntaxHighlighting: true,
+                    sanitizerFunction: (renderedHTML) => {
+                        // Using DOMPurify and only allowing <b> tags
+                        return DOMPurify.sanitize(renderedHTML, {ALLOWED_TAGS: [
+                                'b',
+                                'strong',
+                                'h1',
+                                'h2',
+                                'h3',
+                                'code',
+                                'blockquote',
+                                'i',
+                                'strikethrough',
+                                'del',
+                                's',
+                                'q',
+                                'p',
+                                'br',
+                                'em',
+                                'a'
+                            ]})
+                    },
+                },
+                showIcons: ["code", "table"],
+                spellChecker: false,
+                sideBySideFullscreen: false,
+            });
+
             $.fn.datepicker.dates['{{ app()->getLocale() }}'] = {
                 days: [
                     "{{ trans('datepicker.days.sunday') }}",

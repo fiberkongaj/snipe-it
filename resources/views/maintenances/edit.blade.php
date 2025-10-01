@@ -20,6 +20,11 @@
 {{-- Page content --}}
 @section('content')
 
+  <style>
+    .editor-toolbar {
+     padding-top: 0px;
+    }
+  </style>
 <div class="row">
   <div class="col-md-9">
     @if ($item->id)
@@ -178,8 +183,10 @@
         <div class="form-group {{ $errors->has('notes') ? ' has-error' : '' }}">
           <label for="notes" class="col-md-3 control-label">{{ trans('admin/maintenances/form.notes') }}</label>
           <div class="col-md-7">
-            <textarea class="col-md-6 form-control" id="notes" name="notes">{{ old('notes', $item->notes) }}</textarea>
-            <p class="help-block">{!! trans('general.markdown') !!}</p>
+
+            <textarea class="col-md-6 form-control" rows="4" name="notes" id="markdown-textarea">{{ old('notes', $item->notes) }}</textarea>
+            <p class="help-block">
+              {!! trans('general.markdown') !!}</p>
             {!! $errors->first('notes', '<span class="alert-msg" aria-hidden="true"><i class="fas fa-times" aria-hidden="true"></i> :message</span>') !!}
           </div>
         </div>
