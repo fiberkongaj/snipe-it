@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Evolu\u00e7\u00e3o local de snipe-it API Documentation",
-        "_postman_id": "39b21647-01e3-47a9-90ba-2c0ac4e67c2e",
+        "_postman_id": "df2531f9-f61a-4089-a1ce-69b4f0ddd340",
         "description": "This documentation aims to provide all the information you need to work with the Snipe-IT API.",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -91,7 +91,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=wFPirCLmI5Qlpim62U5T8yvZtjqzmIGHFxQ3hzIZ; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=4xsr65A4AFjnEtAOzz8268YNOMlBA0vQLeN2KDp0; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -270,7 +270,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=OWq14tCum5ZSf6uUlWPqrsC47ncQqkZgrWnXgpLB; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=Fz1Mp9Wc39HRit2HoHC1gn3IUFaLtitvdOOsLXRc; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -379,7 +379,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=D7Dn1nLGrjpIg1nzsvU7qQdh6KydawNPUuwYvN3k; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=qecJ95XCfKjx7KpLEN1GMOu6oyWTUCQ0sgYxOcnr; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -435,6 +435,289 @@
                                     "key": "id",
                                     "value": "1",
                                     "description": "The ID of the accessory."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Account",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display Requested Assets",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/account\/requests",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/account\/requests"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "max-age=0, must-revalidate, no-cache, no-store, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "expires",
+                                    "value": "Sun, 02 Jan 1990 00:00:00 GMT"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "feature-policy",
+                                    "value": "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "content-security-policy",
+                                    "value": "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https:\/\/snipe-it.test https:\/\/avatars.githubusercontent.com\/u\/ https:\/\/www.google.com\/images\/branding\/googlelogo\/2x\/ https:\/\/snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https:\/\/secure.gravatar.com http:\/\/gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "snipe-dev_local=0Ofpg9lqsCx0l3dLVF9yZnquqVPTKFD2MarToo0b; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"error\":\"Unauthorized or unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Display Accepted EULAs",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/account\/eulas",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/account\/eulas"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "max-age=0, must-revalidate, no-cache, no-store, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "expires",
+                                    "value": "Sun, 02 Jan 1990 00:00:00 GMT"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "feature-policy",
+                                    "value": "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "content-security-policy",
+                                    "value": "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https:\/\/snipe-it.test https:\/\/avatars.githubusercontent.com\/u\/ https:\/\/www.google.com\/images\/branding\/googlelogo\/2x\/ https:\/\/snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https:\/\/secure.gravatar.com http:\/\/gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "snipe-dev_local=rxLAV3nb8Lm1vnASccPchKo5Xr1r4FFmSpQZ7iae; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"error\":\"Unauthorized or unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Create API token",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/account\/personal-access-tokens",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/account\/personal-access-tokens"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Show API tokens",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/account\/personal-access-tokens",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/account\/personal-access-tokens"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "max-age=0, must-revalidate, no-cache, no-store, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "expires",
+                                    "value": "Sun, 02 Jan 1990 00:00:00 GMT"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "feature-policy",
+                                    "value": "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "content-security-policy",
+                                    "value": "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https:\/\/snipe-it.test https:\/\/avatars.githubusercontent.com\/u\/ https:\/\/www.google.com\/images\/branding\/googlelogo\/2x\/ https:\/\/snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https:\/\/secure.gravatar.com http:\/\/gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "snipe-dev_local=EoEpl701guwl7yUoXuGM2uBS757gjJ5VProi3qdF; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"error\":\"Unauthorized or unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Delete API token",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/account\/personal-access-tokens\/:tokenId",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/account\/personal-access-tokens\/:tokenId",
+                            "variable": [
+                                {
+                                    "id": "tokenId",
+                                    "key": "tokenId",
+                                    "value": "architecto",
+                                    "description": ""
                                 }
                             ]
                         },
@@ -524,7 +807,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=zbA3woO9t2FDFaBsCrozokcWxsnmbRff3VR6q67x; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=I5MurMG2oaqg3P454RS5JwU3zOYiMQ4Mu752l0M2; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -542,111 +825,111 @@
                             "query": [
                                 {
                                     "key": "action",
-                                    "value": "audits%2C+checkins",
-                                    "description": "The action to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The action to filter by: audits, checkins.",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "upcoming_status",
-                                    "value": "due%2C+overdue%2C+due-or-overdue",
-                                    "description": "The status to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The status to filter by: `due`, `overdue`, `due-or-overdue`.",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "status",
-                                    "value": "RTD%2C+Deployed%2C+Pending%2C+Undeployable%2C+Archived%2C+Requestable",
-                                    "description": "The asset status to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The asset status to filter by: `RTD`, `Deployed`, `Pending`, `Undeployable`, `Archived`, `Requestable`.",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "status_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The asset status ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "asset_tag",
-                                    "value": "ABC123",
+                                    "value": "",
                                     "description": "The asset tag to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "serial",
-                                    "value": "SN123456",
+                                    "value": "",
                                     "description": "The serial number to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "requestable",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "Filter by requestable assets.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "model_id",
-                                    "value": "1+or+model_id%5B%5D%3D1%26model_id%5B%5D%3D2",
-                                    "description": "int|array The model ID or IDs to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The model ID or IDs to filter by.",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "category_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The category ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "location_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The location ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "rtd_location_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The RTD location ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "supplier_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The supplier ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "asset_eol_date",
-                                    "value": "2023-12-31",
+                                    "value": "",
                                     "description": "date The asset end-of-life date to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "assigned_to",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The user ID or department ID the asset is assigned to.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "assigned_type",
                                     "value": "user",
-                                    "description": "The type of assignment, either 'user' or 'department'.",
+                                    "description": "The type of assignment, either 'user' or 'asset' or 'location'.",
                                     "disabled": false
                                 },
                                 {
                                     "key": "company_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The company ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "manufacturer_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The manufacturer ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "depreciation_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The depreciation ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "byod",
@@ -656,24 +939,24 @@
                                 },
                                 {
                                     "key": "order_number",
-                                    "value": "PO12345",
-                                    "description": "The order number to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The order number to filter by. Example:",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "search",
-                                    "value": "laptop",
-                                    "description": "A text string to search for.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "A text string to search for. Example:",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "filter",
-                                    "value": "%7B%22status_label%22%3A%22RTD%22%2C%22location%22%3A%22Headquarters%22%7D",
+                                    "value": "",
                                     "description": "A JSON object of key\/value pairs to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 }
                             ],
-                            "raw": "{{baseUrl}}\/api\/v1\/reports\/depreciation?action=audits%2C+checkins&upcoming_status=due%2C+overdue%2C+due-or-overdue&status=RTD%2C+Deployed%2C+Pending%2C+Undeployable%2C+Archived%2C+Requestable&status_id=1&asset_tag=ABC123&serial=SN123456&requestable=1&model_id=1+or+model_id%5B%5D%3D1%26model_id%5B%5D%3D2&category_id=1&location_id=1&rtd_location_id=1&supplier_id=1&asset_eol_date=2023-12-31&assigned_to=1&assigned_type=user&company_id=1&manufacturer_id=1&depreciation_id=1&byod=1&order_number=PO12345&search=laptop&filter=%7B%22status_label%22%3A%22RTD%22%2C%22location%22%3A%22Headquarters%22%7D"
+                            "raw": "{{baseUrl}}\/api\/v1\/reports\/depreciation?action=&upcoming_status=&status=&status_id=&asset_tag=&serial=&requestable=&model_id=&category_id=&location_id=&rtd_location_id=&supplier_id=&asset_eol_date=&assigned_to=&assigned_type=user&company_id=&manufacturer_id=&depreciation_id=&byod=1&order_number=&search=&filter="
                         },
                         "method": "GET",
                         "header": [
@@ -730,7 +1013,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=JG7zDn5PXHPIEticUUTUZ6UYyVdD8tXbVulOATER; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=lgpECl5XEBNSghyioYDAIqojY2wKWDElpBXGy0iX; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -803,7 +1086,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=16OzihBU0h4xmW2JUW0vkz5ZNEFBqsf4j0VouuKJ; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=qCapayTz590czNpP8xSUCUUB7vdosx4mVIaOPBWt; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -884,7 +1167,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=kwE3gnKCzQnr1FQa17AIvOYCbsRx7EeG4NWpBmPS; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=fPZtQcCA1cl8JQwmi75mxq8HdQLD3LwMhNazG9Wu; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -965,7 +1248,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=OvqgWEoNT96szHavg4rG0fw2ALfqiKoxLoKsii5j; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=dZb1Dgz426tSKYXi764GXTAAj3txJctbfOweyf00; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -1137,7 +1420,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=l28ShBmk00D1YpPW9K2z6e0a6sV1PgdTWAP6E97g; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=bLKbCN3YL113zwHdqIHbDf55MnHhuzLviaE9Ki5w; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -1155,111 +1438,111 @@
                             "query": [
                                 {
                                     "key": "action",
-                                    "value": "audits%2C+checkins",
-                                    "description": "The action to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The action to filter by: audits, checkins.",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "upcoming_status",
-                                    "value": "due%2C+overdue%2C+due-or-overdue",
-                                    "description": "The status to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The status to filter by: `due`, `overdue`, `due-or-overdue`.",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "status",
-                                    "value": "RTD%2C+Deployed%2C+Pending%2C+Undeployable%2C+Archived%2C+Requestable",
-                                    "description": "The asset status to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The asset status to filter by: `RTD`, `Deployed`, `Pending`, `Undeployable`, `Archived`, `Requestable`.",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "status_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The asset status ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "asset_tag",
-                                    "value": "ABC123",
+                                    "value": "",
                                     "description": "The asset tag to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "serial",
-                                    "value": "SN123456",
+                                    "value": "",
                                     "description": "The serial number to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "requestable",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "Filter by requestable assets.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "model_id",
-                                    "value": "1+or+model_id%5B%5D%3D1%26model_id%5B%5D%3D2",
-                                    "description": "int|array The model ID or IDs to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The model ID or IDs to filter by.",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "category_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The category ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "location_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The location ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "rtd_location_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The RTD location ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "supplier_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The supplier ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "asset_eol_date",
-                                    "value": "2023-12-31",
+                                    "value": "",
                                     "description": "date The asset end-of-life date to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "assigned_to",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The user ID or department ID the asset is assigned to.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "assigned_type",
                                     "value": "user",
-                                    "description": "The type of assignment, either 'user' or 'department'.",
+                                    "description": "The type of assignment, either 'user' or 'asset' or 'location'.",
                                     "disabled": false
                                 },
                                 {
                                     "key": "company_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The company ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "manufacturer_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The manufacturer ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "depreciation_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The depreciation ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "byod",
@@ -1269,24 +1552,24 @@
                                 },
                                 {
                                     "key": "order_number",
-                                    "value": "PO12345",
-                                    "description": "The order number to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The order number to filter by. Example:",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "search",
-                                    "value": "laptop",
-                                    "description": "A text string to search for.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "A text string to search for. Example:",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "filter",
-                                    "value": "%7B%22status_label%22%3A%22RTD%22%2C%22location%22%3A%22Headquarters%22%7D",
+                                    "value": "",
                                     "description": "A JSON object of key\/value pairs to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 }
                             ],
-                            "raw": "{{baseUrl}}\/api\/v1\/hardware\/:action\/:upcoming_status?action=audits%2C+checkins&upcoming_status=due%2C+overdue%2C+due-or-overdue&status=RTD%2C+Deployed%2C+Pending%2C+Undeployable%2C+Archived%2C+Requestable&status_id=1&asset_tag=ABC123&serial=SN123456&requestable=1&model_id=1+or+model_id%5B%5D%3D1%26model_id%5B%5D%3D2&category_id=1&location_id=1&rtd_location_id=1&supplier_id=1&asset_eol_date=2023-12-31&assigned_to=1&assigned_type=user&company_id=1&manufacturer_id=1&depreciation_id=1&byod=1&order_number=PO12345&search=laptop&filter=%7B%22status_label%22%3A%22RTD%22%2C%22location%22%3A%22Headquarters%22%7D",
+                            "raw": "{{baseUrl}}\/api\/v1\/hardware\/:action\/:upcoming_status?action=&upcoming_status=&status=&status_id=&asset_tag=&serial=&requestable=&model_id=&category_id=&location_id=&rtd_location_id=&supplier_id=&asset_eol_date=&assigned_to=&assigned_type=user&company_id=&manufacturer_id=&depreciation_id=&byod=1&order_number=&search=&filter=",
                             "variable": [
                                 {
                                     "id": "action",
@@ -1357,7 +1640,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=po1MHUpzMVPhyFW97gr5Evw2gERZ28qPLmm2o3xG; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=zsk5qqmCwDDO0urpMTuPWVeAIk8EVCCFWJVsfYNt; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -1595,7 +1878,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=ZsaGl6Ma2AaF2KPBgpJclGg2NWmArGyXM3dTS3Wf; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=yDpxz34OvmUXAUrWAmvqPUqBx0jSrBqASwWCkPI3; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -1676,7 +1959,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=fVNzF7g0DnBQWaCSscY3fjVAKeGUDI0Je0PiUdHS; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=HupEzsHnneFUARG0m2OmnG9MYetucXa0onvgcprT; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -1822,111 +2105,111 @@
                             "query": [
                                 {
                                     "key": "action",
-                                    "value": "audits%2C+checkins",
-                                    "description": "The action to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The action to filter by: audits, checkins.",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "upcoming_status",
-                                    "value": "due%2C+overdue%2C+due-or-overdue",
-                                    "description": "The status to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The status to filter by: `due`, `overdue`, `due-or-overdue`.",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "status",
-                                    "value": "RTD%2C+Deployed%2C+Pending%2C+Undeployable%2C+Archived%2C+Requestable",
-                                    "description": "The asset status to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The asset status to filter by: `RTD`, `Deployed`, `Pending`, `Undeployable`, `Archived`, `Requestable`.",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "status_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The asset status ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "asset_tag",
-                                    "value": "ABC123",
+                                    "value": "",
                                     "description": "The asset tag to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "serial",
-                                    "value": "SN123456",
+                                    "value": "",
                                     "description": "The serial number to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "requestable",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "Filter by requestable assets.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "model_id",
-                                    "value": "1+or+model_id%5B%5D%3D1%26model_id%5B%5D%3D2",
-                                    "description": "int|array The model ID or IDs to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The model ID or IDs to filter by.",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "category_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The category ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "location_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The location ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "rtd_location_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The RTD location ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "supplier_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The supplier ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "asset_eol_date",
-                                    "value": "2023-12-31",
+                                    "value": "",
                                     "description": "date The asset end-of-life date to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "assigned_to",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The user ID or department ID the asset is assigned to.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "assigned_type",
                                     "value": "user",
-                                    "description": "The type of assignment, either 'user' or 'department'.",
+                                    "description": "The type of assignment, either 'user' or 'asset' or 'location'.",
                                     "disabled": false
                                 },
                                 {
                                     "key": "company_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The company ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "manufacturer_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The manufacturer ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "depreciation_id",
-                                    "value": "1",
+                                    "value": "",
                                     "description": "The depreciation ID to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 },
                                 {
                                     "key": "byod",
@@ -1936,24 +2219,24 @@
                                 },
                                 {
                                     "key": "order_number",
-                                    "value": "PO12345",
-                                    "description": "The order number to filter by.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "The order number to filter by. Example:",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "search",
-                                    "value": "laptop",
-                                    "description": "A text string to search for.",
-                                    "disabled": false
+                                    "value": "",
+                                    "description": "A text string to search for. Example:",
+                                    "disabled": true
                                 },
                                 {
                                     "key": "filter",
-                                    "value": "%7B%22status_label%22%3A%22RTD%22%2C%22location%22%3A%22Headquarters%22%7D",
+                                    "value": "",
                                     "description": "A JSON object of key\/value pairs to filter by.",
-                                    "disabled": false
+                                    "disabled": true
                                 }
                             ],
-                            "raw": "{{baseUrl}}\/api\/v1\/hardware?action=audits%2C+checkins&upcoming_status=due%2C+overdue%2C+due-or-overdue&status=RTD%2C+Deployed%2C+Pending%2C+Undeployable%2C+Archived%2C+Requestable&status_id=1&asset_tag=ABC123&serial=SN123456&requestable=1&model_id=1+or+model_id%5B%5D%3D1%26model_id%5B%5D%3D2&category_id=1&location_id=1&rtd_location_id=1&supplier_id=1&asset_eol_date=2023-12-31&assigned_to=1&assigned_type=user&company_id=1&manufacturer_id=1&depreciation_id=1&byod=1&order_number=PO12345&search=laptop&filter=%7B%22status_label%22%3A%22RTD%22%2C%22location%22%3A%22Headquarters%22%7D"
+                            "raw": "{{baseUrl}}\/api\/v1\/hardware?action=&upcoming_status=&status=&status_id=&asset_tag=&serial=&requestable=&model_id=&category_id=&location_id=&rtd_location_id=&supplier_id=&asset_eol_date=&assigned_to=&assigned_type=user&company_id=&manufacturer_id=&depreciation_id=&byod=1&order_number=&search=&filter="
                         },
                         "method": "GET",
                         "header": [
@@ -2010,7 +2293,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=kg9RTUdMrEHyhN5Bd6bZItA5CzuWdzUopKkOGLxn; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=4zHcglQOUm8Q0GcRLew8uq1Jq8rfXF4QhK6SWBiu; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -2116,7 +2399,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=VY9cDTvWn46QRUoErwcIjYLl770M2MwMI42Pg9xm; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=9oSVzGufN6TNj7OK4IZEgBauebliSH1E23tNbams; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -2261,7 +2544,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=YjsDKEO59Ug1gUfonLIOiJ6nJKwstpQ8zTMzVJKN; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=AZo0eAfOOUQnsCZDbtqlMBcKQqUPojbAawxU7LZX; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -2334,7 +2617,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=JeD8GYZ5kJID9j3qGs8ieaUbZiCqCENvfiUv6m5g; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=8bSKu4dMOYJ9RLZoDoR1hc2MCjBohtq71eEtYOw2; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -2440,7 +2723,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=a8fBNBsCZ6g90kBLOVyTdMxkPqeYMaXj3CcsLxHQ; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=Gnx8F3DAxbo1BxPMKDEaIwjeOWO4DSOqrNjpBWcl; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -2585,7 +2868,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=tM8jGck3i8WEBJ4ZzPsqkPtrRHjdwWJIII7QwxyE; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=39j1TJ4u77vkwpPWdJ21Af8JdFBwVE1mHHQwwKnV; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -2658,7 +2941,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=JQLQBHma98I64t9cecIxazcdG6DPdujDMkO11Xt0; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=YPCXSxw1BCbGdh5TSF65HX2Cum5gdCSSHn0drIo5; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -2764,7 +3047,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=k6BXuD9WRk8WNPWcvfIKRHQKsmzjnhPPfukWphRU; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=rIdjimWLcOlAK7wmJmYroxWHNNVscnRRm0lbYcpf; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -2917,7 +3200,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=cBJMElHNIOAyns5sTaQs1opPLly1pw5jQdPxYFTG; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=l69hDtPUivTY3RkjLz37pbj2GKnC3BLNAOunKiEY; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -3059,7 +3342,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=7kQLg1kCKp2DfUWV5mcP2utNrb5TwvWZ3zqGDTtW; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=B9zjvAcjCF6c2d57F3g71TaOvN54OFQRaK7gd2OC; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -3165,7 +3448,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=5v9ZEo0rEJmMnaEKE1GPxtDyQf3zm8k0JnwrJ2Mr; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=g1FUyaIOABzelOVQTQ3FLYuQ9B1VVxwzjW0w2wTm; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -3310,7 +3593,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=GB19xzV614mIPJYtBLHApC3bBgXqGWsWivI7zZJa; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=ZmtPy0SxU3PM1BVAf3KTTVAmGBTSDy0jt43OqiqE; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -3391,7 +3674,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=YxRN1WGYzVhO1TIWTVq8bzrulbH7yotfLBGIsS80; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=pndgboXKoez4z1LtbisqkbVctfXxddINm8ik5aiy; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -3570,7 +3853,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=TB6zCcPHXL51nzidsogy0zvGndilq7Mm6KrY2UXJ; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=QDIxyIp54OjpdRDaNqLN9XhiRzqNjrFZCXkhHwid; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -3676,7 +3959,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=E5h64TTOIO4p5SWsPcRDUTke4NwczjffRUUjivOg; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=Ah3XSaDo34D1PxIpQ8pDuauDLYl0RzOxRcI79MjZ; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -3920,7 +4203,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=99zGltIEXJoPssIuY5kdHPhF5WF5aNkP5tfz2L33; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=XGoDMr0ai3wApt6nD6yqGfrMn5rqrw5p8RDcPNFK; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -4026,7 +4309,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=9OK5wTM6hJF8UC7pVlzDFdbw1hlxnaTRgbMVPdbr; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=b9D8k1gvQZIlMPBBI3MZfLYQCERes850mIsxGXMo; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -4241,7 +4524,7 @@
                                         },
                                         {
                                             "key": "set-cookie",
-                                            "value": "snipe-dev_local=oNXbSKBODGKzLyK9z0f9CffLsod39tPJdleakVm1; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                            "value": "snipe-dev_local=wfdqPJ45wyKEmwY0aZqQ066UDLFOh6b0DaCn8vj2; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                         }
                                     ],
                                     "code": 401,
@@ -4347,7 +4630,7 @@
                                         },
                                         {
                                             "key": "set-cookie",
-                                            "value": "snipe-dev_local=exd0ejuLQeSH2na1V3uj0dImHDa3Pfq7vnM04CdD; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                            "value": "snipe-dev_local=6j8uTg18mlNpS0i134Y5HZfn046xO1Xrkb1dVKBM; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                         }
                                     ],
                                     "code": 401,
@@ -4494,7 +4777,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=q39mzTRuKTXhiFNT9X71Saja38lJQAENLyU0KAIL; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=HX1E99230RsSiSAYyYt8ymjo93rW1Po4Y2iaHBbY; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -4622,7 +4905,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=psliGrHoU0KWxlZ0WtN7bz5I0G6iOpUdq8dmhAM9; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=H1fi0QDG96zZ4zAFyyfP6RXjquDCstRQiT25jXQ7; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -4728,7 +5011,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=8RjAJLgSPWQqA2O7ew4upuiEyMwFy9gpyczV3LCp; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=XksLdkSCcvKWuJHct75vHD6lb5PcsiRS9PR1K9SR; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -4873,7 +5156,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=rYOmiCCFOGpmfN0yPDBdmqW7E9d8hswPlUujyo4P; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=kjoK9tIvADO49x8wh7YBfUbHLwfFmZiogfxlIx8e; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -4979,7 +5262,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=wJKmqPQkUusAB4HQq2NbZHKAzkslnIQx7HcXkw0k; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=PcuDIeeJRqicdRSHDLcDpUjTfLN1Xz8JRFkdnbYB; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -5138,7 +5421,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=flFdpkx3IBOTXfODZeLo8E0fS9tvAmd2crd78UWY; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=1XRIXqHTHmoidi0ffEqwHcaQnYNbA6UYCHsK0yeE; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -5231,7 +5514,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=INilwKsuWgb4tyIZaqdgAry89pal3Lo9ouL3x16z; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=yW8kji4VdrZVOH8CBP4COEYKKVG923atDdaJ0dNn; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -5427,7 +5710,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=rcq5qxowxiylcX2tcmPIO6MXYFDjnBCy1sYELCRr; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=BS1Bq4UFPDXwLQZRs3pSJixFMMpgJxfBOmr4DWl5; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -5572,7 +5855,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=sIO514ykUFGr9tWC2k0GUGQn0ecm51seHwiaxYAu; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=Vx7BzraR3SCrM5l8wEl64mF54nlfR6tGzf4fcv2W; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -5645,7 +5928,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=sqJOx3iLo1kJxTd8mmQ2btLXJxPePoM2XzJz0YxG; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=p1OaN8jLuQSkhULdDAEPeglceyX2BrdC9De6tkpP; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -5724,7 +6007,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=WPLnc4UXk0pZFNqpQgshxtUG9L1OvbZX2BIBPV2G; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=GsLdJ1PUvsI9174uM06Rcv7e2T0LLe9v4lcwIbTA; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -5846,7 +6129,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=fTHS0kpnxeIXRqzK5xzNc03B62DpKmQ2BiqWnBgc; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=IO91xw66IfWrGGBCgBI6lwj3IuLkd7OOqQ9NdJke; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -5952,7 +6235,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=IAwA0qXWtxL9lb0ifXGpFqJj8eNcNUDDALgJlAZL; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=oHg7lJM8DAT5ZUQLjJ7KNW23lT8W6oOd0rzEwSbt; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -6103,7 +6386,7 @@
                                         },
                                         {
                                             "key": "set-cookie",
-                                            "value": "snipe-dev_local=AeCtsuabi8bZKwRzQdr8p7XJiL1Jac94HywjTk3e; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                            "value": "snipe-dev_local=QjJEb98EV0RwDHTQcOylyUvaRVYrNHNQ5saV5WED; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                         }
                                     ],
                                     "code": 401,
@@ -6190,7 +6473,7 @@
                                         },
                                         {
                                             "key": "set-cookie",
-                                            "value": "snipe-dev_local=929jjEqg98XCM3WkRgG28cYD2K5BgE7sEI6R6cZ6; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                            "value": "snipe-dev_local=JZePiyxly78weK50lzr6qf09bL1XOr8TGIDmv0Py; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                         }
                                     ],
                                     "code": 401,
@@ -6310,7 +6593,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=kxkAn6ktvDEdpCvR2riFQus14bXiRAXJ8XCncjws; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=jWuLhK0gZXMcSoJ3gjMe31Ys9BApDOCFRlynDRE2; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -6391,7 +6674,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=Nf1tNFD7n2qoaiLc23yMxOkHBaFZAOiAnSm6tcTb; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=YKRhZlOs0DbXICR0t3y0HWzTIN2aCeh17uYYavce; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -6472,7 +6755,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=62yt5S3mxzYYSMUmyhYhIwtyMGJsD3eDd6OSGQwA; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=BuTYvjG5ingO4kODcJSrcuK3ZgD1kCxCCl5pjHVV; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -6553,7 +6836,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=T8p4JqeUHZZN2prYTOhKgBcrEe0doawfuquJ3bEa; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=5yywKXasxT2awvUdynRcjG934YHYPP15sSbVJEJK; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -6705,7 +6988,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=SqYzY3n9eFlPontR5x5bUmCq63qtjt87IMGcn6b9; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=KA53NGw7xt6u5b4C2hs1ZUEFgRey28iNpGgkIz3w; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -6811,7 +7094,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=Xu6H2IlOJprQvX5dpFgKolsA7LUHJtPQJ21uiyMr; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=bdbj1NyL6Jdb2tEcgjS9Rfrjdj5Ssp0AhxvM4nu0; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -7017,7 +7300,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=a6zHAj7joxmpz5X9eBbbTU8ejfcPJPyO0bHiw6ys; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=MykmAIDiNGruoLSzqvzqlMIoUTnOUqr2pVVfgFw1; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -7123,7 +7406,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=CEzYacpuuQZ4tw7X9yROCQVJhKxckdutV9Izk7mv; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=fCDCxFbwzZZwPH8hOpwKcjLz4YCR2gZ2DKGQJT4u; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -7268,7 +7551,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=G8n3vdsgPCj9VKm7UDvioWQJWWO6VClAeZU7VWbZ; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=EOCHbNiLhd1V8GlNACOOheSDg2Fh5fpo36OaUYk0; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -7441,7 +7724,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=1MZWSqnleW9A9xxg84gio9OKpDCDIUJZK1qdqBer; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=Ng8RBSTTVGgrXNkQxr5nn17aNqRG2cxClMZdMgp9; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=719999; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -7547,7 +7830,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=Ox4B9rI7uuddpp7UlnUEbmqbLLd3mLszZoXEWxyG; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=kp6Uan6rAZCd8rCSERRfxYV3xjh4ZzzIX8jsI50z; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -7629,225 +7912,6 @@
             "description": "",
             "item": [
                 {
-                    "name": "GET api\/v1",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": ""
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "max-age=0, must-revalidate, no-cache, no-store, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "vary",
-                                    "value": "Origin"
-                                },
-                                {
-                                    "key": "pragma",
-                                    "value": "no-cache"
-                                },
-                                {
-                                    "key": "expires",
-                                    "value": "Sun, 02 Jan 1990 00:00:00 GMT"
-                                },
-                                {
-                                    "key": "x-content-type-options",
-                                    "value": "nosniff"
-                                },
-                                {
-                                    "key": "feature-policy",
-                                    "value": "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-                                },
-                                {
-                                    "key": "referrer-policy",
-                                    "value": "same-origin"
-                                },
-                                {
-                                    "key": "content-security-policy",
-                                    "value": "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https:\/\/snipe-it.test https:\/\/avatars.githubusercontent.com\/u\/ https:\/\/www.google.com\/images\/branding\/googlelogo\/2x\/ https:\/\/snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https:\/\/secure.gravatar.com http:\/\/gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-                                },
-                                {
-                                    "key": "set-cookie",
-                                    "value": "snipe-dev_local=jgR3H8NxpOZswCMLNyP7Jr4JSKaAduEOFuKfWsPc; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"error\":\"Unauthorized or unauthenticated.\"}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Display a listing of requested assets.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/account\/requests",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/account\/requests"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": ""
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "max-age=0, must-revalidate, no-cache, no-store, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "vary",
-                                    "value": "Origin"
-                                },
-                                {
-                                    "key": "pragma",
-                                    "value": "no-cache"
-                                },
-                                {
-                                    "key": "expires",
-                                    "value": "Sun, 02 Jan 1990 00:00:00 GMT"
-                                },
-                                {
-                                    "key": "x-content-type-options",
-                                    "value": "nosniff"
-                                },
-                                {
-                                    "key": "feature-policy",
-                                    "value": "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-                                },
-                                {
-                                    "key": "referrer-policy",
-                                    "value": "same-origin"
-                                },
-                                {
-                                    "key": "content-security-policy",
-                                    "value": "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https:\/\/snipe-it.test https:\/\/avatars.githubusercontent.com\/u\/ https:\/\/www.google.com\/images\/branding\/googlelogo\/2x\/ https:\/\/snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https:\/\/secure.gravatar.com http:\/\/gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-                                },
-                                {
-                                    "key": "set-cookie",
-                                    "value": "snipe-dev_local=sAVv5eThRkdkR5M8lrJ4D89mdhNARZZjpgTNYwbF; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"error\":\"Unauthorized or unauthenticated.\"}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Display the EULAs accepted by the user.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/account\/eulas",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/account\/eulas"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "@param \\App\\Http\\Transformers\\ActionlogsTransformer $transformer"
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "max-age=0, must-revalidate, no-cache, no-store, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "vary",
-                                    "value": "Origin"
-                                },
-                                {
-                                    "key": "pragma",
-                                    "value": "no-cache"
-                                },
-                                {
-                                    "key": "expires",
-                                    "value": "Sun, 02 Jan 1990 00:00:00 GMT"
-                                },
-                                {
-                                    "key": "x-content-type-options",
-                                    "value": "nosniff"
-                                },
-                                {
-                                    "key": "feature-policy",
-                                    "value": "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-                                },
-                                {
-                                    "key": "referrer-policy",
-                                    "value": "same-origin"
-                                },
-                                {
-                                    "key": "content-security-policy",
-                                    "value": "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https:\/\/snipe-it.test https:\/\/avatars.githubusercontent.com\/u\/ https:\/\/www.google.com\/images\/branding\/googlelogo\/2x\/ https:\/\/snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https:\/\/secure.gravatar.com http:\/\/gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-                                },
-                                {
-                                    "key": "set-cookie",
-                                    "value": "snipe-dev_local=sGpQnsbOAvzzSif7RWGBnpRT3crgiMnNqGrkpJZ2; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"error\":\"Unauthorized or unauthenticated.\"}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
                     "name": "POST api\/v1\/account\/request\/{asset_id}",
                     "request": {
                         "url": {
@@ -7898,137 +7962,6 @@
                             ]
                         },
                         "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": ""
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Delete an API token",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/account\/personal-access-tokens",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/account\/personal-access-tokens"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": ""
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Show user's API tokens",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/account\/personal-access-tokens",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/account\/personal-access-tokens"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": ""
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "max-age=0, must-revalidate, no-cache, no-store, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "vary",
-                                    "value": "Origin"
-                                },
-                                {
-                                    "key": "pragma",
-                                    "value": "no-cache"
-                                },
-                                {
-                                    "key": "expires",
-                                    "value": "Sun, 02 Jan 1990 00:00:00 GMT"
-                                },
-                                {
-                                    "key": "x-content-type-options",
-                                    "value": "nosniff"
-                                },
-                                {
-                                    "key": "feature-policy",
-                                    "value": "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-                                },
-                                {
-                                    "key": "referrer-policy",
-                                    "value": "same-origin"
-                                },
-                                {
-                                    "key": "content-security-policy",
-                                    "value": "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https:\/\/snipe-it.test https:\/\/avatars.githubusercontent.com\/u\/ https:\/\/www.google.com\/images\/branding\/googlelogo\/2x\/ https:\/\/snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https:\/\/secure.gravatar.com http:\/\/gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-                                },
-                                {
-                                    "key": "set-cookie",
-                                    "value": "snipe-dev_local=LNRDQR1CZpACyPTiuFMrE94N62SnROd72GbwESk2; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"error\":\"Unauthorized or unauthenticated.\"}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Delete an API token",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/account\/personal-access-tokens\/:tokenId",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/account\/personal-access-tokens\/:tokenId",
-                            "variable": [
-                                {
-                                    "id": "tokenId",
-                                    "key": "tokenId",
-                                    "value": "architecto",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
                         "header": [
                             {
                                 "key": "Content-Type",
@@ -8141,7 +8074,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=yQqAcTcuPtWDcFbT5Wn7cr1VnYRw5K0GEnRqf6aX; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=sHPMC2SqAZ5cAOx1UvXW3elAy3P3oiipptk2p0FZ; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -8222,7 +8155,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=G3alAwTqzzpBmnRgDDO2pPjTXFmzZ6usPyrFjhJ1; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=KyijYcHB8a6W2I03kqLUp8Ca0jSq1NkkGSEAafJW; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -8303,7 +8236,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=AJaxkunAlxEsroyGEAyGe505rTbVShhvJ3zae1zv; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=DhLS17un2bga4hm36kDHWijjLccRe4D7qGWeertj; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -8384,7 +8317,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=h32nE0HKwzQc7ss03y6gTtADpj5SPTwZahWnca9n; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=jwgg1JDhWc8bhd88IkSMh8NrfSTdnbKXDnIvbazB; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -8392,104 +8325,6 @@
                             "name": ""
                         }
                     ]
-                },
-                {
-                    "name": "GET api\/v1\/settings\/ldaptest",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/settings\/ldaptest",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/settings\/ldaptest"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": ""
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "max-age=0, must-revalidate, no-cache, no-store, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "vary",
-                                    "value": "Origin"
-                                },
-                                {
-                                    "key": "pragma",
-                                    "value": "no-cache"
-                                },
-                                {
-                                    "key": "expires",
-                                    "value": "Sun, 02 Jan 1990 00:00:00 GMT"
-                                },
-                                {
-                                    "key": "x-content-type-options",
-                                    "value": "nosniff"
-                                },
-                                {
-                                    "key": "feature-policy",
-                                    "value": "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-                                },
-                                {
-                                    "key": "referrer-policy",
-                                    "value": "same-origin"
-                                },
-                                {
-                                    "key": "content-security-policy",
-                                    "value": "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https:\/\/snipe-it.test https:\/\/avatars.githubusercontent.com\/u\/ https:\/\/www.google.com\/images\/branding\/googlelogo\/2x\/ https:\/\/snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https:\/\/secure.gravatar.com http:\/\/gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-                                },
-                                {
-                                    "key": "set-cookie",
-                                    "value": "snipe-dev_local=xMzuu6FkX6EJwgJRpWHfXA47kwCUxYfjMYuo7fKH; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"error\":\"Unauthorized or unauthenticated.\"}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Delete server-cached barcodes",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/settings\/purge_barcodes",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/settings\/purge_barcodes"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": ""
-                    },
-                    "response": []
                 },
                 {
                     "name": "Get a list of login attempts",
@@ -8555,7 +8390,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=yFgejJJjq2EpZkpb6c9p5KdS6FvafeMmSits5OhR; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=PixSpuAiQcKGKevpNoGvcac0DIIlsvBhhwm35Sov; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -8563,59 +8398,6 @@
                             "name": ""
                         }
                     ]
-                },
-                {
-                    "name": "POST api\/v1\/settings\/ldaptestlogin",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/settings\/ldaptestlogin",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/settings\/ldaptestlogin"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"ldaptest_user\":\"architecto\",\"ldaptest_password\":\"architecto\"}"
-                        },
-                        "description": ""
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Test the email configuration",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/settings\/mailtest",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/settings\/mailtest"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": ""
-                    },
-                    "response": []
                 },
                 {
                     "name": "Lists backup files",
@@ -8681,7 +8463,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=qjjT0ujUAX45xiacm1WWNGAXHCzg829WwY9QUpTt; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=ZdyXnJL3ZjvVbGA20TL3YJvFVtvXfMSfnMxdR0u3; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -8754,7 +8536,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=G5VGebkI7Efpep55pj0YsY4IxIloqwUuNWxU8K4D; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=12H7czcfvhzN41bMPpVZ6uJSv3ldPqeXqxYn3Hfx; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -8835,88 +8617,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=4OEK9LMHgIKcB4ECJAWKwyizzizwLDT4F2goIdDA; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"error\":\"Unauthorized or unauthenticated.\"}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Display the EULAs accepted by the user.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/users\/:user_id\/eulas",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/users\/:user_id\/eulas",
-                            "variable": [
-                                {
-                                    "id": "user_id",
-                                    "key": "user_id",
-                                    "value": "2",
-                                    "description": "The ID of the user."
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "@param \\App\\Models\\User $user"
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "max-age=0, must-revalidate, no-cache, no-store, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "vary",
-                                    "value": "Origin"
-                                },
-                                {
-                                    "key": "pragma",
-                                    "value": "no-cache"
-                                },
-                                {
-                                    "key": "expires",
-                                    "value": "Sun, 02 Jan 1990 00:00:00 GMT"
-                                },
-                                {
-                                    "key": "x-content-type-options",
-                                    "value": "nosniff"
-                                },
-                                {
-                                    "key": "feature-policy",
-                                    "value": "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-                                },
-                                {
-                                    "key": "referrer-policy",
-                                    "value": "same-origin"
-                                },
-                                {
-                                    "key": "content-security-policy",
-                                    "value": "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https:\/\/snipe-it.test https:\/\/avatars.githubusercontent.com\/u\/ https:\/\/www.google.com\/images\/branding\/googlelogo\/2x\/ https:\/\/snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https:\/\/secure.gravatar.com http:\/\/gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-                                },
-                                {
-                                    "key": "set-cookie",
-                                    "value": "snipe-dev_local=Ht9zEvd6BoGAmteUr9U0M1EhukRDU8R7sB8mSOKw; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=7262fNrfUhCtn7FC7YV1iiIZzwoF2PrBqd6Axi1d; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -8989,7 +8690,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=CPJbwvdCxw0DYqUMJxxi8OmNeup4BlA5rkQirAju; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=9pbW3Lj27gqsdqjf9Onr74qGlwdQxRO7HKtgdSxR; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -9095,7 +8796,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=EU4sT1Hqg6oKZJKuvM3vDzUQrdg41Ff7DIAwsXRf; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=uskGZUp3AzQqeC2JdKpRCiJjEIuCgDp8LHywERj6; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -9242,7 +8943,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=1qhgimw5bC0fHQGSgVgJqKcaSW42IqRJ2F4polDF; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=VXG7nhRBx0n9dmOU9H9g0JoiTzOuE2oWJn9foBNu; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -9434,7 +9135,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=WdH9GMKFEFXrDlSabXmWC61WEVsbjEsXfzuZvGcB; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=KrrLKfzDmsdlm5LulANZUYoCPy9sh7nNRx3HCSmt; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -9548,7 +9249,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=WOfLcw4xJKTMbort9bqVzAXqpZ6f1qWOp8sBkfH3; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=Ymdsfjt4VVVhtRDZjt1vEh8ftmFUrewMizYO5VZg; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -9740,7 +9441,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=aEC6avo9gEeVKvjyRHL2MEy5P5L3nTdocVk5flUL; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=Ofw7nV48LnTp8SAN2B8W7nWuAw1jpI7GuFCRxc6B; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -9924,7 +9625,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=c7RrS9j8xGNhya4Ts8R7yKc2ymIrPo607cHUZOOR; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=zBZCXN8IrVhp0gmWImh45OcrU6cQm00sPVHDni5M; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -9997,7 +9698,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=z1U2ClGhYZv5iKYA4cWb5k2YHUchy9a9HUSWQNDX; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=6Cmpyzc2mOwZhTp7cE5pqa2YsN7c3q0lR8gZIOZ7; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -10078,7 +9779,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=oM63SLXqghs9b2nURW4ZbHp9KipkcIdGDeHIP1OF; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=t71KbEhwD7gcUBoIZY7GnisT1MghbetA8AdH2CZo; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -10157,7 +9858,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=vBXFctl7onEDovM8eSKc93QsS5L4tAqovRrD5NXz; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=hvRc22afMc91wsdTT85Ht47Q29HBb3EbvY2z3Y1O; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -10230,7 +9931,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=THFowyEVGhU3x5t9BPD4sAFlPBoRSVA3IVlcS0o2; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=Cl16Du8NHw18bURF7kVm0zrgflHanUmuWj6R2LDu; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -10303,7 +10004,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=igTsi93UE725qACTUUOAQNldCyy6HiyL6IwO1uir; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=NeW9gaoRdvWuQC1aQSk6kx1A72Si2V8WFp9z1egL; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -10518,7 +10219,7 @@
                                         },
                                         {
                                             "key": "set-cookie",
-                                            "value": "snipe-dev_local=qmx3IT8bGNwfKDYs3HXdICl59fpNBPkN9gMQP0E6; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                            "value": "snipe-dev_local=xAEtyBUGWlC0moD22O7DJgUD3CqXGEWotGEuwSA7; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                         }
                                     ],
                                     "code": 401,
@@ -10528,6 +10229,163 @@
                             ]
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "name": "Settings",
+            "description": "",
+            "item": [
+                {
+                    "name": "Test LDAP Connection",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/settings\/ldaptest",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/settings\/ldaptest"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "max-age=0, must-revalidate, no-cache, no-store, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "expires",
+                                    "value": "Sun, 02 Jan 1990 00:00:00 GMT"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "feature-policy",
+                                    "value": "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "content-security-policy",
+                                    "value": "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https:\/\/snipe-it.test https:\/\/avatars.githubusercontent.com\/u\/ https:\/\/www.google.com\/images\/branding\/googlelogo\/2x\/ https:\/\/snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https:\/\/secure.gravatar.com http:\/\/gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "snipe-dev_local=mWYpyrpeGcsbvxTh42aAgm1BUzHcKW2ZzcbI3Cxq; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"error\":\"Unauthorized or unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Delete Barcode Cache",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/settings\/purge_barcodes",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/settings\/purge_barcodes"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Test LDAP Login",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/settings\/ldaptestlogin",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/settings\/ldaptestlogin"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"ldaptest_user\":\"architecto\",\"ldaptest_password\":\"architecto\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Test Email Configuration",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/settings\/mailtest",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/settings\/mailtest"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
                 }
             ]
         },
@@ -10603,7 +10461,7 @@
                                         },
                                         {
                                             "key": "set-cookie",
-                                            "value": "snipe-dev_local=G20C8NLrpkVqlc0NNio7g3ptJtPAXnibwwTVNQeQ; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                            "value": "snipe-dev_local=DwH0Z0jznkmdlwerWNY0sBvt01HFqQoipoH7NPNf; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                         }
                                     ],
                                     "code": 401,
@@ -10676,7 +10534,7 @@
                                         },
                                         {
                                             "key": "set-cookie",
-                                            "value": "snipe-dev_local=nfojjoCoFBvDIofUosz4FAHEbARc2LWdBDY9mRRx; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                            "value": "snipe-dev_local=IJSRhBnYtFd0syyXU680YEwF0BIMthCNLfOpcyLN; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                         }
                                     ],
                                     "code": 401,
@@ -10749,7 +10607,7 @@
                                         },
                                         {
                                             "key": "set-cookie",
-                                            "value": "snipe-dev_local=uVOpCavS7QSLRjH0yDdyV74jegAqu5eXuqTRB3uG; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                            "value": "snipe-dev_local=ZOIZ05Rp1YVJaN29a0oGwiyWTrTTcUqo5lc5IjPs; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                         }
                                     ],
                                     "code": 401,
@@ -10830,7 +10688,7 @@
                                         },
                                         {
                                             "key": "set-cookie",
-                                            "value": "snipe-dev_local=Ht7V7qpACUTVu7IJzwwbJUXuxblHSrmHNUCajeqk; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                            "value": "snipe-dev_local=aF0alOp2ocaDp8IgwKesKh7farzPtxeAUhyc28IF; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                         }
                                     ],
                                     "code": 401,
@@ -10911,7 +10769,7 @@
                                         },
                                         {
                                             "key": "set-cookie",
-                                            "value": "snipe-dev_local=z9QIVR09zOjzp4SfQ6PnSyHPmMBgIdL6rWPk4LtG; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                            "value": "snipe-dev_local=yvmceFpSYfSsG4CbvhhMs2cBhFlHEqvGVKDevoDG; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                         }
                                     ],
                                     "code": 401,
@@ -10991,7 +10849,7 @@
                                         },
                                         {
                                             "key": "set-cookie",
-                                            "value": "snipe-dev_local=UW9ov1LkpK1Z1YliskXZEW6plEgpQW1YZuYsdica; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                            "value": "snipe-dev_local=IYg40ZEyQBdflyTTVSdA6PDnYUm7TgE9JH3IZfKU; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                         }
                                     ],
                                     "code": 401,
@@ -11097,7 +10955,7 @@
                                         },
                                         {
                                             "key": "set-cookie",
-                                            "value": "snipe-dev_local=ReQua8ijyQpft7NDUog7TgQclP19t4LEGrFQNt1b; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                            "value": "snipe-dev_local=4fGnpY6Knc6SJS5TS7WkNHK5Ec5qPilO6DhNftpy; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                         }
                                     ],
                                     "code": 401,
@@ -11244,7 +11102,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=BR6PeveVGsilxq1FP5fT6WAioeCFDL1gUs6Ym9rZ; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=65C7TW1PiGjeaD2y6hvRsGYfeIbw6nlsoiJ0xwP6; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -11420,7 +11278,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=GIWthbIGeD8hOuFNzuVJJexwmXJT7t1Lu2iovTWr; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=Ygwy1qbumTs3btIGwY6tegcN8o9isTe6KzDLCsCz; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -11526,7 +11384,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=u3CtCeJlscwNdonOQgzzRAz7L5b7PUJA5QGFugkY; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=toyAMs6CPONOBpGPTaErVBrkQmGal9vH0b3ZBo3s; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -11671,7 +11529,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=fFeEpKb9M61WnUEMGDCSuV4kfzkJcCXWsnUeIGee; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=kC65uNZYirk9MpUgY1qQWRkj8R3yUD1VsJxETu8o; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -11777,7 +11635,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=fZJPTXSFdFjqLShHjCZ9g1GFuEMP6MVXn0DqT1QF; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=nXikZnt2yCTS1oU2rDLd5ug3LCWqkpnmTqdOdsHi; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -11922,7 +11780,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=JC6ltPDEnZt7b2BKD6p43Hf6gJpbvexFKPt1vVbv; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=kw28HZIT52r8jz3Sbo6hnarUjf8SBB3clQMub2dP; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -12045,7 +11903,88 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=v6Cb1rLm3mlkNzuAF1e9YU4OfC74Iqhj4N9H03fv; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=LmY8gP1mxEcxwQkzCIEl6Jjry5STc3MsQZzeBHCB; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"error\":\"Unauthorized or unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "User EULAs",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/users\/:user_id\/eulas",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/users\/:user_id\/eulas",
+                            "variable": [
+                                {
+                                    "id": "user_id",
+                                    "key": "user_id",
+                                    "value": "2",
+                                    "description": "The ID of the user."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Gets the lst of accepted EULAs for a user,"
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "max-age=0, must-revalidate, no-cache, no-store, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "expires",
+                                    "value": "Sun, 02 Jan 1990 00:00:00 GMT"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "feature-policy",
+                                    "value": "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "content-security-policy",
+                                    "value": "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https:\/\/snipe-it.test https:\/\/avatars.githubusercontent.com\/u\/ https:\/\/www.google.com\/images\/branding\/googlelogo\/2x\/ https:\/\/snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https:\/\/secure.gravatar.com http:\/\/gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "snipe-dev_local=x1EHM0OT00cWXn3wkfghPYlJTB9zt8rzQF4tfUzH; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -12126,7 +12065,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=NM7fi7M9rXZA4UsxLSrlxCrnhqup454f060pIp2G; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=ljzGjKMqRjPz4VlUKPgAJwPJJH3mwnnME1G4oWLz; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -12240,7 +12179,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=KCloddtglY2T8yjhIKUdghLKpNfXla9kNHBZ43ov; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=VIlQixrYDtsKUoezxmmxC394ECo9BEQREUTKa9u1; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -12321,7 +12260,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=eUKLUGZlhjIQ7LBaXgHhnmtV2ULOtAixNSPaoUj5; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=GYgntzVmH8K85tM7eOtGuJ8isoBo8dTIYsydB8oI; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -12590,7 +12529,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=s07zlyGGJd59cbeYkhBsNL77mOqzDJopVBTzIxnO; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=QJt4tI6q4BEnSsQdQidC0TRd8hJ4EnWZ0DrL84VE; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,
@@ -12696,7 +12635,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "snipe-dev_local=xbTJ0W206Ov3xctFXMSvwEt61rFFMK3phcqDGQ0s; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
+                                    "value": "snipe-dev_local=00onEwBFqp7htmXXtBhRhhAGNJHnlo87YcbqKB1Z; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=\/; secure; httponly; samesite=lax"
                                 }
                             ],
                             "code": 401,

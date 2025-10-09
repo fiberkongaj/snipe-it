@@ -11,6 +11,9 @@ tags:
     name: Accessories
     description: ''
   -
+    name: Account
+    description: ''
+  -
     name: Assets
     description: ''
   -
@@ -63,6 +66,9 @@ tags:
     description: ''
   -
     name: Notes
+    description: ''
+  -
+    name: Settings
     description: ''
   -
     name: 'Status Labels'
@@ -363,6 +369,95 @@ paths:
         required: true
         schema:
           type: integer
+  /api/v1/account/requests:
+    get:
+      summary: 'Display Requested Assets'
+      operationId: displayRequestedAssets
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  error: 'Unauthorized or unauthenticated.'
+                properties:
+                  error:
+                    type: string
+                    example: 'Unauthorized or unauthenticated.'
+      tags:
+        - Account
+  /api/v1/account/eulas:
+    get:
+      summary: 'Display Accepted EULAs'
+      operationId: displayAcceptedEULAs
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  error: 'Unauthorized or unauthenticated.'
+                properties:
+                  error:
+                    type: string
+                    example: 'Unauthorized or unauthenticated.'
+      tags:
+        - Account
+  /api/v1/account/personal-access-tokens:
+    post:
+      summary: 'Create API token'
+      operationId: createAPIToken
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Account
+    get:
+      summary: 'Show API tokens'
+      operationId: showAPITokens
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  error: 'Unauthorized or unauthenticated.'
+                properties:
+                  error:
+                    type: string
+                    example: 'Unauthorized or unauthenticated.'
+      tags:
+        - Account
+  '/api/v1/account/personal-access-tokens/{tokenId}':
+    delete:
+      summary: 'Delete API token'
+      operationId: deleteAPIToken
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Account
+    parameters:
+      -
+        in: path
+        name: tokenId
+        description: ''
+        example: architecto
+        required: true
+        schema:
+          type: string
   /api/v1/account/requestable/hardware:
     get:
       summary: 'Show Requestable Assets'
@@ -393,200 +488,200 @@ paths:
         -
           in: query
           name: action
-          description: 'The action to filter by.'
-          example: 'audits, checkins'
+          description: 'The action to filter by: audits, checkins.'
+          example: null
           required: false
           schema:
             type: string
-            description: 'The action to filter by.'
-            example: 'audits, checkins'
+            description: 'The action to filter by: audits, checkins.'
+            example: null
             nullable: false
         -
           in: query
           name: upcoming_status
-          description: 'The status to filter by.'
-          example: 'due, overdue, due-or-overdue'
+          description: 'The status to filter by: `due`, `overdue`, `due-or-overdue`.'
+          example: null
           required: false
           schema:
             type: string
-            description: 'The status to filter by.'
-            example: 'due, overdue, due-or-overdue'
+            description: 'The status to filter by: `due`, `overdue`, `due-or-overdue`.'
+            example: null
             nullable: false
         -
           in: query
           name: status
-          description: 'The asset status to filter by.'
-          example: 'RTD, Deployed, Pending, Undeployable, Archived, Requestable'
+          description: 'The asset status to filter by: `RTD`, `Deployed`, `Pending`, `Undeployable`, `Archived`, `Requestable`.'
+          example: null
           required: false
           schema:
             type: string
-            description: 'The asset status to filter by.'
-            example: 'RTD, Deployed, Pending, Undeployable, Archived, Requestable'
+            description: 'The asset status to filter by: `RTD`, `Deployed`, `Pending`, `Undeployable`, `Archived`, `Requestable`.'
+            example: null
             nullable: false
         -
           in: query
           name: status_id
           description: 'The asset status ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The asset status ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: asset_tag
           description: 'The asset tag to filter by.'
-          example: ABC123
+          example: null
           required: false
           schema:
             type: string
             description: 'The asset tag to filter by.'
-            example: ABC123
+            example: null
             nullable: false
         -
           in: query
           name: serial
           description: 'The serial number to filter by.'
-          example: SN123456
+          example: null
           required: false
           schema:
             type: string
             description: 'The serial number to filter by.'
-            example: SN123456
+            example: null
             nullable: false
         -
           in: query
           name: requestable
           description: 'Filter by requestable assets.'
-          example: true
+          example: null
           required: false
           schema:
             type: boolean
             description: 'Filter by requestable assets.'
-            example: true
+            example: null
             nullable: false
         -
           in: query
           name: model_id
-          description: 'int|array The model ID or IDs to filter by.'
-          example: '1 or model_id[]=1&model_id[]=2'
+          description: 'The model ID or IDs to filter by.'
+          example: null
           required: false
           schema:
-            type: string
-            description: 'int|array The model ID or IDs to filter by.'
-            example: '1 or model_id[]=1&model_id[]=2'
+            type: integer
+            description: 'The model ID or IDs to filter by.'
+            example: null
             nullable: false
         -
           in: query
           name: category_id
           description: 'The category ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The category ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: location_id
           description: 'The location ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The location ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: rtd_location_id
           description: 'The RTD location ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The RTD location ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: supplier_id
           description: 'The supplier ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The supplier ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: asset_eol_date
           description: 'date The asset end-of-life date to filter by.'
-          example: '2023-12-31'
+          example: null
           required: false
           schema:
             type: string
             description: 'date The asset end-of-life date to filter by.'
-            example: '2023-12-31'
+            example: null
             nullable: false
         -
           in: query
           name: assigned_to
           description: 'The user ID or department ID the asset is assigned to.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The user ID or department ID the asset is assigned to.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: assigned_type
-          description: "The type of assignment, either 'user' or 'department'."
+          description: "The type of assignment, either 'user' or 'asset' or 'location'."
           example: user
           required: false
           schema:
             type: string
-            description: "The type of assignment, either 'user' or 'department'."
+            description: "The type of assignment, either 'user' or 'asset' or 'location'."
             example: user
             nullable: false
         -
           in: query
           name: company_id
           description: 'The company ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The company ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: manufacturer_id
           description: 'The manufacturer ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The manufacturer ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: depreciation_id
           description: 'The depreciation ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The depreciation ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
@@ -602,35 +697,35 @@ paths:
         -
           in: query
           name: order_number
-          description: 'The order number to filter by.'
-          example: PO12345
+          description: 'The order number to filter by. Example:'
+          example: null
           required: false
           schema:
             type: string
-            description: 'The order number to filter by.'
-            example: PO12345
+            description: 'The order number to filter by. Example:'
+            example: null
             nullable: false
         -
           in: query
           name: search
-          description: 'A text string to search for.'
-          example: laptop
+          description: 'A text string to search for. Example:'
+          example: null
           required: false
           schema:
             type: string
-            description: 'A text string to search for.'
-            example: laptop
+            description: 'A text string to search for. Example:'
+            example: null
             nullable: false
         -
           in: query
           name: filter
           description: 'A JSON object of key/value pairs to filter by.'
-          example: '{"status_label":"RTD","location":"Headquarters"}'
+          example: null
           required: false
           schema:
             type: string
             description: 'A JSON object of key/value pairs to filter by.'
-            example: '{"status_label":"RTD","location":"Headquarters"}'
+            example: null
             nullable: false
       responses:
         401:
@@ -812,200 +907,200 @@ paths:
         -
           in: query
           name: action
-          description: 'The action to filter by.'
-          example: 'audits, checkins'
+          description: 'The action to filter by: audits, checkins.'
+          example: null
           required: false
           schema:
             type: string
-            description: 'The action to filter by.'
-            example: 'audits, checkins'
+            description: 'The action to filter by: audits, checkins.'
+            example: null
             nullable: false
         -
           in: query
           name: upcoming_status
-          description: 'The status to filter by.'
-          example: 'due, overdue, due-or-overdue'
+          description: 'The status to filter by: `due`, `overdue`, `due-or-overdue`.'
+          example: null
           required: false
           schema:
             type: string
-            description: 'The status to filter by.'
-            example: 'due, overdue, due-or-overdue'
+            description: 'The status to filter by: `due`, `overdue`, `due-or-overdue`.'
+            example: null
             nullable: false
         -
           in: query
           name: status
-          description: 'The asset status to filter by.'
-          example: 'RTD, Deployed, Pending, Undeployable, Archived, Requestable'
+          description: 'The asset status to filter by: `RTD`, `Deployed`, `Pending`, `Undeployable`, `Archived`, `Requestable`.'
+          example: null
           required: false
           schema:
             type: string
-            description: 'The asset status to filter by.'
-            example: 'RTD, Deployed, Pending, Undeployable, Archived, Requestable'
+            description: 'The asset status to filter by: `RTD`, `Deployed`, `Pending`, `Undeployable`, `Archived`, `Requestable`.'
+            example: null
             nullable: false
         -
           in: query
           name: status_id
           description: 'The asset status ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The asset status ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: asset_tag
           description: 'The asset tag to filter by.'
-          example: ABC123
+          example: null
           required: false
           schema:
             type: string
             description: 'The asset tag to filter by.'
-            example: ABC123
+            example: null
             nullable: false
         -
           in: query
           name: serial
           description: 'The serial number to filter by.'
-          example: SN123456
+          example: null
           required: false
           schema:
             type: string
             description: 'The serial number to filter by.'
-            example: SN123456
+            example: null
             nullable: false
         -
           in: query
           name: requestable
           description: 'Filter by requestable assets.'
-          example: true
+          example: null
           required: false
           schema:
             type: boolean
             description: 'Filter by requestable assets.'
-            example: true
+            example: null
             nullable: false
         -
           in: query
           name: model_id
-          description: 'int|array The model ID or IDs to filter by.'
-          example: '1 or model_id[]=1&model_id[]=2'
+          description: 'The model ID or IDs to filter by.'
+          example: null
           required: false
           schema:
-            type: string
-            description: 'int|array The model ID or IDs to filter by.'
-            example: '1 or model_id[]=1&model_id[]=2'
+            type: integer
+            description: 'The model ID or IDs to filter by.'
+            example: null
             nullable: false
         -
           in: query
           name: category_id
           description: 'The category ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The category ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: location_id
           description: 'The location ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The location ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: rtd_location_id
           description: 'The RTD location ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The RTD location ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: supplier_id
           description: 'The supplier ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The supplier ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: asset_eol_date
           description: 'date The asset end-of-life date to filter by.'
-          example: '2023-12-31'
+          example: null
           required: false
           schema:
             type: string
             description: 'date The asset end-of-life date to filter by.'
-            example: '2023-12-31'
+            example: null
             nullable: false
         -
           in: query
           name: assigned_to
           description: 'The user ID or department ID the asset is assigned to.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The user ID or department ID the asset is assigned to.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: assigned_type
-          description: "The type of assignment, either 'user' or 'department'."
+          description: "The type of assignment, either 'user' or 'asset' or 'location'."
           example: user
           required: false
           schema:
             type: string
-            description: "The type of assignment, either 'user' or 'department'."
+            description: "The type of assignment, either 'user' or 'asset' or 'location'."
             example: user
             nullable: false
         -
           in: query
           name: company_id
           description: 'The company ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The company ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: manufacturer_id
           description: 'The manufacturer ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The manufacturer ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: depreciation_id
           description: 'The depreciation ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The depreciation ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
@@ -1021,35 +1116,35 @@ paths:
         -
           in: query
           name: order_number
-          description: 'The order number to filter by.'
-          example: PO12345
+          description: 'The order number to filter by. Example:'
+          example: null
           required: false
           schema:
             type: string
-            description: 'The order number to filter by.'
-            example: PO12345
+            description: 'The order number to filter by. Example:'
+            example: null
             nullable: false
         -
           in: query
           name: search
-          description: 'A text string to search for.'
-          example: laptop
+          description: 'A text string to search for. Example:'
+          example: null
           required: false
           schema:
             type: string
-            description: 'A text string to search for.'
-            example: laptop
+            description: 'A text string to search for. Example:'
+            example: null
             nullable: false
         -
           in: query
           name: filter
           description: 'A JSON object of key/value pairs to filter by.'
-          example: '{"status_label":"RTD","location":"Headquarters"}'
+          example: null
           required: false
           schema:
             type: string
             description: 'A JSON object of key/value pairs to filter by.'
-            example: '{"status_label":"RTD","location":"Headquarters"}'
+            example: null
             nullable: false
       responses:
         401:
@@ -1369,200 +1464,200 @@ paths:
         -
           in: query
           name: action
-          description: 'The action to filter by.'
-          example: 'audits, checkins'
+          description: 'The action to filter by: audits, checkins.'
+          example: null
           required: false
           schema:
             type: string
-            description: 'The action to filter by.'
-            example: 'audits, checkins'
+            description: 'The action to filter by: audits, checkins.'
+            example: null
             nullable: false
         -
           in: query
           name: upcoming_status
-          description: 'The status to filter by.'
-          example: 'due, overdue, due-or-overdue'
+          description: 'The status to filter by: `due`, `overdue`, `due-or-overdue`.'
+          example: null
           required: false
           schema:
             type: string
-            description: 'The status to filter by.'
-            example: 'due, overdue, due-or-overdue'
+            description: 'The status to filter by: `due`, `overdue`, `due-or-overdue`.'
+            example: null
             nullable: false
         -
           in: query
           name: status
-          description: 'The asset status to filter by.'
-          example: 'RTD, Deployed, Pending, Undeployable, Archived, Requestable'
+          description: 'The asset status to filter by: `RTD`, `Deployed`, `Pending`, `Undeployable`, `Archived`, `Requestable`.'
+          example: null
           required: false
           schema:
             type: string
-            description: 'The asset status to filter by.'
-            example: 'RTD, Deployed, Pending, Undeployable, Archived, Requestable'
+            description: 'The asset status to filter by: `RTD`, `Deployed`, `Pending`, `Undeployable`, `Archived`, `Requestable`.'
+            example: null
             nullable: false
         -
           in: query
           name: status_id
           description: 'The asset status ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The asset status ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: asset_tag
           description: 'The asset tag to filter by.'
-          example: ABC123
+          example: null
           required: false
           schema:
             type: string
             description: 'The asset tag to filter by.'
-            example: ABC123
+            example: null
             nullable: false
         -
           in: query
           name: serial
           description: 'The serial number to filter by.'
-          example: SN123456
+          example: null
           required: false
           schema:
             type: string
             description: 'The serial number to filter by.'
-            example: SN123456
+            example: null
             nullable: false
         -
           in: query
           name: requestable
           description: 'Filter by requestable assets.'
-          example: true
+          example: null
           required: false
           schema:
             type: boolean
             description: 'Filter by requestable assets.'
-            example: true
+            example: null
             nullable: false
         -
           in: query
           name: model_id
-          description: 'int|array The model ID or IDs to filter by.'
-          example: '1 or model_id[]=1&model_id[]=2'
+          description: 'The model ID or IDs to filter by.'
+          example: null
           required: false
           schema:
-            type: string
-            description: 'int|array The model ID or IDs to filter by.'
-            example: '1 or model_id[]=1&model_id[]=2'
+            type: integer
+            description: 'The model ID or IDs to filter by.'
+            example: null
             nullable: false
         -
           in: query
           name: category_id
           description: 'The category ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The category ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: location_id
           description: 'The location ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The location ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: rtd_location_id
           description: 'The RTD location ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The RTD location ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: supplier_id
           description: 'The supplier ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The supplier ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: asset_eol_date
           description: 'date The asset end-of-life date to filter by.'
-          example: '2023-12-31'
+          example: null
           required: false
           schema:
             type: string
             description: 'date The asset end-of-life date to filter by.'
-            example: '2023-12-31'
+            example: null
             nullable: false
         -
           in: query
           name: assigned_to
           description: 'The user ID or department ID the asset is assigned to.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The user ID or department ID the asset is assigned to.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: assigned_type
-          description: "The type of assignment, either 'user' or 'department'."
+          description: "The type of assignment, either 'user' or 'asset' or 'location'."
           example: user
           required: false
           schema:
             type: string
-            description: "The type of assignment, either 'user' or 'department'."
+            description: "The type of assignment, either 'user' or 'asset' or 'location'."
             example: user
             nullable: false
         -
           in: query
           name: company_id
           description: 'The company ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The company ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: manufacturer_id
           description: 'The manufacturer ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The manufacturer ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
           name: depreciation_id
           description: 'The depreciation ID to filter by.'
-          example: 1
+          example: null
           required: false
           schema:
             type: integer
             description: 'The depreciation ID to filter by.'
-            example: 1
+            example: null
             nullable: false
         -
           in: query
@@ -1578,35 +1673,35 @@ paths:
         -
           in: query
           name: order_number
-          description: 'The order number to filter by.'
-          example: PO12345
+          description: 'The order number to filter by. Example:'
+          example: null
           required: false
           schema:
             type: string
-            description: 'The order number to filter by.'
-            example: PO12345
+            description: 'The order number to filter by. Example:'
+            example: null
             nullable: false
         -
           in: query
           name: search
-          description: 'A text string to search for.'
-          example: laptop
+          description: 'A text string to search for. Example:'
+          example: null
           required: false
           schema:
             type: string
-            description: 'A text string to search for.'
-            example: laptop
+            description: 'A text string to search for. Example:'
+            example: null
             nullable: false
         -
           in: query
           name: filter
           description: 'A JSON object of key/value pairs to filter by.'
-          example: '{"status_label":"RTD","location":"Headquarters"}'
+          example: null
           required: false
           schema:
             type: string
             description: 'A JSON object of key/value pairs to filter by.'
-            example: '{"status_label":"RTD","location":"Headquarters"}'
+            example: null
             nullable: false
       responses:
         401:
@@ -4084,69 +4179,6 @@ paths:
         required: true
         schema:
           type: string
-  /api/v1:
-    get:
-      summary: ''
-      operationId: getApiV1
-      description: ''
-      parameters: []
-      responses:
-        401:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  error: 'Unauthorized or unauthenticated.'
-                properties:
-                  error:
-                    type: string
-                    example: 'Unauthorized or unauthenticated.'
-      tags:
-        - Misc
-  /api/v1/account/requests:
-    get:
-      summary: 'Display a listing of requested assets.'
-      operationId: displayAListingOfRequestedAssets
-      description: ''
-      parameters: []
-      responses:
-        401:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  error: 'Unauthorized or unauthenticated.'
-                properties:
-                  error:
-                    type: string
-                    example: 'Unauthorized or unauthenticated.'
-      tags:
-        - Misc
-  /api/v1/account/eulas:
-    get:
-      summary: 'Display the EULAs accepted by the user.'
-      operationId: displayTheEULAsAcceptedByTheUser
-      description: '@param \App\Http\Transformers\ActionlogsTransformer $transformer'
-      parameters: []
-      responses:
-        401:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  error: 'Unauthorized or unauthenticated.'
-                properties:
-                  error:
-                    type: string
-                    example: 'Unauthorized or unauthenticated.'
-      tags:
-        - Misc
   '/api/v1/account/request/{asset_id}':
     post:
       summary: ''
@@ -4183,53 +4215,6 @@ paths:
         required: true
         schema:
           type: integer
-  /api/v1/account/personal-access-tokens:
-    post:
-      summary: 'Delete an API token'
-      operationId: deleteAnAPIToken
-      description: ''
-      parameters: []
-      responses: {  }
-      tags:
-        - Misc
-    get:
-      summary: "Show user's API tokens"
-      operationId: showUsersAPITokens
-      description: ''
-      parameters: []
-      responses:
-        401:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  error: 'Unauthorized or unauthenticated.'
-                properties:
-                  error:
-                    type: string
-                    example: 'Unauthorized or unauthenticated.'
-      tags:
-        - Misc
-  '/api/v1/account/personal-access-tokens/{tokenId}':
-    delete:
-      summary: 'Delete an API token'
-      operationId: deleteAnAPIToken
-      description: ''
-      parameters: []
-      responses: {  }
-      tags:
-        - Misc
-    parameters:
-      -
-        in: path
-        name: tokenId
-        description: ''
-        example: architecto
-        required: true
-        schema:
-          type: string
   '/api/v1/accessories/{accessory}/checkin':
     post:
       summary: 'Checkin Accessory'
@@ -4375,36 +4360,6 @@ paths:
         required: true
         schema:
           type: string
-  /api/v1/settings/ldaptest:
-    get:
-      summary: ''
-      operationId: getApiV1SettingsLdaptest
-      description: ''
-      parameters: []
-      responses:
-        401:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  error: 'Unauthorized or unauthenticated.'
-                properties:
-                  error:
-                    type: string
-                    example: 'Unauthorized or unauthenticated.'
-      tags:
-        - Misc
-  /api/v1/settings/purge_barcodes:
-    post:
-      summary: 'Delete server-cached barcodes'
-      operationId: deleteServerCachedBarcodes
-      description: ''
-      parameters: []
-      responses: {  }
-      tags:
-        - Misc
   /api/v1/settings/login-attempts:
     get:
       summary: 'Get a list of login attempts'
@@ -4424,44 +4379,6 @@ paths:
                   error:
                     type: string
                     example: 'Unauthorized or unauthenticated.'
-      tags:
-        - Misc
-  /api/v1/settings/ldaptestlogin:
-    post:
-      summary: ''
-      operationId: postApiV1SettingsLdaptestlogin
-      description: ''
-      parameters: []
-      responses: {  }
-      tags:
-        - Misc
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                ldaptest_user:
-                  type: string
-                  description: ''
-                  example: architecto
-                  nullable: false
-                ldaptest_password:
-                  type: string
-                  description: ''
-                  example: architecto
-                  nullable: false
-              required:
-                - ldaptest_user
-                - ldaptest_password
-  /api/v1/settings/mailtest:
-    post:
-      summary: 'Test the email configuration'
-      operationId: testTheEmailConfiguration
-      description: ''
-      parameters: []
-      responses: {  }
       tags:
         - Misc
   /api/v1/settings/backups:
@@ -4536,36 +4453,6 @@ paths:
         required: true
         schema:
           type: string
-  '/api/v1/users/{user_id}/eulas':
-    get:
-      summary: 'Display the EULAs accepted by the user.'
-      operationId: displayTheEULAsAcceptedByTheUser
-      description: '@param \App\Models\User $user'
-      parameters: []
-      responses:
-        401:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  error: 'Unauthorized or unauthenticated.'
-                properties:
-                  error:
-                    type: string
-                    example: 'Unauthorized or unauthenticated.'
-      tags:
-        - Misc
-    parameters:
-      -
-        in: path
-        name: user_id
-        description: 'The ID of the user.'
-        example: 2
-        required: true
-        schema:
-          type: integer
   /api/v1/kits:
     get:
       summary: 'Display a listing of the resource.'
@@ -5086,6 +4973,74 @@ paths:
         required: true
         schema:
           type: integer
+  /api/v1/settings/ldaptest:
+    get:
+      summary: 'Test LDAP Connection'
+      operationId: testLDAPConnection
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  error: 'Unauthorized or unauthenticated.'
+                properties:
+                  error:
+                    type: string
+                    example: 'Unauthorized or unauthenticated.'
+      tags:
+        - Settings
+  /api/v1/settings/purge_barcodes:
+    post:
+      summary: 'Delete Barcode Cache'
+      operationId: deleteBarcodeCache
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Settings
+  /api/v1/settings/ldaptestlogin:
+    post:
+      summary: 'Test LDAP Login'
+      operationId: testLDAPLogin
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Settings
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ldaptest_user:
+                  type: string
+                  description: ''
+                  example: architecto
+                  nullable: false
+                ldaptest_password:
+                  type: string
+                  description: ''
+                  example: architecto
+                  nullable: false
+              required:
+                - ldaptest_user
+                - ldaptest_password
+  /api/v1/settings/mailtest:
+    post:
+      summary: 'Test Email Configuration'
+      operationId: testEmailConfiguration
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Settings
   /api/v1/statuslabels/selectlist:
     get:
       summary: Selectlist
@@ -5713,6 +5668,36 @@ paths:
                     example: 'Unauthorized or unauthenticated.'
       tags:
         - Users
+  '/api/v1/users/{user_id}/eulas':
+    get:
+      summary: 'User EULAs'
+      operationId: userEULAs
+      description: 'Gets the lst of accepted EULAs for a user,'
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  error: 'Unauthorized or unauthenticated.'
+                properties:
+                  error:
+                    type: string
+                    example: 'Unauthorized or unauthenticated.'
+      tags:
+        - Users
+    parameters:
+      -
+        in: path
+        name: user_id
+        description: 'The ID of the user.'
+        example: 2
+        required: true
+        schema:
+          type: integer
   '/api/v1/users/{user}/assets':
     get:
       summary: 'List Assets Assigned to User'

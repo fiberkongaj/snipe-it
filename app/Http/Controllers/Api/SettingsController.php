@@ -23,6 +23,12 @@ class SettingsController extends Controller
 {
 
 
+    /**
+     * Test LDAP Connection
+     *
+     * @group Settings
+     * @return JsonResponse
+     */
     public function ldaptest() : JsonResponse
     {
         $settings = Setting::getSettings();
@@ -95,6 +101,13 @@ class SettingsController extends Controller
 
     }
 
+    /**
+     * Test LDAP Login
+     *
+     * @group Settings
+     * @param Request $request
+     * @return JsonResponse
+     */
     public function ldaptestlogin(Request $request) : JsonResponse
     {
 
@@ -151,8 +164,9 @@ class SettingsController extends Controller
     }
 
     /**
-     * Test the email configuration
+     * Test Email Configuration
      *
+     * @group Settings
      * @author [A. Gianotto] [<snipe@snipe.net>]
      * @since [v3.0]
      */
@@ -175,8 +189,9 @@ class SettingsController extends Controller
 
 
     /**
-     * Delete server-cached barcodes
+     * Delete Barcode Cache
      *
+     * @group Settings
      * @author [A. Gianotto] [<snipe@snipe.net>]
      * @since [v5.0.0]
      */

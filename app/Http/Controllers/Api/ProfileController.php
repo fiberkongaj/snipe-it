@@ -42,8 +42,9 @@ class ProfileController extends Controller
     }
 
     /**
-     * Display a listing of requested assets.
+     * Display Requested Assets
      *
+     * @group Account
      * @author [A. Gianotto] [<snipe@snipe.net>]
      * @since [v4.3.0]
      */
@@ -93,8 +94,8 @@ class ProfileController extends Controller
 
 
     /**
-     * Delete an API token
-     *
+     * Create API token
+     * @group Account
      * @author [A. Gianotto] [<snipe@snipe.net>]
      * @since [v6.0.5]
      */
@@ -122,8 +123,9 @@ class ProfileController extends Controller
 
 
     /**
-     * Delete an API token
+     * Delete API token
      *
+     * @group Account
      * @author [A. Gianotto] [<snipe@snipe.net>]
      * @since [v6.0.5]
      */
@@ -150,8 +152,9 @@ class ProfileController extends Controller
 
 
     /**
-     * Show user's API tokens
+     * Show API tokens
      *
+     * @group Account
      * @author [A. Gianotto] [<snipe@snipe.net>]
      * @since [v6.0.5]
      */
@@ -172,11 +175,12 @@ class ProfileController extends Controller
     }
 
     /**
-     * Display the EULAs accepted by the user.
+     * Display Accepted EULAs
      *
-     *  @param \App\Http\Transformers\ActionlogsTransformer $transformer
-     *  @return \Illuminate\Http\JsonResponse
-     *@since [v8.1.16]
+     * @group Account
+     * @param \App\Http\Transformers\ActionlogsTransformer $transformer
+     * @return \Illuminate\Http\JsonResponse
+     * @since [v8.1.16]
      * @author [Godfrey Martinez] [<gmartinez@grokability.com>]
      */
     public function eulas(ProfileTransformer $transformer)

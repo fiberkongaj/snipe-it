@@ -42,7 +42,7 @@ return [
 
             // Exclude these routes even if they matched the rules above.
             'exclude' => [
-                'api.index'
+                'api/v1'
             ],
         ],
     ],

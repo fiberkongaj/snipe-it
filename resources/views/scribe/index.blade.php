@@ -99,6 +99,28 @@
                             </li>
                                                                         </ul>
                             </ul>
+                    <ul id="tocify-header-account" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="account">
+                    <a href="#account">Account</a>
+                </li>
+                                    <ul id="tocify-subheader-account" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="account-GETapi-v1-account-requests">
+                                <a href="#account-GETapi-v1-account-requests">Display Requested Assets</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="account-GETapi-v1-account-eulas">
+                                <a href="#account-GETapi-v1-account-eulas">Display Accepted EULAs</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="account-POSTapi-v1-account-personal-access-tokens">
+                                <a href="#account-POSTapi-v1-account-personal-access-tokens">Create API token</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="account-GETapi-v1-account-personal-access-tokens">
+                                <a href="#account-GETapi-v1-account-personal-access-tokens">Show API tokens</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="account-DELETEapi-v1-account-personal-access-tokens--tokenId-">
+                                <a href="#account-DELETEapi-v1-account-personal-access-tokens--tokenId-">Delete API token</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
                     <ul id="tocify-header-assets" class="tocify-header">
                 <li class="tocify-item level-1" data-unique="assets">
                     <a href="#assets">Assets</a>
@@ -573,29 +595,11 @@
                     <a href="#misc">Misc</a>
                 </li>
                                     <ul id="tocify-subheader-misc" class="tocify-subheader">
-                                                    <li class="tocify-item level-2" data-unique="misc-GETapi-v1">
-                                <a href="#misc-GETapi-v1">GET api/v1</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="misc-GETapi-v1-account-requests">
-                                <a href="#misc-GETapi-v1-account-requests">Display a listing of requested assets.</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="misc-GETapi-v1-account-eulas">
-                                <a href="#misc-GETapi-v1-account-eulas">Display the EULAs accepted by the user.</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="misc-POSTapi-v1-account-request--asset_id-">
+                                                    <li class="tocify-item level-2" data-unique="misc-POSTapi-v1-account-request--asset_id-">
                                 <a href="#misc-POSTapi-v1-account-request--asset_id-">POST api/v1/account/request/{asset_id}</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="misc-POSTapi-v1-account-request--asset_id--cancel">
                                 <a href="#misc-POSTapi-v1-account-request--asset_id--cancel">POST api/v1/account/request/{asset_id}/cancel</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="misc-POSTapi-v1-account-personal-access-tokens">
-                                <a href="#misc-POSTapi-v1-account-personal-access-tokens">Delete an API token</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="misc-GETapi-v1-account-personal-access-tokens">
-                                <a href="#misc-GETapi-v1-account-personal-access-tokens">Show user's API tokens</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="misc-DELETEapi-v1-account-personal-access-tokens--tokenId-">
-                                <a href="#misc-DELETEapi-v1-account-personal-access-tokens--tokenId-">Delete an API token</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="misc-POSTapi-v1-accessories--accessory--checkin">
                                 <a href="#misc-POSTapi-v1-accessories--accessory--checkin">Checkin Accessory</a>
@@ -612,20 +616,8 @@
                                                                                 <li class="tocify-item level-2" data-unique="misc-GETapi-v1-models--id-">
                                 <a href="#misc-GETapi-v1-models--id-">Show Model</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="misc-GETapi-v1-settings-ldaptest">
-                                <a href="#misc-GETapi-v1-settings-ldaptest">GET api/v1/settings/ldaptest</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="misc-POSTapi-v1-settings-purge_barcodes">
-                                <a href="#misc-POSTapi-v1-settings-purge_barcodes">Delete server-cached barcodes</a>
-                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="misc-GETapi-v1-settings-login-attempts">
                                 <a href="#misc-GETapi-v1-settings-login-attempts">Get a list of login attempts</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="misc-POSTapi-v1-settings-ldaptestlogin">
-                                <a href="#misc-POSTapi-v1-settings-ldaptestlogin">POST api/v1/settings/ldaptestlogin</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="misc-POSTapi-v1-settings-mailtest">
-                                <a href="#misc-POSTapi-v1-settings-mailtest">Test the email configuration</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="misc-GETapi-v1-settings-backups">
                                 <a href="#misc-GETapi-v1-settings-backups">Lists backup files</a>
@@ -635,9 +627,6 @@
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="misc-GETapi-v1-settings-backups-download--file-">
                                 <a href="#misc-GETapi-v1-settings-backups-download--file-">Downloads a backup file.</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="misc-GETapi-v1-users--user_id--eulas">
-                                <a href="#misc-GETapi-v1-users--user_id--eulas">Display the EULAs accepted by the user.</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="misc-GETapi-v1-kits">
                                 <a href="#misc-GETapi-v1-kits">Display a listing of the resource.</a>
@@ -750,6 +739,25 @@
                                                                     </ul>
                                                                         </ul>
                             </ul>
+                    <ul id="tocify-header-settings" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="settings">
+                    <a href="#settings">Settings</a>
+                </li>
+                                    <ul id="tocify-subheader-settings" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="settings-GETapi-v1-settings-ldaptest">
+                                <a href="#settings-GETapi-v1-settings-ldaptest">Test LDAP Connection</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="settings-POSTapi-v1-settings-purge_barcodes">
+                                <a href="#settings-POSTapi-v1-settings-purge_barcodes">Delete Barcode Cache</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="settings-POSTapi-v1-settings-ldaptestlogin">
+                                <a href="#settings-POSTapi-v1-settings-ldaptestlogin">Test LDAP Login</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="settings-POSTapi-v1-settings-mailtest">
+                                <a href="#settings-POSTapi-v1-settings-mailtest">Test Email Configuration</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
                     <ul id="tocify-header-status-labels" class="tocify-header">
                 <li class="tocify-item level-1" data-unique="status-labels">
                     <a href="#status-labels">Status Labels</a>
@@ -856,6 +864,9 @@
                                                                                 <li class="tocify-item level-2" data-unique="users-GETapi-v1-users-me">
                                 <a href="#users-GETapi-v1-users-me">Get Current User Info</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="users-GETapi-v1-users--user_id--eulas">
+                                <a href="#users-GETapi-v1-users--user_id--eulas">User EULAs</a>
+                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="users-GETapi-v1-users--user--assets">
                                 <a href="#users-GETapi-v1-users--user--assets">List Assets Assigned to User</a>
                             </li>
@@ -897,7 +908,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: October 9, 2025 (fab85dafa)</li>
+        <li>Last updated: October 9, 2025 (a386dfc1c)</li>
     </ul>
 </div>
 
@@ -1002,7 +1013,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=wFPirCLmI5Qlpim62U5T8yvZtjqzmIGHFxQ3hzIZ; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=4xsr65A4AFjnEtAOzz8268YNOMlBA0vQLeN2KDp0; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -1373,7 +1384,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=OWq14tCum5ZSf6uUlWPqrsC47ncQqkZgrWnXgpLB; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=Fz1Mp9Wc39HRit2HoHC1gn3IUFaLtitvdOOsLXRc; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -1875,7 +1886,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=D7Dn1nLGrjpIg1nzsvU7qQdh6KydawNPUuwYvN3k; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=qecJ95XCfKjx7KpLEN1GMOu6oyWTUCQ0sgYxOcnr; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -2272,6 +2283,786 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
+                <h1 id="account">Account</h1>
+
+    
+
+                                <h2 id="account-GETapi-v1-account-requests">Display Requested Assets</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-account-requests">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://snipe-it.test/api/v1/account/requests" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://snipe-it.test/api/v1/account/requests"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'https://snipe-it.test/api/v1/account/requests';
+$response = $client-&gt;get(
+    $url,
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'https://snipe-it.test/api/v1/account/requests'
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('GET', url, headers=headers)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-account-requests">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: max-age=0, must-revalidate, no-cache, no-store, private
+content-type: application/json
+vary: Origin
+pragma: no-cache
+expires: Sun, 02 Jan 1990 00:00:00 GMT
+x-content-type-options: nosniff
+feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
+referrer-policy: same-origin
+content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
+set-cookie: snipe-dev_local=0Ofpg9lqsCx0l3dLVF9yZnquqVPTKFD2MarToo0b; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;error&quot;: &quot;Unauthorized or unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-account-requests" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-account-requests"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-account-requests"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-account-requests" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-account-requests">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-account-requests" data-method="GET"
+      data-path="api/v1/account/requests"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-account-requests', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-account-requests"
+                    onclick="tryItOut('GETapi-v1-account-requests');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-account-requests"
+                    onclick="cancelTryOut('GETapi-v1-account-requests');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-account-requests"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/account/requests</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-account-requests"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-account-requests"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="account-GETapi-v1-account-eulas">Display Accepted EULAs</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-account-eulas">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://snipe-it.test/api/v1/account/eulas" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://snipe-it.test/api/v1/account/eulas"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'https://snipe-it.test/api/v1/account/eulas';
+$response = $client-&gt;get(
+    $url,
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'https://snipe-it.test/api/v1/account/eulas'
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('GET', url, headers=headers)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-account-eulas">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: max-age=0, must-revalidate, no-cache, no-store, private
+content-type: application/json
+vary: Origin
+pragma: no-cache
+expires: Sun, 02 Jan 1990 00:00:00 GMT
+x-content-type-options: nosniff
+feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
+referrer-policy: same-origin
+content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
+set-cookie: snipe-dev_local=rxLAV3nb8Lm1vnASccPchKo5Xr1r4FFmSpQZ7iae; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;error&quot;: &quot;Unauthorized or unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-account-eulas" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-account-eulas"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-account-eulas"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-account-eulas" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-account-eulas">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-account-eulas" data-method="GET"
+      data-path="api/v1/account/eulas"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-account-eulas', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-account-eulas"
+                    onclick="tryItOut('GETapi-v1-account-eulas');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-account-eulas"
+                    onclick="cancelTryOut('GETapi-v1-account-eulas');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-account-eulas"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/account/eulas</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-account-eulas"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-account-eulas"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="account-POSTapi-v1-account-personal-access-tokens">Create API token</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-v1-account-personal-access-tokens">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "https://snipe-it.test/api/v1/account/personal-access-tokens" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://snipe-it.test/api/v1/account/personal-access-tokens"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'https://snipe-it.test/api/v1/account/personal-access-tokens';
+$response = $client-&gt;post(
+    $url,
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'https://snipe-it.test/api/v1/account/personal-access-tokens'
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('POST', url, headers=headers)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-v1-account-personal-access-tokens">
+</span>
+<span id="execution-results-POSTapi-v1-account-personal-access-tokens" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-v1-account-personal-access-tokens"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-v1-account-personal-access-tokens"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-v1-account-personal-access-tokens" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-v1-account-personal-access-tokens">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-v1-account-personal-access-tokens" data-method="POST"
+      data-path="api/v1/account/personal-access-tokens"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-account-personal-access-tokens', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-v1-account-personal-access-tokens"
+                    onclick="tryItOut('POSTapi-v1-account-personal-access-tokens');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-v1-account-personal-access-tokens"
+                    onclick="cancelTryOut('POSTapi-v1-account-personal-access-tokens');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-v1-account-personal-access-tokens"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/v1/account/personal-access-tokens</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-v1-account-personal-access-tokens"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-v1-account-personal-access-tokens"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="account-GETapi-v1-account-personal-access-tokens">Show API tokens</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-account-personal-access-tokens">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://snipe-it.test/api/v1/account/personal-access-tokens" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://snipe-it.test/api/v1/account/personal-access-tokens"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'https://snipe-it.test/api/v1/account/personal-access-tokens';
+$response = $client-&gt;get(
+    $url,
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'https://snipe-it.test/api/v1/account/personal-access-tokens'
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('GET', url, headers=headers)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-account-personal-access-tokens">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: max-age=0, must-revalidate, no-cache, no-store, private
+content-type: application/json
+vary: Origin
+pragma: no-cache
+expires: Sun, 02 Jan 1990 00:00:00 GMT
+x-content-type-options: nosniff
+feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
+referrer-policy: same-origin
+content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
+set-cookie: snipe-dev_local=EoEpl701guwl7yUoXuGM2uBS757gjJ5VProi3qdF; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;error&quot;: &quot;Unauthorized or unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-account-personal-access-tokens" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-account-personal-access-tokens"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-account-personal-access-tokens"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-account-personal-access-tokens" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-account-personal-access-tokens">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-account-personal-access-tokens" data-method="GET"
+      data-path="api/v1/account/personal-access-tokens"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-account-personal-access-tokens', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-account-personal-access-tokens"
+                    onclick="tryItOut('GETapi-v1-account-personal-access-tokens');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-account-personal-access-tokens"
+                    onclick="cancelTryOut('GETapi-v1-account-personal-access-tokens');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-account-personal-access-tokens"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/account/personal-access-tokens</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-account-personal-access-tokens"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-account-personal-access-tokens"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="account-DELETEapi-v1-account-personal-access-tokens--tokenId-">Delete API token</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-v1-account-personal-access-tokens--tokenId-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "https://snipe-it.test/api/v1/account/personal-access-tokens/architecto" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://snipe-it.test/api/v1/account/personal-access-tokens/architecto"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'https://snipe-it.test/api/v1/account/personal-access-tokens/architecto';
+$response = $client-&gt;delete(
+    $url,
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'https://snipe-it.test/api/v1/account/personal-access-tokens/architecto'
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('DELETE', url, headers=headers)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-v1-account-personal-access-tokens--tokenId-">
+</span>
+<span id="execution-results-DELETEapi-v1-account-personal-access-tokens--tokenId-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-v1-account-personal-access-tokens--tokenId-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-v1-account-personal-access-tokens--tokenId-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-v1-account-personal-access-tokens--tokenId-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-v1-account-personal-access-tokens--tokenId-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-v1-account-personal-access-tokens--tokenId-" data-method="DELETE"
+      data-path="api/v1/account/personal-access-tokens/{tokenId}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-v1-account-personal-access-tokens--tokenId-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-v1-account-personal-access-tokens--tokenId-"
+                    onclick="tryItOut('DELETEapi-v1-account-personal-access-tokens--tokenId-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-v1-account-personal-access-tokens--tokenId-"
+                    onclick="cancelTryOut('DELETEapi-v1-account-personal-access-tokens--tokenId-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-v1-account-personal-access-tokens--tokenId-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/v1/account/personal-access-tokens/{tokenId}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-v1-account-personal-access-tokens--tokenId-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-v1-account-personal-access-tokens--tokenId-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>tokenId</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="tokenId"                data-endpoint="DELETEapi-v1-account-personal-access-tokens--tokenId-"
+               value="architecto"
+               data-component="url">
+    <br>
+<p>Example: <code>architecto</code></p>
+            </div>
+                    </form>
+
                 <h1 id="assets">Assets</h1>
 
     
@@ -2359,7 +3150,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=zbA3woO9t2FDFaBsCrozokcWxsnmbRff3VR6q67x; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=I5MurMG2oaqg3P454RS5JwU3zOYiMQ4Mu752l0M2; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -2452,7 +3243,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://snipe-it.test/api/v1/reports/depreciation?action=audits%2C+checkins&amp;upcoming_status=due%2C+overdue%2C+due-or-overdue&amp;status=RTD%2C+Deployed%2C+Pending%2C+Undeployable%2C+Archived%2C+Requestable&amp;status_id=1&amp;asset_tag=ABC123&amp;serial=SN123456&amp;requestable=1&amp;model_id=1+or+model_id%5B%5D%3D1%26model_id%5B%5D%3D2&amp;category_id=1&amp;location_id=1&amp;rtd_location_id=1&amp;supplier_id=1&amp;asset_eol_date=2023-12-31&amp;assigned_to=1&amp;assigned_type=user&amp;company_id=1&amp;manufacturer_id=1&amp;depreciation_id=1&amp;byod=1&amp;order_number=PO12345&amp;search=laptop&amp;filter=%7B%22status_label%22%3A%22RTD%22%2C%22location%22%3A%22Headquarters%22%7D" \
+    --get "https://snipe-it.test/api/v1/reports/depreciation?assigned_type=user&amp;byod=1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -2463,28 +3254,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "action": "audits, checkins",
-    "upcoming_status": "due, overdue, due-or-overdue",
-    "status": "RTD, Deployed, Pending, Undeployable, Archived, Requestable",
-    "status_id": "1",
-    "asset_tag": "ABC123",
-    "serial": "SN123456",
-    "requestable": "1",
-    "model_id": "1 or model_id[]=1&amp;model_id[]=2",
-    "category_id": "1",
-    "location_id": "1",
-    "rtd_location_id": "1",
-    "supplier_id": "1",
-    "asset_eol_date": "2023-12-31",
-    "assigned_to": "1",
     "assigned_type": "user",
-    "company_id": "1",
-    "manufacturer_id": "1",
-    "depreciation_id": "1",
     "byod": "1",
-    "order_number": "PO12345",
-    "search": "laptop",
-    "filter": "{"status_label":"RTD","location":"Headquarters"}",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -2511,28 +3282,8 @@ $response = $client-&gt;get(
             'Accept' =&gt; 'application/json',
         ],
         'query' =&gt; [
-            'action' =&gt; 'audits, checkins',
-            'upcoming_status' =&gt; 'due, overdue, due-or-overdue',
-            'status' =&gt; 'RTD, Deployed, Pending, Undeployable, Archived, Requestable',
-            'status_id' =&gt; '1',
-            'asset_tag' =&gt; 'ABC123',
-            'serial' =&gt; 'SN123456',
-            'requestable' =&gt; '1',
-            'model_id' =&gt; '1 or model_id[]=1&amp;model_id[]=2',
-            'category_id' =&gt; '1',
-            'location_id' =&gt; '1',
-            'rtd_location_id' =&gt; '1',
-            'supplier_id' =&gt; '1',
-            'asset_eol_date' =&gt; '2023-12-31',
-            'assigned_to' =&gt; '1',
             'assigned_type' =&gt; 'user',
-            'company_id' =&gt; '1',
-            'manufacturer_id' =&gt; '1',
-            'depreciation_id' =&gt; '1',
             'byod' =&gt; '1',
-            'order_number' =&gt; 'PO12345',
-            'search' =&gt; 'laptop',
-            'filter' =&gt; '{"status_label":"RTD","location":"Headquarters"}',
         ],
     ]
 );
@@ -2546,28 +3297,8 @@ import json
 
 url = 'https://snipe-it.test/api/v1/reports/depreciation'
 params = {
-  'action': 'audits, checkins',
-  'upcoming_status': 'due, overdue, due-or-overdue',
-  'status': 'RTD, Deployed, Pending, Undeployable, Archived, Requestable',
-  'status_id': '1',
-  'asset_tag': 'ABC123',
-  'serial': 'SN123456',
-  'requestable': '1',
-  'model_id': '1 or model_id[]=1&amp;model_id[]=2',
-  'category_id': '1',
-  'location_id': '1',
-  'rtd_location_id': '1',
-  'supplier_id': '1',
-  'asset_eol_date': '2023-12-31',
-  'assigned_to': '1',
   'assigned_type': 'user',
-  'company_id': '1',
-  'manufacturer_id': '1',
-  'depreciation_id': '1',
   'byod': '1',
-  'order_number': 'PO12345',
-  'search': 'laptop',
-  'filter': '{"status_label":"RTD","location":"Headquarters"}',
 }
 headers = {
   'Content-Type': 'application/json',
@@ -2596,7 +3327,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=JG7zDn5PXHPIEticUUTUZ6UYyVdD8tXbVulOATER; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=lgpECl5XEBNSghyioYDAIqojY2wKWDElpBXGy0iX; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -2680,10 +3411,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="action"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="audits, checkins"
+               value=""
                data-component="query">
     <br>
-<p>The action to filter by. Example: <code>audits, checkins</code></p>
+<p>The action to filter by: audits, checkins.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>upcoming_status</code></b>&nbsp;&nbsp;
@@ -2691,10 +3422,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="upcoming_status"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="due, overdue, due-or-overdue"
+               value=""
                data-component="query">
     <br>
-<p>The status to filter by. Example: <code>due, overdue, due-or-overdue</code></p>
+<p>The status to filter by: <code>due</code>, <code>overdue</code>, <code>due-or-overdue</code>.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -2702,10 +3433,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="RTD, Deployed, Pending, Undeployable, Archived, Requestable"
+               value=""
                data-component="query">
     <br>
-<p>The asset status to filter by. Example: <code>RTD, Deployed, Pending, Undeployable, Archived, Requestable</code></p>
+<p>The asset status to filter by: <code>RTD</code>, <code>Deployed</code>, <code>Pending</code>, <code>Undeployable</code>, <code>Archived</code>, <code>Requestable</code>.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>status_id</code></b>&nbsp;&nbsp;
@@ -2713,10 +3444,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="status_id"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The asset status ID to filter by. Example: <code>1</code></p>
+<p>The asset status ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>asset_tag</code></b>&nbsp;&nbsp;
@@ -2724,10 +3455,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="asset_tag"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="ABC123"
+               value=""
                data-component="query">
     <br>
-<p>The asset tag to filter by. Example: <code>ABC123</code></p>
+<p>The asset tag to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>serial</code></b>&nbsp;&nbsp;
@@ -2735,10 +3466,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="serial"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="SN123456"
+               value=""
                data-component="query">
     <br>
-<p>The serial number to filter by. Example: <code>SN123456</code></p>
+<p>The serial number to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>requestable</code></b>&nbsp;&nbsp;
@@ -2759,18 +3490,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Filter by requestable assets. Example: <code>true</code></p>
+<p>Filter by requestable assets.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>model_id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
+<small>integer</small>&nbsp;
 <i>optional</i> &nbsp;
-                <input type="text" style="display: none"
-                              name="model_id"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="1 or model_id[]=1&model_id[]=2"
+                <input type="number" style="display: none"
+               step="any"               name="model_id"                data-endpoint="GETapi-v1-reports-depreciation"
+               value=""
                data-component="query">
     <br>
-<p>int|array The model ID or IDs to filter by. Example: <code>1 or model_id[]=1&amp;model_id[]=2</code></p>
+<p>The model ID or IDs to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>category_id</code></b>&nbsp;&nbsp;
@@ -2778,10 +3509,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="category_id"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The category ID to filter by. Example: <code>1</code></p>
+<p>The category ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>location_id</code></b>&nbsp;&nbsp;
@@ -2789,10 +3520,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="location_id"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The location ID to filter by. Example: <code>1</code></p>
+<p>The location ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>rtd_location_id</code></b>&nbsp;&nbsp;
@@ -2800,10 +3531,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rtd_location_id"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The RTD location ID to filter by. Example: <code>1</code></p>
+<p>The RTD location ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>supplier_id</code></b>&nbsp;&nbsp;
@@ -2811,10 +3542,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="supplier_id"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The supplier ID to filter by. Example: <code>1</code></p>
+<p>The supplier ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>asset_eol_date</code></b>&nbsp;&nbsp;
@@ -2822,10 +3553,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="asset_eol_date"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="2023-12-31"
+               value=""
                data-component="query">
     <br>
-<p>date The asset end-of-life date to filter by. Example: <code>2023-12-31</code></p>
+<p>date The asset end-of-life date to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>assigned_to</code></b>&nbsp;&nbsp;
@@ -2833,10 +3564,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="assigned_to"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The user ID or department ID the asset is assigned to. Example: <code>1</code></p>
+<p>The user ID or department ID the asset is assigned to.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>assigned_type</code></b>&nbsp;&nbsp;
@@ -2847,7 +3578,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="user"
                data-component="query">
     <br>
-<p>The type of assignment, either 'user' or 'department'. Example: <code>user</code></p>
+<p>The type of assignment, either 'user' or 'asset' or 'location'. Example: <code>user</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>company_id</code></b>&nbsp;&nbsp;
@@ -2855,10 +3586,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="company_id"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The company ID to filter by. Example: <code>1</code></p>
+<p>The company ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>manufacturer_id</code></b>&nbsp;&nbsp;
@@ -2866,10 +3597,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="manufacturer_id"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The manufacturer ID to filter by. Example: <code>1</code></p>
+<p>The manufacturer ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>depreciation_id</code></b>&nbsp;&nbsp;
@@ -2877,10 +3608,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="depreciation_id"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The depreciation ID to filter by. Example: <code>1</code></p>
+<p>The depreciation ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>byod</code></b>&nbsp;&nbsp;
@@ -2909,10 +3640,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="order_number"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="PO12345"
+               value=""
                data-component="query">
     <br>
-<p>The order number to filter by. Example: <code>PO12345</code></p>
+<p>The order number to filter by. Example:</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>search</code></b>&nbsp;&nbsp;
@@ -2920,10 +3651,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="search"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="laptop"
+               value=""
                data-component="query">
     <br>
-<p>A text string to search for. Example: <code>laptop</code></p>
+<p>A text string to search for. Example:</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter</code></b>&nbsp;&nbsp;
@@ -2931,10 +3662,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="filter"                data-endpoint="GETapi-v1-reports-depreciation"
-               value="{"status_label":"RTD","location":"Headquarters"}"
+               value=""
                data-component="query">
     <br>
-<p>A JSON object of key/value pairs to filter by. Example: <code>{"status_label":"RTD","location":"Headquarters"}</code></p>
+<p>A JSON object of key/value pairs to filter by.</p>
             </div>
                 </form>
 
@@ -3021,7 +3752,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=16OzihBU0h4xmW2JUW0vkz5ZNEFBqsf4j0VouuKJ; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=qCapayTz590czNpP8xSUCUUB7vdosx4mVIaOPBWt; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -3183,7 +3914,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=kwE3gnKCzQnr1FQa17AIvOYCbsRx7EeG4NWpBmPS; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=fPZtQcCA1cl8JQwmi75mxq8HdQLD3LwMhNazG9Wu; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -3357,7 +4088,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=OvqgWEoNT96szHavg4rG0fw2ALfqiKoxLoKsii5j; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=dZb1Dgz426tSKYXi764GXTAAj3txJctbfOweyf00; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -3972,7 +4703,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=l28ShBmk00D1YpPW9K2z6e0a6sV1PgdTWAP6E97g; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=bLKbCN3YL113zwHdqIHbDf55MnHhuzLviaE9Ki5w; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -4077,7 +4808,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://snipe-it.test/api/v1/hardware/audit|audits|checkins/due|overdue|due-or-overdue?action=audits%2C+checkins&amp;upcoming_status=due%2C+overdue%2C+due-or-overdue&amp;status=RTD%2C+Deployed%2C+Pending%2C+Undeployable%2C+Archived%2C+Requestable&amp;status_id=1&amp;asset_tag=ABC123&amp;serial=SN123456&amp;requestable=1&amp;model_id=1+or+model_id%5B%5D%3D1%26model_id%5B%5D%3D2&amp;category_id=1&amp;location_id=1&amp;rtd_location_id=1&amp;supplier_id=1&amp;asset_eol_date=2023-12-31&amp;assigned_to=1&amp;assigned_type=user&amp;company_id=1&amp;manufacturer_id=1&amp;depreciation_id=1&amp;byod=1&amp;order_number=PO12345&amp;search=laptop&amp;filter=%7B%22status_label%22%3A%22RTD%22%2C%22location%22%3A%22Headquarters%22%7D" \
+    --get "https://snipe-it.test/api/v1/hardware/audit|audits|checkins/due|overdue|due-or-overdue?assigned_type=user&amp;byod=1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -4088,28 +4819,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "action": "audits, checkins",
-    "upcoming_status": "due, overdue, due-or-overdue",
-    "status": "RTD, Deployed, Pending, Undeployable, Archived, Requestable",
-    "status_id": "1",
-    "asset_tag": "ABC123",
-    "serial": "SN123456",
-    "requestable": "1",
-    "model_id": "1 or model_id[]=1&amp;model_id[]=2",
-    "category_id": "1",
-    "location_id": "1",
-    "rtd_location_id": "1",
-    "supplier_id": "1",
-    "asset_eol_date": "2023-12-31",
-    "assigned_to": "1",
     "assigned_type": "user",
-    "company_id": "1",
-    "manufacturer_id": "1",
-    "depreciation_id": "1",
     "byod": "1",
-    "order_number": "PO12345",
-    "search": "laptop",
-    "filter": "{"status_label":"RTD","location":"Headquarters"}",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -4136,28 +4847,8 @@ $response = $client-&gt;get(
             'Accept' =&gt; 'application/json',
         ],
         'query' =&gt; [
-            'action' =&gt; 'audits, checkins',
-            'upcoming_status' =&gt; 'due, overdue, due-or-overdue',
-            'status' =&gt; 'RTD, Deployed, Pending, Undeployable, Archived, Requestable',
-            'status_id' =&gt; '1',
-            'asset_tag' =&gt; 'ABC123',
-            'serial' =&gt; 'SN123456',
-            'requestable' =&gt; '1',
-            'model_id' =&gt; '1 or model_id[]=1&amp;model_id[]=2',
-            'category_id' =&gt; '1',
-            'location_id' =&gt; '1',
-            'rtd_location_id' =&gt; '1',
-            'supplier_id' =&gt; '1',
-            'asset_eol_date' =&gt; '2023-12-31',
-            'assigned_to' =&gt; '1',
             'assigned_type' =&gt; 'user',
-            'company_id' =&gt; '1',
-            'manufacturer_id' =&gt; '1',
-            'depreciation_id' =&gt; '1',
             'byod' =&gt; '1',
-            'order_number' =&gt; 'PO12345',
-            'search' =&gt; 'laptop',
-            'filter' =&gt; '{"status_label":"RTD","location":"Headquarters"}',
         ],
     ]
 );
@@ -4171,28 +4862,8 @@ import json
 
 url = 'https://snipe-it.test/api/v1/hardware/audit|audits|checkins/due|overdue|due-or-overdue'
 params = {
-  'action': 'audits, checkins',
-  'upcoming_status': 'due, overdue, due-or-overdue',
-  'status': 'RTD, Deployed, Pending, Undeployable, Archived, Requestable',
-  'status_id': '1',
-  'asset_tag': 'ABC123',
-  'serial': 'SN123456',
-  'requestable': '1',
-  'model_id': '1 or model_id[]=1&amp;model_id[]=2',
-  'category_id': '1',
-  'location_id': '1',
-  'rtd_location_id': '1',
-  'supplier_id': '1',
-  'asset_eol_date': '2023-12-31',
-  'assigned_to': '1',
   'assigned_type': 'user',
-  'company_id': '1',
-  'manufacturer_id': '1',
-  'depreciation_id': '1',
   'byod': '1',
-  'order_number': 'PO12345',
-  'search': 'laptop',
-  'filter': '{"status_label":"RTD","location":"Headquarters"}',
 }
 headers = {
   'Content-Type': 'application/json',
@@ -4221,7 +4892,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=po1MHUpzMVPhyFW97gr5Evw2gERZ28qPLmm2o3xG; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=zsk5qqmCwDDO0urpMTuPWVeAIk8EVCCFWJVsfYNt; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -4328,10 +4999,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="action"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="audits, checkins"
+               value=""
                data-component="query">
     <br>
-<p>The action to filter by. Example: <code>audits, checkins</code></p>
+<p>The action to filter by: audits, checkins.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>upcoming_status</code></b>&nbsp;&nbsp;
@@ -4339,10 +5010,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="upcoming_status"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="due, overdue, due-or-overdue"
+               value=""
                data-component="query">
     <br>
-<p>The status to filter by. Example: <code>due, overdue, due-or-overdue</code></p>
+<p>The status to filter by: <code>due</code>, <code>overdue</code>, <code>due-or-overdue</code>.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -4350,10 +5021,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="RTD, Deployed, Pending, Undeployable, Archived, Requestable"
+               value=""
                data-component="query">
     <br>
-<p>The asset status to filter by. Example: <code>RTD, Deployed, Pending, Undeployable, Archived, Requestable</code></p>
+<p>The asset status to filter by: <code>RTD</code>, <code>Deployed</code>, <code>Pending</code>, <code>Undeployable</code>, <code>Archived</code>, <code>Requestable</code>.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>status_id</code></b>&nbsp;&nbsp;
@@ -4361,10 +5032,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="status_id"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The asset status ID to filter by. Example: <code>1</code></p>
+<p>The asset status ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>asset_tag</code></b>&nbsp;&nbsp;
@@ -4372,10 +5043,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="asset_tag"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="ABC123"
+               value=""
                data-component="query">
     <br>
-<p>The asset tag to filter by. Example: <code>ABC123</code></p>
+<p>The asset tag to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>serial</code></b>&nbsp;&nbsp;
@@ -4383,10 +5054,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="serial"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="SN123456"
+               value=""
                data-component="query">
     <br>
-<p>The serial number to filter by. Example: <code>SN123456</code></p>
+<p>The serial number to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>requestable</code></b>&nbsp;&nbsp;
@@ -4407,18 +5078,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Filter by requestable assets. Example: <code>true</code></p>
+<p>Filter by requestable assets.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>model_id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
+<small>integer</small>&nbsp;
 <i>optional</i> &nbsp;
-                <input type="text" style="display: none"
-                              name="model_id"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="1 or model_id[]=1&model_id[]=2"
+                <input type="number" style="display: none"
+               step="any"               name="model_id"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
+               value=""
                data-component="query">
     <br>
-<p>int|array The model ID or IDs to filter by. Example: <code>1 or model_id[]=1&amp;model_id[]=2</code></p>
+<p>The model ID or IDs to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>category_id</code></b>&nbsp;&nbsp;
@@ -4426,10 +5097,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="category_id"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The category ID to filter by. Example: <code>1</code></p>
+<p>The category ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>location_id</code></b>&nbsp;&nbsp;
@@ -4437,10 +5108,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="location_id"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The location ID to filter by. Example: <code>1</code></p>
+<p>The location ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>rtd_location_id</code></b>&nbsp;&nbsp;
@@ -4448,10 +5119,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rtd_location_id"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The RTD location ID to filter by. Example: <code>1</code></p>
+<p>The RTD location ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>supplier_id</code></b>&nbsp;&nbsp;
@@ -4459,10 +5130,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="supplier_id"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The supplier ID to filter by. Example: <code>1</code></p>
+<p>The supplier ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>asset_eol_date</code></b>&nbsp;&nbsp;
@@ -4470,10 +5141,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="asset_eol_date"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="2023-12-31"
+               value=""
                data-component="query">
     <br>
-<p>date The asset end-of-life date to filter by. Example: <code>2023-12-31</code></p>
+<p>date The asset end-of-life date to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>assigned_to</code></b>&nbsp;&nbsp;
@@ -4481,10 +5152,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="assigned_to"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The user ID or department ID the asset is assigned to. Example: <code>1</code></p>
+<p>The user ID or department ID the asset is assigned to.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>assigned_type</code></b>&nbsp;&nbsp;
@@ -4495,7 +5166,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="user"
                data-component="query">
     <br>
-<p>The type of assignment, either 'user' or 'department'. Example: <code>user</code></p>
+<p>The type of assignment, either 'user' or 'asset' or 'location'. Example: <code>user</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>company_id</code></b>&nbsp;&nbsp;
@@ -4503,10 +5174,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="company_id"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The company ID to filter by. Example: <code>1</code></p>
+<p>The company ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>manufacturer_id</code></b>&nbsp;&nbsp;
@@ -4514,10 +5185,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="manufacturer_id"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The manufacturer ID to filter by. Example: <code>1</code></p>
+<p>The manufacturer ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>depreciation_id</code></b>&nbsp;&nbsp;
@@ -4525,10 +5196,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="depreciation_id"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The depreciation ID to filter by. Example: <code>1</code></p>
+<p>The depreciation ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>byod</code></b>&nbsp;&nbsp;
@@ -4557,10 +5228,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="order_number"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="PO12345"
+               value=""
                data-component="query">
     <br>
-<p>The order number to filter by. Example: <code>PO12345</code></p>
+<p>The order number to filter by. Example:</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>search</code></b>&nbsp;&nbsp;
@@ -4568,10 +5239,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="search"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="laptop"
+               value=""
                data-component="query">
     <br>
-<p>A text string to search for. Example: <code>laptop</code></p>
+<p>A text string to search for. Example:</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter</code></b>&nbsp;&nbsp;
@@ -4579,10 +5250,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="filter"                data-endpoint="GETapi-v1-hardware--action---upcoming_status-"
-               value="{"status_label":"RTD","location":"Headquarters"}"
+               value=""
                data-component="query">
     <br>
-<p>A JSON object of key/value pairs to filter by. Example: <code>{"status_label":"RTD","location":"Headquarters"}</code></p>
+<p>A JSON object of key/value pairs to filter by.</p>
             </div>
                 </form>
 
@@ -5412,7 +6083,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=ZsaGl6Ma2AaF2KPBgpJclGg2NWmArGyXM3dTS3Wf; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=yDpxz34OvmUXAUrWAmvqPUqBx0jSrBqASwWCkPI3; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -5586,7 +6257,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=fVNzF7g0DnBQWaCSscY3fjVAKeGUDI0Je0PiUdHS; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=HupEzsHnneFUARG0m2OmnG9MYetucXa0onvgcprT; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -6153,7 +6824,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://snipe-it.test/api/v1/hardware?action=audits%2C+checkins&amp;upcoming_status=due%2C+overdue%2C+due-or-overdue&amp;status=RTD%2C+Deployed%2C+Pending%2C+Undeployable%2C+Archived%2C+Requestable&amp;status_id=1&amp;asset_tag=ABC123&amp;serial=SN123456&amp;requestable=1&amp;model_id=1+or+model_id%5B%5D%3D1%26model_id%5B%5D%3D2&amp;category_id=1&amp;location_id=1&amp;rtd_location_id=1&amp;supplier_id=1&amp;asset_eol_date=2023-12-31&amp;assigned_to=1&amp;assigned_type=user&amp;company_id=1&amp;manufacturer_id=1&amp;depreciation_id=1&amp;byod=1&amp;order_number=PO12345&amp;search=laptop&amp;filter=%7B%22status_label%22%3A%22RTD%22%2C%22location%22%3A%22Headquarters%22%7D" \
+    --get "https://snipe-it.test/api/v1/hardware?assigned_type=user&amp;byod=1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -6164,28 +6835,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "action": "audits, checkins",
-    "upcoming_status": "due, overdue, due-or-overdue",
-    "status": "RTD, Deployed, Pending, Undeployable, Archived, Requestable",
-    "status_id": "1",
-    "asset_tag": "ABC123",
-    "serial": "SN123456",
-    "requestable": "1",
-    "model_id": "1 or model_id[]=1&amp;model_id[]=2",
-    "category_id": "1",
-    "location_id": "1",
-    "rtd_location_id": "1",
-    "supplier_id": "1",
-    "asset_eol_date": "2023-12-31",
-    "assigned_to": "1",
     "assigned_type": "user",
-    "company_id": "1",
-    "manufacturer_id": "1",
-    "depreciation_id": "1",
     "byod": "1",
-    "order_number": "PO12345",
-    "search": "laptop",
-    "filter": "{"status_label":"RTD","location":"Headquarters"}",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -6212,28 +6863,8 @@ $response = $client-&gt;get(
             'Accept' =&gt; 'application/json',
         ],
         'query' =&gt; [
-            'action' =&gt; 'audits, checkins',
-            'upcoming_status' =&gt; 'due, overdue, due-or-overdue',
-            'status' =&gt; 'RTD, Deployed, Pending, Undeployable, Archived, Requestable',
-            'status_id' =&gt; '1',
-            'asset_tag' =&gt; 'ABC123',
-            'serial' =&gt; 'SN123456',
-            'requestable' =&gt; '1',
-            'model_id' =&gt; '1 or model_id[]=1&amp;model_id[]=2',
-            'category_id' =&gt; '1',
-            'location_id' =&gt; '1',
-            'rtd_location_id' =&gt; '1',
-            'supplier_id' =&gt; '1',
-            'asset_eol_date' =&gt; '2023-12-31',
-            'assigned_to' =&gt; '1',
             'assigned_type' =&gt; 'user',
-            'company_id' =&gt; '1',
-            'manufacturer_id' =&gt; '1',
-            'depreciation_id' =&gt; '1',
             'byod' =&gt; '1',
-            'order_number' =&gt; 'PO12345',
-            'search' =&gt; 'laptop',
-            'filter' =&gt; '{"status_label":"RTD","location":"Headquarters"}',
         ],
     ]
 );
@@ -6247,28 +6878,8 @@ import json
 
 url = 'https://snipe-it.test/api/v1/hardware'
 params = {
-  'action': 'audits, checkins',
-  'upcoming_status': 'due, overdue, due-or-overdue',
-  'status': 'RTD, Deployed, Pending, Undeployable, Archived, Requestable',
-  'status_id': '1',
-  'asset_tag': 'ABC123',
-  'serial': 'SN123456',
-  'requestable': '1',
-  'model_id': '1 or model_id[]=1&amp;model_id[]=2',
-  'category_id': '1',
-  'location_id': '1',
-  'rtd_location_id': '1',
-  'supplier_id': '1',
-  'asset_eol_date': '2023-12-31',
-  'assigned_to': '1',
   'assigned_type': 'user',
-  'company_id': '1',
-  'manufacturer_id': '1',
-  'depreciation_id': '1',
   'byod': '1',
-  'order_number': 'PO12345',
-  'search': 'laptop',
-  'filter': '{"status_label":"RTD","location":"Headquarters"}',
 }
 headers = {
   'Content-Type': 'application/json',
@@ -6297,7 +6908,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=kg9RTUdMrEHyhN5Bd6bZItA5CzuWdzUopKkOGLxn; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=4zHcglQOUm8Q0GcRLew8uq1Jq8rfXF4QhK6SWBiu; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -6381,10 +6992,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="action"                data-endpoint="GETapi-v1-hardware"
-               value="audits, checkins"
+               value=""
                data-component="query">
     <br>
-<p>The action to filter by. Example: <code>audits, checkins</code></p>
+<p>The action to filter by: audits, checkins.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>upcoming_status</code></b>&nbsp;&nbsp;
@@ -6392,10 +7003,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="upcoming_status"                data-endpoint="GETapi-v1-hardware"
-               value="due, overdue, due-or-overdue"
+               value=""
                data-component="query">
     <br>
-<p>The status to filter by. Example: <code>due, overdue, due-or-overdue</code></p>
+<p>The status to filter by: <code>due</code>, <code>overdue</code>, <code>due-or-overdue</code>.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -6403,10 +7014,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="GETapi-v1-hardware"
-               value="RTD, Deployed, Pending, Undeployable, Archived, Requestable"
+               value=""
                data-component="query">
     <br>
-<p>The asset status to filter by. Example: <code>RTD, Deployed, Pending, Undeployable, Archived, Requestable</code></p>
+<p>The asset status to filter by: <code>RTD</code>, <code>Deployed</code>, <code>Pending</code>, <code>Undeployable</code>, <code>Archived</code>, <code>Requestable</code>.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>status_id</code></b>&nbsp;&nbsp;
@@ -6414,10 +7025,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="status_id"                data-endpoint="GETapi-v1-hardware"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The asset status ID to filter by. Example: <code>1</code></p>
+<p>The asset status ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>asset_tag</code></b>&nbsp;&nbsp;
@@ -6425,10 +7036,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="asset_tag"                data-endpoint="GETapi-v1-hardware"
-               value="ABC123"
+               value=""
                data-component="query">
     <br>
-<p>The asset tag to filter by. Example: <code>ABC123</code></p>
+<p>The asset tag to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>serial</code></b>&nbsp;&nbsp;
@@ -6436,10 +7047,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="serial"                data-endpoint="GETapi-v1-hardware"
-               value="SN123456"
+               value=""
                data-component="query">
     <br>
-<p>The serial number to filter by. Example: <code>SN123456</code></p>
+<p>The serial number to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>requestable</code></b>&nbsp;&nbsp;
@@ -6460,18 +7071,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Filter by requestable assets. Example: <code>true</code></p>
+<p>Filter by requestable assets.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>model_id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
+<small>integer</small>&nbsp;
 <i>optional</i> &nbsp;
-                <input type="text" style="display: none"
-                              name="model_id"                data-endpoint="GETapi-v1-hardware"
-               value="1 or model_id[]=1&model_id[]=2"
+                <input type="number" style="display: none"
+               step="any"               name="model_id"                data-endpoint="GETapi-v1-hardware"
+               value=""
                data-component="query">
     <br>
-<p>int|array The model ID or IDs to filter by. Example: <code>1 or model_id[]=1&amp;model_id[]=2</code></p>
+<p>The model ID or IDs to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>category_id</code></b>&nbsp;&nbsp;
@@ -6479,10 +7090,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="category_id"                data-endpoint="GETapi-v1-hardware"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The category ID to filter by. Example: <code>1</code></p>
+<p>The category ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>location_id</code></b>&nbsp;&nbsp;
@@ -6490,10 +7101,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="location_id"                data-endpoint="GETapi-v1-hardware"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The location ID to filter by. Example: <code>1</code></p>
+<p>The location ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>rtd_location_id</code></b>&nbsp;&nbsp;
@@ -6501,10 +7112,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rtd_location_id"                data-endpoint="GETapi-v1-hardware"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The RTD location ID to filter by. Example: <code>1</code></p>
+<p>The RTD location ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>supplier_id</code></b>&nbsp;&nbsp;
@@ -6512,10 +7123,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="supplier_id"                data-endpoint="GETapi-v1-hardware"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The supplier ID to filter by. Example: <code>1</code></p>
+<p>The supplier ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>asset_eol_date</code></b>&nbsp;&nbsp;
@@ -6523,10 +7134,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="asset_eol_date"                data-endpoint="GETapi-v1-hardware"
-               value="2023-12-31"
+               value=""
                data-component="query">
     <br>
-<p>date The asset end-of-life date to filter by. Example: <code>2023-12-31</code></p>
+<p>date The asset end-of-life date to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>assigned_to</code></b>&nbsp;&nbsp;
@@ -6534,10 +7145,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="assigned_to"                data-endpoint="GETapi-v1-hardware"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The user ID or department ID the asset is assigned to. Example: <code>1</code></p>
+<p>The user ID or department ID the asset is assigned to.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>assigned_type</code></b>&nbsp;&nbsp;
@@ -6548,7 +7159,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="user"
                data-component="query">
     <br>
-<p>The type of assignment, either 'user' or 'department'. Example: <code>user</code></p>
+<p>The type of assignment, either 'user' or 'asset' or 'location'. Example: <code>user</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>company_id</code></b>&nbsp;&nbsp;
@@ -6556,10 +7167,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="company_id"                data-endpoint="GETapi-v1-hardware"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The company ID to filter by. Example: <code>1</code></p>
+<p>The company ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>manufacturer_id</code></b>&nbsp;&nbsp;
@@ -6567,10 +7178,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="manufacturer_id"                data-endpoint="GETapi-v1-hardware"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The manufacturer ID to filter by. Example: <code>1</code></p>
+<p>The manufacturer ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>depreciation_id</code></b>&nbsp;&nbsp;
@@ -6578,10 +7189,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="depreciation_id"                data-endpoint="GETapi-v1-hardware"
-               value="1"
+               value=""
                data-component="query">
     <br>
-<p>The depreciation ID to filter by. Example: <code>1</code></p>
+<p>The depreciation ID to filter by.</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>byod</code></b>&nbsp;&nbsp;
@@ -6610,10 +7221,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="order_number"                data-endpoint="GETapi-v1-hardware"
-               value="PO12345"
+               value=""
                data-component="query">
     <br>
-<p>The order number to filter by. Example: <code>PO12345</code></p>
+<p>The order number to filter by. Example:</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>search</code></b>&nbsp;&nbsp;
@@ -6621,10 +7232,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="search"                data-endpoint="GETapi-v1-hardware"
-               value="laptop"
+               value=""
                data-component="query">
     <br>
-<p>A text string to search for. Example: <code>laptop</code></p>
+<p>A text string to search for. Example:</p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter</code></b>&nbsp;&nbsp;
@@ -6632,10 +7243,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="filter"                data-endpoint="GETapi-v1-hardware"
-               value="{"status_label":"RTD","location":"Headquarters"}"
+               value=""
                data-component="query">
     <br>
-<p>A JSON object of key/value pairs to filter by. Example: <code>{"status_label":"RTD","location":"Headquarters"}</code></p>
+<p>A JSON object of key/value pairs to filter by.</p>
             </div>
                 </form>
 
@@ -6861,7 +7472,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=VY9cDTvWn46QRUoErwcIjYLl770M2MwMI42Pg9xm; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=9oSVzGufN6TNj7OK4IZEgBauebliSH1E23tNbams; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -7329,7 +7940,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=YjsDKEO59Ug1gUfonLIOiJ6nJKwstpQ8zTMzVJKN; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=AZo0eAfOOUQnsCZDbtqlMBcKQqUPojbAawxU7LZX; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -7503,7 +8114,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=JeD8GYZ5kJID9j3qGs8ieaUbZiCqCENvfiUv6m5g; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=8bSKu4dMOYJ9RLZoDoR1hc2MCjBohtq71eEtYOw2; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -7804,7 +8415,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=a8fBNBsCZ6g90kBLOVyTdMxkPqeYMaXj3CcsLxHQ; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=Gnx8F3DAxbo1BxPMKDEaIwjeOWO4DSOqrNjpBWcl; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -8288,7 +8899,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=tM8jGck3i8WEBJ4ZzPsqkPtrRHjdwWJIII7QwxyE; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=39j1TJ4u77vkwpPWdJ21Af8JdFBwVE1mHHQwwKnV; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -8450,7 +9061,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=JQLQBHma98I64t9cecIxazcdG6DPdujDMkO11Xt0; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=YPCXSxw1BCbGdh5TSF65HX2Cum5gdCSSHn0drIo5; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -8751,7 +9362,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=k6BXuD9WRk8WNPWcvfIKRHQKsmzjnhPPfukWphRU; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=rIdjimWLcOlAK7wmJmYroxWHNNVscnRRm0lbYcpf; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -9235,7 +9846,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=cBJMElHNIOAyns5sTaQs1opPLly1pw5jQdPxYFTG; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=l69hDtPUivTY3RkjLz37pbj2GKnC3BLNAOunKiEY; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -9749,7 +10360,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=7kQLg1kCKp2DfUWV5mcP2utNrb5TwvWZ3zqGDTtW; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=B9zjvAcjCF6c2d57F3g71TaOvN54OFQRaK7gd2OC; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -10050,7 +10661,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=5v9ZEo0rEJmMnaEKE1GPxtDyQf3zm8k0JnwrJ2Mr; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=g1FUyaIOABzelOVQTQ3FLYuQ9B1VVxwzjW0w2wTm; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -10534,7 +11145,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=GB19xzV614mIPJYtBLHApC3bBgXqGWsWivI7zZJa; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=ZmtPy0SxU3PM1BVAf3KTTVAmGBTSDy0jt43OqiqE; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -10696,7 +11307,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=YxRN1WGYzVhO1TIWTVq8bzrulbH7yotfLBGIsS80; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=pndgboXKoez4z1LtbisqkbVctfXxddINm8ik5aiy; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -11066,7 +11677,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=TB6zCcPHXL51nzidsogy0zvGndilq7Mm6KrY2UXJ; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=QDIxyIp54OjpdRDaNqLN9XhiRzqNjrFZCXkhHwid; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -11500,7 +12111,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=E5h64TTOIO4p5SWsPcRDUTke4NwczjffRUUjivOg; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=Ah3XSaDo34D1PxIpQ8pDuauDLYl0RzOxRcI79MjZ; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -12437,7 +13048,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=99zGltIEXJoPssIuY5kdHPhF5WF5aNkP5tfz2L33; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=XGoDMr0ai3wApt6nD6yqGfrMn5rqrw5p8RDcPNFK; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -12738,7 +13349,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=9OK5wTM6hJF8UC7pVlzDFdbw1hlxnaTRgbMVPdbr; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=b9D8k1gvQZIlMPBBI3MZfLYQCERes850mIsxGXMo; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -13532,7 +14143,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=oNXbSKBODGKzLyK9z0f9CffLsod39tPJdleakVm1; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=wfdqPJ45wyKEmwY0aZqQ066UDLFOh6b0DaCn8vj2; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -13833,7 +14444,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=exd0ejuLQeSH2na1V3uj0dImHDa3Pfq7vnM04CdD; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=6j8uTg18mlNpS0i134Y5HZfn046xO1Xrkb1dVKBM; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -14317,7 +14928,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=q39mzTRuKTXhiFNT9X71Saja38lJQAENLyU0KAIL; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=HX1E99230RsSiSAYyYt8ymjo93rW1Po4Y2iaHBbY; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -14515,7 +15126,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=psliGrHoU0KWxlZ0WtN7bz5I0G6iOpUdq8dmhAM9; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=H1fi0QDG96zZ4zAFyyfP6RXjquDCstRQiT25jXQ7; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -14916,7 +15527,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=8RjAJLgSPWQqA2O7ew4upuiEyMwFy9gpyczV3LCp; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=XksLdkSCcvKWuJHct75vHD6lb5PcsiRS9PR1K9SR; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -15400,7 +16011,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=rYOmiCCFOGpmfN0yPDBdmqW7E9d8hswPlUujyo4P; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=kjoK9tIvADO49x8wh7YBfUbHLwfFmZiogfxlIx8e; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -15701,7 +16312,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=wJKmqPQkUusAB4HQq2NbZHKAzkslnIQx7HcXkw0k; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=PcuDIeeJRqicdRSHDLcDpUjTfLN1Xz8JRFkdnbYB; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -16185,7 +16796,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=flFdpkx3IBOTXfODZeLo8E0fS9tvAmd2crd78UWY; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=1XRIXqHTHmoidi0ffEqwHcaQnYNbA6UYCHsK0yeE; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -16370,7 +16981,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=INilwKsuWgb4tyIZaqdgAry89pal3Lo9ouL3x16z; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=yW8kji4VdrZVOH8CBP4COEYKKVG923atDdaJ0dNn; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -17056,7 +17667,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=rcq5qxowxiylcX2tcmPIO6MXYFDjnBCy1sYELCRr; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=BS1Bq4UFPDXwLQZRs3pSJixFMMpgJxfBOmr4DWl5; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -17512,7 +18123,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=sIO514ykUFGr9tWC2k0GUGQn0ecm51seHwiaxYAu; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=Vx7BzraR3SCrM5l8wEl64mF54nlfR6tGzf4fcv2W; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -17686,7 +18297,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=sqJOx3iLo1kJxTd8mmQ2btLXJxPePoM2XzJz0YxG; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=p1OaN8jLuQSkhULdDAEPeglceyX2BrdC9De6tkpP; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -17852,7 +18463,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=WPLnc4UXk0pZFNqpQgshxtUG9L1OvbZX2BIBPV2G; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=GsLdJ1PUvsI9174uM06Rcv7e2T0LLe9v4lcwIbTA; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -18047,7 +18658,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=fTHS0kpnxeIXRqzK5xzNc03B62DpKmQ2BiqWnBgc; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=IO91xw66IfWrGGBCgBI6lwj3IuLkd7OOqQ9NdJke; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -18437,7 +19048,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=IAwA0qXWtxL9lb0ifXGpFqJj8eNcNUDDALgJlAZL; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=oHg7lJM8DAT5ZUQLjJ7KNW23lT8W6oOd0rzEwSbt; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -18918,7 +19529,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=AeCtsuabi8bZKwRzQdr8p7XJiL1Jac94HywjTk3e; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=QjJEb98EV0RwDHTQcOylyUvaRVYrNHNQ5saV5WED; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -19092,7 +19703,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=929jjEqg98XCM3WkRgG28cYD2K5BgE7sEI6R6cZ6; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=JZePiyxly78weK50lzr6qf09bL1XOr8TGIDmv0Py; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -19462,7 +20073,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=kxkAn6ktvDEdpCvR2riFQus14bXiRAXJ8XCncjws; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=jWuLhK0gZXMcSoJ3gjMe31Ys9BApDOCFRlynDRE2; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -19624,7 +20235,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=Nf1tNFD7n2qoaiLc23yMxOkHBaFZAOiAnSm6tcTb; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=YKRhZlOs0DbXICR0t3y0HWzTIN2aCeh17uYYavce; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -19798,7 +20409,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=62yt5S3mxzYYSMUmyhYhIwtyMGJsD3eDd6OSGQwA; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=BuTYvjG5ingO4kODcJSrcuK3ZgD1kCxCCl5pjHVV; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -19972,7 +20583,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=T8p4JqeUHZZN2prYTOhKgBcrEe0doawfuquJ3bEa; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=5yywKXasxT2awvUdynRcjG934YHYPP15sSbVJEJK; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -20194,7 +20805,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=SqYzY3n9eFlPontR5x5bUmCq63qtjt87IMGcn6b9; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=KA53NGw7xt6u5b4C2hs1ZUEFgRey28iNpGgkIz3w; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -20639,7 +21250,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=Xu6H2IlOJprQvX5dpFgKolsA7LUHJtPQJ21uiyMr; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=bdbj1NyL6Jdb2tEcgjS9Rfrjdj5Ssp0AhxvM4nu0; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -21162,7 +21773,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=a6zHAj7joxmpz5X9eBbbTU8ejfcPJPyO0bHiw6ys; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=MykmAIDiNGruoLSzqvzqlMIoUTnOUqr2pVVfgFw1; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -21574,7 +22185,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=CEzYacpuuQZ4tw7X9yROCQVJhKxckdutV9Izk7mv; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=fCDCxFbwzZZwPH8hOpwKcjLz4YCR2gZ2DKGQJT4u; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -22058,7 +22669,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=G8n3vdsgPCj9VKm7UDvioWQJWWO6VClAeZU7VWbZ; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=EOCHbNiLhd1V8GlNACOOheSDg2Fh5fpo36OaUYk0; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -22413,7 +23024,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=1MZWSqnleW9A9xxg84gio9OKpDCDIUJZK1qdqBer; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=Ng8RBSTTVGgrXNkQxr5nn17aNqRG2cxClMZdMgp9; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=719999; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -22836,7 +23447,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=Ox4B9rI7uuddpp7UlnUEbmqbLLd3mLszZoXEWxyG; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=kp6Uan6rAZCd8rCSERRfxYV3xjh4ZzzIX8jsI50z; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -23237,493 +23848,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
     
 
-                                <h2 id="misc-GETapi-v1">GET api/v1</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "https://snipe-it.test/api/v1" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://snipe-it.test/api/v1"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-
-<div class="php-example">
-    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'https://snipe-it.test/api/v1';
-$response = $client-&gt;get(
-    $url,
-    [
-        'headers' =&gt; [
-            'Content-Type' =&gt; 'application/json',
-            'Accept' =&gt; 'application/json',
-        ],
-    ]
-);
-$body = $response-&gt;getBody();
-print_r(json_decode((string) $body));</code></pre></div>
-
-
-<div class="python-example">
-    <pre><code class="language-python">import requests
-import json
-
-url = 'https://snipe-it.test/api/v1'
-headers = {
-  'Content-Type': 'application/json',
-  'Accept': 'application/json'
-}
-
-response = requests.request('GET', url, headers=headers)
-response.json()</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1">
-            <blockquote>
-            <p>Example response (401):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: max-age=0, must-revalidate, no-cache, no-store, private
-content-type: application/json
-vary: Origin
-pragma: no-cache
-expires: Sun, 02 Jan 1990 00:00:00 GMT
-x-content-type-options: nosniff
-feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
-referrer-policy: same-origin
-content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=jgR3H8NxpOZswCMLNyP7Jr4JSKaAduEOFuKfWsPc; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;error&quot;: &quot;Unauthorized or unauthenticated.&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1" data-method="GET"
-      data-path="api/v1"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1"
-                    onclick="tryItOut('GETapi-v1');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1"
-                    onclick="cancelTryOut('GETapi-v1');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="misc-GETapi-v1-account-requests">Display a listing of requested assets.</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1-account-requests">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "https://snipe-it.test/api/v1/account/requests" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://snipe-it.test/api/v1/account/requests"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-
-<div class="php-example">
-    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'https://snipe-it.test/api/v1/account/requests';
-$response = $client-&gt;get(
-    $url,
-    [
-        'headers' =&gt; [
-            'Content-Type' =&gt; 'application/json',
-            'Accept' =&gt; 'application/json',
-        ],
-    ]
-);
-$body = $response-&gt;getBody();
-print_r(json_decode((string) $body));</code></pre></div>
-
-
-<div class="python-example">
-    <pre><code class="language-python">import requests
-import json
-
-url = 'https://snipe-it.test/api/v1/account/requests'
-headers = {
-  'Content-Type': 'application/json',
-  'Accept': 'application/json'
-}
-
-response = requests.request('GET', url, headers=headers)
-response.json()</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-account-requests">
-            <blockquote>
-            <p>Example response (401):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: max-age=0, must-revalidate, no-cache, no-store, private
-content-type: application/json
-vary: Origin
-pragma: no-cache
-expires: Sun, 02 Jan 1990 00:00:00 GMT
-x-content-type-options: nosniff
-feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
-referrer-policy: same-origin
-content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=sAVv5eThRkdkR5M8lrJ4D89mdhNARZZjpgTNYwbF; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;error&quot;: &quot;Unauthorized or unauthenticated.&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-account-requests" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-account-requests"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-account-requests"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-account-requests" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-account-requests">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-account-requests" data-method="GET"
-      data-path="api/v1/account/requests"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-account-requests', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-account-requests"
-                    onclick="tryItOut('GETapi-v1-account-requests');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-account-requests"
-                    onclick="cancelTryOut('GETapi-v1-account-requests');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-account-requests"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/account/requests</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-account-requests"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-account-requests"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="misc-GETapi-v1-account-eulas">Display the EULAs accepted by the user.</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-<p>@param \App\Http\Transformers\ActionlogsTransformer $transformer</p>
-
-<span id="example-requests-GETapi-v1-account-eulas">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "https://snipe-it.test/api/v1/account/eulas" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://snipe-it.test/api/v1/account/eulas"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-
-<div class="php-example">
-    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'https://snipe-it.test/api/v1/account/eulas';
-$response = $client-&gt;get(
-    $url,
-    [
-        'headers' =&gt; [
-            'Content-Type' =&gt; 'application/json',
-            'Accept' =&gt; 'application/json',
-        ],
-    ]
-);
-$body = $response-&gt;getBody();
-print_r(json_decode((string) $body));</code></pre></div>
-
-
-<div class="python-example">
-    <pre><code class="language-python">import requests
-import json
-
-url = 'https://snipe-it.test/api/v1/account/eulas'
-headers = {
-  'Content-Type': 'application/json',
-  'Accept': 'application/json'
-}
-
-response = requests.request('GET', url, headers=headers)
-response.json()</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-account-eulas">
-            <blockquote>
-            <p>Example response (401):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: max-age=0, must-revalidate, no-cache, no-store, private
-content-type: application/json
-vary: Origin
-pragma: no-cache
-expires: Sun, 02 Jan 1990 00:00:00 GMT
-x-content-type-options: nosniff
-feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
-referrer-policy: same-origin
-content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=sGpQnsbOAvzzSif7RWGBnpRT3crgiMnNqGrkpJZ2; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;error&quot;: &quot;Unauthorized or unauthenticated.&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-account-eulas" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-account-eulas"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-account-eulas"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-account-eulas" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-account-eulas">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-account-eulas" data-method="GET"
-      data-path="api/v1/account/eulas"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-account-eulas', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-account-eulas"
-                    onclick="tryItOut('GETapi-v1-account-eulas');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-account-eulas"
-                    onclick="cancelTryOut('GETapi-v1-account-eulas');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-account-eulas"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/account/eulas</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-account-eulas"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-account-eulas"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="misc-POSTapi-v1-account-request--asset_id-">POST api/v1/account/request/{asset_id}</h2>
+                                <h2 id="misc-POSTapi-v1-account-request--asset_id-">POST api/v1/account/request/{asset_id}</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -24025,458 +24150,6 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="misc-POSTapi-v1-account-personal-access-tokens">Delete an API token</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-POSTapi-v1-account-personal-access-tokens">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "https://snipe-it.test/api/v1/account/personal-access-tokens" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://snipe-it.test/api/v1/account/personal-access-tokens"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "POST",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-
-<div class="php-example">
-    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'https://snipe-it.test/api/v1/account/personal-access-tokens';
-$response = $client-&gt;post(
-    $url,
-    [
-        'headers' =&gt; [
-            'Content-Type' =&gt; 'application/json',
-            'Accept' =&gt; 'application/json',
-        ],
-    ]
-);
-$body = $response-&gt;getBody();
-print_r(json_decode((string) $body));</code></pre></div>
-
-
-<div class="python-example">
-    <pre><code class="language-python">import requests
-import json
-
-url = 'https://snipe-it.test/api/v1/account/personal-access-tokens'
-headers = {
-  'Content-Type': 'application/json',
-  'Accept': 'application/json'
-}
-
-response = requests.request('POST', url, headers=headers)
-response.json()</code></pre></div>
-
-</span>
-
-<span id="example-responses-POSTapi-v1-account-personal-access-tokens">
-</span>
-<span id="execution-results-POSTapi-v1-account-personal-access-tokens" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-POSTapi-v1-account-personal-access-tokens"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-v1-account-personal-access-tokens"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-POSTapi-v1-account-personal-access-tokens" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-v1-account-personal-access-tokens">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-POSTapi-v1-account-personal-access-tokens" data-method="POST"
-      data-path="api/v1/account/personal-access-tokens"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-account-personal-access-tokens', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-v1-account-personal-access-tokens"
-                    onclick="tryItOut('POSTapi-v1-account-personal-access-tokens');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-v1-account-personal-access-tokens"
-                    onclick="cancelTryOut('POSTapi-v1-account-personal-access-tokens');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-v1-account-personal-access-tokens"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-black">POST</small>
-            <b><code>api/v1/account/personal-access-tokens</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-v1-account-personal-access-tokens"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-v1-account-personal-access-tokens"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="misc-GETapi-v1-account-personal-access-tokens">Show user&#039;s API tokens</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1-account-personal-access-tokens">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "https://snipe-it.test/api/v1/account/personal-access-tokens" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://snipe-it.test/api/v1/account/personal-access-tokens"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-
-<div class="php-example">
-    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'https://snipe-it.test/api/v1/account/personal-access-tokens';
-$response = $client-&gt;get(
-    $url,
-    [
-        'headers' =&gt; [
-            'Content-Type' =&gt; 'application/json',
-            'Accept' =&gt; 'application/json',
-        ],
-    ]
-);
-$body = $response-&gt;getBody();
-print_r(json_decode((string) $body));</code></pre></div>
-
-
-<div class="python-example">
-    <pre><code class="language-python">import requests
-import json
-
-url = 'https://snipe-it.test/api/v1/account/personal-access-tokens'
-headers = {
-  'Content-Type': 'application/json',
-  'Accept': 'application/json'
-}
-
-response = requests.request('GET', url, headers=headers)
-response.json()</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-account-personal-access-tokens">
-            <blockquote>
-            <p>Example response (401):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: max-age=0, must-revalidate, no-cache, no-store, private
-content-type: application/json
-vary: Origin
-pragma: no-cache
-expires: Sun, 02 Jan 1990 00:00:00 GMT
-x-content-type-options: nosniff
-feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
-referrer-policy: same-origin
-content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=LNRDQR1CZpACyPTiuFMrE94N62SnROd72GbwESk2; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;error&quot;: &quot;Unauthorized or unauthenticated.&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-account-personal-access-tokens" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-account-personal-access-tokens"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-account-personal-access-tokens"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-account-personal-access-tokens" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-account-personal-access-tokens">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-account-personal-access-tokens" data-method="GET"
-      data-path="api/v1/account/personal-access-tokens"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-account-personal-access-tokens', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-account-personal-access-tokens"
-                    onclick="tryItOut('GETapi-v1-account-personal-access-tokens');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-account-personal-access-tokens"
-                    onclick="cancelTryOut('GETapi-v1-account-personal-access-tokens');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-account-personal-access-tokens"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/account/personal-access-tokens</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-account-personal-access-tokens"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-account-personal-access-tokens"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="misc-DELETEapi-v1-account-personal-access-tokens--tokenId-">Delete an API token</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-DELETEapi-v1-account-personal-access-tokens--tokenId-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request DELETE \
-    "https://snipe-it.test/api/v1/account/personal-access-tokens/architecto" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://snipe-it.test/api/v1/account/personal-access-tokens/architecto"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "DELETE",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-
-<div class="php-example">
-    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'https://snipe-it.test/api/v1/account/personal-access-tokens/architecto';
-$response = $client-&gt;delete(
-    $url,
-    [
-        'headers' =&gt; [
-            'Content-Type' =&gt; 'application/json',
-            'Accept' =&gt; 'application/json',
-        ],
-    ]
-);
-$body = $response-&gt;getBody();
-print_r(json_decode((string) $body));</code></pre></div>
-
-
-<div class="python-example">
-    <pre><code class="language-python">import requests
-import json
-
-url = 'https://snipe-it.test/api/v1/account/personal-access-tokens/architecto'
-headers = {
-  'Content-Type': 'application/json',
-  'Accept': 'application/json'
-}
-
-response = requests.request('DELETE', url, headers=headers)
-response.json()</code></pre></div>
-
-</span>
-
-<span id="example-responses-DELETEapi-v1-account-personal-access-tokens--tokenId-">
-</span>
-<span id="execution-results-DELETEapi-v1-account-personal-access-tokens--tokenId-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-DELETEapi-v1-account-personal-access-tokens--tokenId-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEapi-v1-account-personal-access-tokens--tokenId-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-DELETEapi-v1-account-personal-access-tokens--tokenId-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEapi-v1-account-personal-access-tokens--tokenId-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-DELETEapi-v1-account-personal-access-tokens--tokenId-" data-method="DELETE"
-      data-path="api/v1/account/personal-access-tokens/{tokenId}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-v1-account-personal-access-tokens--tokenId-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-DELETEapi-v1-account-personal-access-tokens--tokenId-"
-                    onclick="tryItOut('DELETEapi-v1-account-personal-access-tokens--tokenId-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-DELETEapi-v1-account-personal-access-tokens--tokenId-"
-                    onclick="cancelTryOut('DELETEapi-v1-account-personal-access-tokens--tokenId-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-DELETEapi-v1-account-personal-access-tokens--tokenId-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-red">DELETE</small>
-            <b><code>api/v1/account/personal-access-tokens/{tokenId}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="DELETEapi-v1-account-personal-access-tokens--tokenId-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="DELETEapi-v1-account-personal-access-tokens--tokenId-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>tokenId</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="tokenId"                data-endpoint="DELETEapi-v1-account-personal-access-tokens--tokenId-"
-               value="architecto"
-               data-component="url">
-    <br>
-<p>Example: <code>architecto</code></p>
-            </div>
-                    </form>
-
                     <h2 id="misc-POSTapi-v1-accessories--accessory--checkin">Checkin Accessory</h2>
 
 <p>
@@ -24711,7 +24384,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=yQqAcTcuPtWDcFbT5Wn7cr1VnYRw5K0GEnRqf6aX; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=sHPMC2SqAZ5cAOx1UvXW3elAy3P3oiipptk2p0FZ; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -24873,7 +24546,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=G3alAwTqzzpBmnRgDDO2pPjTXFmzZ6usPyrFjhJ1; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=KyijYcHB8a6W2I03kqLUp8Ca0jSq1NkkGSEAafJW; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -25047,7 +24720,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=AJaxkunAlxEsroyGEAyGe505rTbVShhvJ3zae1zv; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=DhLS17un2bga4hm36kDHWijjLccRe4D7qGWeertj; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -25221,7 +24894,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=h32nE0HKwzQc7ss03y6gTtADpj5SPTwZahWnca9n; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=jwgg1JDhWc8bhd88IkSMh8NrfSTdnbKXDnIvbazB; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -25312,307 +24985,6 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="misc-GETapi-v1-settings-ldaptest">GET api/v1/settings/ldaptest</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1-settings-ldaptest">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "https://snipe-it.test/api/v1/settings/ldaptest" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://snipe-it.test/api/v1/settings/ldaptest"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-
-<div class="php-example">
-    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'https://snipe-it.test/api/v1/settings/ldaptest';
-$response = $client-&gt;get(
-    $url,
-    [
-        'headers' =&gt; [
-            'Content-Type' =&gt; 'application/json',
-            'Accept' =&gt; 'application/json',
-        ],
-    ]
-);
-$body = $response-&gt;getBody();
-print_r(json_decode((string) $body));</code></pre></div>
-
-
-<div class="python-example">
-    <pre><code class="language-python">import requests
-import json
-
-url = 'https://snipe-it.test/api/v1/settings/ldaptest'
-headers = {
-  'Content-Type': 'application/json',
-  'Accept': 'application/json'
-}
-
-response = requests.request('GET', url, headers=headers)
-response.json()</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-settings-ldaptest">
-            <blockquote>
-            <p>Example response (401):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: max-age=0, must-revalidate, no-cache, no-store, private
-content-type: application/json
-vary: Origin
-pragma: no-cache
-expires: Sun, 02 Jan 1990 00:00:00 GMT
-x-content-type-options: nosniff
-feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
-referrer-policy: same-origin
-content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=xMzuu6FkX6EJwgJRpWHfXA47kwCUxYfjMYuo7fKH; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;error&quot;: &quot;Unauthorized or unauthenticated.&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-settings-ldaptest" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-settings-ldaptest"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-settings-ldaptest"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-settings-ldaptest" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-settings-ldaptest">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-settings-ldaptest" data-method="GET"
-      data-path="api/v1/settings/ldaptest"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-settings-ldaptest', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-settings-ldaptest"
-                    onclick="tryItOut('GETapi-v1-settings-ldaptest');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-settings-ldaptest"
-                    onclick="cancelTryOut('GETapi-v1-settings-ldaptest');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-settings-ldaptest"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/settings/ldaptest</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-settings-ldaptest"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-settings-ldaptest"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="misc-POSTapi-v1-settings-purge_barcodes">Delete server-cached barcodes</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-POSTapi-v1-settings-purge_barcodes">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "https://snipe-it.test/api/v1/settings/purge_barcodes" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://snipe-it.test/api/v1/settings/purge_barcodes"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "POST",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-
-<div class="php-example">
-    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'https://snipe-it.test/api/v1/settings/purge_barcodes';
-$response = $client-&gt;post(
-    $url,
-    [
-        'headers' =&gt; [
-            'Content-Type' =&gt; 'application/json',
-            'Accept' =&gt; 'application/json',
-        ],
-    ]
-);
-$body = $response-&gt;getBody();
-print_r(json_decode((string) $body));</code></pre></div>
-
-
-<div class="python-example">
-    <pre><code class="language-python">import requests
-import json
-
-url = 'https://snipe-it.test/api/v1/settings/purge_barcodes'
-headers = {
-  'Content-Type': 'application/json',
-  'Accept': 'application/json'
-}
-
-response = requests.request('POST', url, headers=headers)
-response.json()</code></pre></div>
-
-</span>
-
-<span id="example-responses-POSTapi-v1-settings-purge_barcodes">
-</span>
-<span id="execution-results-POSTapi-v1-settings-purge_barcodes" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-POSTapi-v1-settings-purge_barcodes"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-v1-settings-purge_barcodes"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-POSTapi-v1-settings-purge_barcodes" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-v1-settings-purge_barcodes">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-POSTapi-v1-settings-purge_barcodes" data-method="POST"
-      data-path="api/v1/settings/purge_barcodes"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-settings-purge_barcodes', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-v1-settings-purge_barcodes"
-                    onclick="tryItOut('POSTapi-v1-settings-purge_barcodes');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-v1-settings-purge_barcodes"
-                    onclick="cancelTryOut('POSTapi-v1-settings-purge_barcodes');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-v1-settings-purge_barcodes"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-black">POST</small>
-            <b><code>api/v1/settings/purge_barcodes</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-v1-settings-purge_barcodes"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-v1-settings-purge_barcodes"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
                     <h2 id="misc-GETapi-v1-settings-login-attempts">Get a list of login attempts</h2>
 
 <p>
@@ -25696,7 +25068,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=yFgejJJjq2EpZkpb6c9p5KdS6FvafeMmSits5OhR; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=PixSpuAiQcKGKevpNoGvcac0DIIlsvBhhwm35Sov; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -25768,326 +25140,6 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Accept"                data-endpoint="GETapi-v1-settings-login-attempts"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="misc-POSTapi-v1-settings-ldaptestlogin">POST api/v1/settings/ldaptestlogin</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-POSTapi-v1-settings-ldaptestlogin">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "https://snipe-it.test/api/v1/settings/ldaptestlogin" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"ldaptest_user\": \"architecto\",
-    \"ldaptest_password\": \"architecto\"
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://snipe-it.test/api/v1/settings/ldaptestlogin"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "ldaptest_user": "architecto",
-    "ldaptest_password": "architecto"
-};
-
-fetch(url, {
-    method: "POST",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-
-<div class="php-example">
-    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'https://snipe-it.test/api/v1/settings/ldaptestlogin';
-$response = $client-&gt;post(
-    $url,
-    [
-        'headers' =&gt; [
-            'Content-Type' =&gt; 'application/json',
-            'Accept' =&gt; 'application/json',
-        ],
-        'json' =&gt; [
-            'ldaptest_user' =&gt; 'architecto',
-            'ldaptest_password' =&gt; 'architecto',
-        ],
-    ]
-);
-$body = $response-&gt;getBody();
-print_r(json_decode((string) $body));</code></pre></div>
-
-
-<div class="python-example">
-    <pre><code class="language-python">import requests
-import json
-
-url = 'https://snipe-it.test/api/v1/settings/ldaptestlogin'
-payload = {
-    "ldaptest_user": "architecto",
-    "ldaptest_password": "architecto"
-}
-headers = {
-  'Content-Type': 'application/json',
-  'Accept': 'application/json'
-}
-
-response = requests.request('POST', url, headers=headers, json=payload)
-response.json()</code></pre></div>
-
-</span>
-
-<span id="example-responses-POSTapi-v1-settings-ldaptestlogin">
-</span>
-<span id="execution-results-POSTapi-v1-settings-ldaptestlogin" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-POSTapi-v1-settings-ldaptestlogin"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-v1-settings-ldaptestlogin"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-POSTapi-v1-settings-ldaptestlogin" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-v1-settings-ldaptestlogin">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-POSTapi-v1-settings-ldaptestlogin" data-method="POST"
-      data-path="api/v1/settings/ldaptestlogin"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-settings-ldaptestlogin', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-v1-settings-ldaptestlogin"
-                    onclick="tryItOut('POSTapi-v1-settings-ldaptestlogin');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-v1-settings-ldaptestlogin"
-                    onclick="cancelTryOut('POSTapi-v1-settings-ldaptestlogin');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-v1-settings-ldaptestlogin"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-black">POST</small>
-            <b><code>api/v1/settings/ldaptestlogin</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-v1-settings-ldaptestlogin"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-v1-settings-ldaptestlogin"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>ldaptest_user</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="ldaptest_user"                data-endpoint="POSTapi-v1-settings-ldaptestlogin"
-               value="architecto"
-               data-component="body">
-    <br>
-<p>Example: <code>architecto</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>ldaptest_password</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="ldaptest_password"                data-endpoint="POSTapi-v1-settings-ldaptestlogin"
-               value="architecto"
-               data-component="body">
-    <br>
-<p>Example: <code>architecto</code></p>
-        </div>
-        </form>
-
-                    <h2 id="misc-POSTapi-v1-settings-mailtest">Test the email configuration</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-POSTapi-v1-settings-mailtest">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "https://snipe-it.test/api/v1/settings/mailtest" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://snipe-it.test/api/v1/settings/mailtest"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "POST",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-
-<div class="php-example">
-    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'https://snipe-it.test/api/v1/settings/mailtest';
-$response = $client-&gt;post(
-    $url,
-    [
-        'headers' =&gt; [
-            'Content-Type' =&gt; 'application/json',
-            'Accept' =&gt; 'application/json',
-        ],
-    ]
-);
-$body = $response-&gt;getBody();
-print_r(json_decode((string) $body));</code></pre></div>
-
-
-<div class="python-example">
-    <pre><code class="language-python">import requests
-import json
-
-url = 'https://snipe-it.test/api/v1/settings/mailtest'
-headers = {
-  'Content-Type': 'application/json',
-  'Accept': 'application/json'
-}
-
-response = requests.request('POST', url, headers=headers)
-response.json()</code></pre></div>
-
-</span>
-
-<span id="example-responses-POSTapi-v1-settings-mailtest">
-</span>
-<span id="execution-results-POSTapi-v1-settings-mailtest" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-POSTapi-v1-settings-mailtest"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-v1-settings-mailtest"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-POSTapi-v1-settings-mailtest" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-v1-settings-mailtest">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-POSTapi-v1-settings-mailtest" data-method="POST"
-      data-path="api/v1/settings/mailtest"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-settings-mailtest', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-v1-settings-mailtest"
-                    onclick="tryItOut('POSTapi-v1-settings-mailtest');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-v1-settings-mailtest"
-                    onclick="cancelTryOut('POSTapi-v1-settings-mailtest');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-v1-settings-mailtest"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-black">POST</small>
-            <b><code>api/v1/settings/mailtest</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-v1-settings-mailtest"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-v1-settings-mailtest"
                value="application/json"
                data-component="header">
     <br>
@@ -26178,7 +25230,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=qjjT0ujUAX45xiacm1WWNGAXHCzg829WwY9QUpTt; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=ZdyXnJL3ZjvVbGA20TL3YJvFVtvXfMSfnMxdR0u3; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -26340,7 +25392,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=G5VGebkI7Efpep55pj0YsY4IxIloqwUuNWxU8K4D; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=12H7czcfvhzN41bMPpVZ6uJSv3ldPqeXqxYn3Hfx; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -26503,7 +25555,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=4OEK9LMHgIKcB4ECJAWKwyizzizwLDT4F2goIdDA; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=7262fNrfUhCtn7FC7YV1iiIZzwoF2PrBqd6Axi1d; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -26594,180 +25646,6 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="misc-GETapi-v1-users--user_id--eulas">Display the EULAs accepted by the user.</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-<p>@param \App\Models\User $user</p>
-
-<span id="example-requests-GETapi-v1-users--user_id--eulas">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "https://snipe-it.test/api/v1/users/2/eulas" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://snipe-it.test/api/v1/users/2/eulas"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-
-<div class="php-example">
-    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'https://snipe-it.test/api/v1/users/2/eulas';
-$response = $client-&gt;get(
-    $url,
-    [
-        'headers' =&gt; [
-            'Content-Type' =&gt; 'application/json',
-            'Accept' =&gt; 'application/json',
-        ],
-    ]
-);
-$body = $response-&gt;getBody();
-print_r(json_decode((string) $body));</code></pre></div>
-
-
-<div class="python-example">
-    <pre><code class="language-python">import requests
-import json
-
-url = 'https://snipe-it.test/api/v1/users/2/eulas'
-headers = {
-  'Content-Type': 'application/json',
-  'Accept': 'application/json'
-}
-
-response = requests.request('GET', url, headers=headers)
-response.json()</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-users--user_id--eulas">
-            <blockquote>
-            <p>Example response (401):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: max-age=0, must-revalidate, no-cache, no-store, private
-content-type: application/json
-vary: Origin
-pragma: no-cache
-expires: Sun, 02 Jan 1990 00:00:00 GMT
-x-content-type-options: nosniff
-feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
-referrer-policy: same-origin
-content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=Ht9zEvd6BoGAmteUr9U0M1EhukRDU8R7sB8mSOKw; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;error&quot;: &quot;Unauthorized or unauthenticated.&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-users--user_id--eulas" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-users--user_id--eulas"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-users--user_id--eulas"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-users--user_id--eulas" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-users--user_id--eulas">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-users--user_id--eulas" data-method="GET"
-      data-path="api/v1/users/{user_id}/eulas"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-users--user_id--eulas', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-users--user_id--eulas"
-                    onclick="tryItOut('GETapi-v1-users--user_id--eulas');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-users--user_id--eulas"
-                    onclick="cancelTryOut('GETapi-v1-users--user_id--eulas');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-users--user_id--eulas"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/users/{user_id}/eulas</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-users--user_id--eulas"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-users--user_id--eulas"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>user_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="user_id"                data-endpoint="GETapi-v1-users--user_id--eulas"
-               value="2"
-               data-component="url">
-    <br>
-<p>The ID of the user. Example: <code>2</code></p>
-            </div>
-                    </form>
-
                     <h2 id="misc-GETapi-v1-kits">Display a listing of the resource.</h2>
 
 <p>
@@ -26851,7 +25729,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=CPJbwvdCxw0DYqUMJxxi8OmNeup4BlA5rkQirAju; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=9pbW3Lj27gqsdqjf9Onr74qGlwdQxRO7HKtgdSxR; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -27152,7 +26030,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=EU4sT1Hqg6oKZJKuvM3vDzUQrdg41Ff7DIAwsXRf; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=uskGZUp3AzQqeC2JdKpRCiJjEIuCgDp8LHywERj6; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -27632,7 +26510,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=1qhgimw5bC0fHQGSgVgJqKcaSW42IqRJ2F4polDF; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=VXG7nhRBx0n9dmOU9H9g0JoiTzOuE2oWJn9foBNu; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -28281,7 +27159,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=WdH9GMKFEFXrDlSabXmWC61WEVsbjEsXfzuZvGcB; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=KrrLKfzDmsdlm5LulANZUYoCPy9sh7nNRx3HCSmt; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -28606,7 +27484,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=WOfLcw4xJKTMbort9bqVzAXqpZ6f1qWOp8sBkfH3; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=Ymdsfjt4VVVhtRDZjt1vEh8ftmFUrewMizYO5VZg; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -29255,7 +28133,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=aEC6avo9gEeVKvjyRHL2MEy5P5L3nTdocVk5flUL; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=Ofw7nV48LnTp8SAN2B8W7nWuAw1jpI7GuFCRxc6B; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -29904,7 +28782,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=c7RrS9j8xGNhya4Ts8R7yKc2ymIrPo607cHUZOOR; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=zBZCXN8IrVhp0gmWImh45OcrU6cQm00sPVHDni5M; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -30066,7 +28944,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=z1U2ClGhYZv5iKYA4cWb5k2YHUchy9a9HUSWQNDX; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=6Cmpyzc2mOwZhTp7cE5pqa2YsN7c3q0lR8gZIOZ7; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -30228,7 +29106,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=oM63SLXqghs9b2nURW4ZbHp9KipkcIdGDeHIP1OF; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=t71KbEhwD7gcUBoIZY7GnisT1MghbetA8AdH2CZo; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -30406,7 +29284,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=vBXFctl7onEDovM8eSKc93QsS5L4tAqovRrD5NXz; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=hvRc22afMc91wsdTT85Ht47Q29HBb3EbvY2z3Y1O; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -30568,7 +29446,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=THFowyEVGhU3x5t9BPD4sAFlPBoRSVA3IVlcS0o2; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=Cl16Du8NHw18bURF7kVm0zrgflHanUmuWj6R2LDu; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -30730,7 +29608,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=igTsi93UE725qACTUUOAQNldCyy6HiyL6IwO1uir; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=NeW9gaoRdvWuQC1aQSk6kx1A72Si2V8WFp9z1egL; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -31497,7 +30375,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=qmx3IT8bGNwfKDYs3HXdICl59fpNBPkN9gMQP0E6; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=xAEtyBUGWlC0moD22O7DJgUD3CqXGEWotGEuwSA7; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -31588,6 +30466,631 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
+                <h1 id="settings">Settings</h1>
+
+    
+
+                                <h2 id="settings-GETapi-v1-settings-ldaptest">Test LDAP Connection</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-settings-ldaptest">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://snipe-it.test/api/v1/settings/ldaptest" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://snipe-it.test/api/v1/settings/ldaptest"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'https://snipe-it.test/api/v1/settings/ldaptest';
+$response = $client-&gt;get(
+    $url,
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'https://snipe-it.test/api/v1/settings/ldaptest'
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('GET', url, headers=headers)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-settings-ldaptest">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: max-age=0, must-revalidate, no-cache, no-store, private
+content-type: application/json
+vary: Origin
+pragma: no-cache
+expires: Sun, 02 Jan 1990 00:00:00 GMT
+x-content-type-options: nosniff
+feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
+referrer-policy: same-origin
+content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
+set-cookie: snipe-dev_local=mWYpyrpeGcsbvxTh42aAgm1BUzHcKW2ZzcbI3Cxq; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;error&quot;: &quot;Unauthorized or unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-settings-ldaptest" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-settings-ldaptest"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-settings-ldaptest"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-settings-ldaptest" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-settings-ldaptest">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-settings-ldaptest" data-method="GET"
+      data-path="api/v1/settings/ldaptest"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-settings-ldaptest', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-settings-ldaptest"
+                    onclick="tryItOut('GETapi-v1-settings-ldaptest');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-settings-ldaptest"
+                    onclick="cancelTryOut('GETapi-v1-settings-ldaptest');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-settings-ldaptest"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/settings/ldaptest</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-settings-ldaptest"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-settings-ldaptest"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="settings-POSTapi-v1-settings-purge_barcodes">Delete Barcode Cache</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-v1-settings-purge_barcodes">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "https://snipe-it.test/api/v1/settings/purge_barcodes" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://snipe-it.test/api/v1/settings/purge_barcodes"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'https://snipe-it.test/api/v1/settings/purge_barcodes';
+$response = $client-&gt;post(
+    $url,
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'https://snipe-it.test/api/v1/settings/purge_barcodes'
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('POST', url, headers=headers)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-v1-settings-purge_barcodes">
+</span>
+<span id="execution-results-POSTapi-v1-settings-purge_barcodes" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-v1-settings-purge_barcodes"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-v1-settings-purge_barcodes"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-v1-settings-purge_barcodes" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-v1-settings-purge_barcodes">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-v1-settings-purge_barcodes" data-method="POST"
+      data-path="api/v1/settings/purge_barcodes"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-settings-purge_barcodes', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-v1-settings-purge_barcodes"
+                    onclick="tryItOut('POSTapi-v1-settings-purge_barcodes');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-v1-settings-purge_barcodes"
+                    onclick="cancelTryOut('POSTapi-v1-settings-purge_barcodes');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-v1-settings-purge_barcodes"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/v1/settings/purge_barcodes</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-v1-settings-purge_barcodes"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-v1-settings-purge_barcodes"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="settings-POSTapi-v1-settings-ldaptestlogin">Test LDAP Login</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-v1-settings-ldaptestlogin">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "https://snipe-it.test/api/v1/settings/ldaptestlogin" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"ldaptest_user\": \"architecto\",
+    \"ldaptest_password\": \"architecto\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://snipe-it.test/api/v1/settings/ldaptestlogin"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "ldaptest_user": "architecto",
+    "ldaptest_password": "architecto"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'https://snipe-it.test/api/v1/settings/ldaptestlogin';
+$response = $client-&gt;post(
+    $url,
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+        'json' =&gt; [
+            'ldaptest_user' =&gt; 'architecto',
+            'ldaptest_password' =&gt; 'architecto',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'https://snipe-it.test/api/v1/settings/ldaptestlogin'
+payload = {
+    "ldaptest_user": "architecto",
+    "ldaptest_password": "architecto"
+}
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('POST', url, headers=headers, json=payload)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-v1-settings-ldaptestlogin">
+</span>
+<span id="execution-results-POSTapi-v1-settings-ldaptestlogin" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-v1-settings-ldaptestlogin"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-v1-settings-ldaptestlogin"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-v1-settings-ldaptestlogin" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-v1-settings-ldaptestlogin">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-v1-settings-ldaptestlogin" data-method="POST"
+      data-path="api/v1/settings/ldaptestlogin"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-settings-ldaptestlogin', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-v1-settings-ldaptestlogin"
+                    onclick="tryItOut('POSTapi-v1-settings-ldaptestlogin');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-v1-settings-ldaptestlogin"
+                    onclick="cancelTryOut('POSTapi-v1-settings-ldaptestlogin');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-v1-settings-ldaptestlogin"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/v1/settings/ldaptestlogin</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-v1-settings-ldaptestlogin"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-v1-settings-ldaptestlogin"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>ldaptest_user</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="ldaptest_user"                data-endpoint="POSTapi-v1-settings-ldaptestlogin"
+               value="architecto"
+               data-component="body">
+    <br>
+<p>Example: <code>architecto</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>ldaptest_password</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="ldaptest_password"                data-endpoint="POSTapi-v1-settings-ldaptestlogin"
+               value="architecto"
+               data-component="body">
+    <br>
+<p>Example: <code>architecto</code></p>
+        </div>
+        </form>
+
+                    <h2 id="settings-POSTapi-v1-settings-mailtest">Test Email Configuration</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-v1-settings-mailtest">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "https://snipe-it.test/api/v1/settings/mailtest" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://snipe-it.test/api/v1/settings/mailtest"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'https://snipe-it.test/api/v1/settings/mailtest';
+$response = $client-&gt;post(
+    $url,
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'https://snipe-it.test/api/v1/settings/mailtest'
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('POST', url, headers=headers)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-v1-settings-mailtest">
+</span>
+<span id="execution-results-POSTapi-v1-settings-mailtest" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-v1-settings-mailtest"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-v1-settings-mailtest"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-v1-settings-mailtest" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-v1-settings-mailtest">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-v1-settings-mailtest" data-method="POST"
+      data-path="api/v1/settings/mailtest"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-settings-mailtest', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-v1-settings-mailtest"
+                    onclick="tryItOut('POSTapi-v1-settings-mailtest');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-v1-settings-mailtest"
+                    onclick="cancelTryOut('POSTapi-v1-settings-mailtest');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-v1-settings-mailtest"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/v1/settings/mailtest</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-v1-settings-mailtest"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-v1-settings-mailtest"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
                 <h1 id="status-labels">Status Labels</h1>
 
     
@@ -31676,7 +31179,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=G20C8NLrpkVqlc0NNio7g3ptJtPAXnibwwTVNQeQ; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=DwH0Z0jznkmdlwerWNY0sBvt01HFqQoipoH7NPNf; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -31838,7 +31341,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=nfojjoCoFBvDIofUosz4FAHEbARc2LWdBDY9mRRx; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=IJSRhBnYtFd0syyXU680YEwF0BIMthCNLfOpcyLN; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -32000,7 +31503,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=uVOpCavS7QSLRjH0yDdyV74jegAqu5eXuqTRB3uG; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=ZOIZ05Rp1YVJaN29a0oGwiyWTrTTcUqo5lc5IjPs; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -32162,7 +31665,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=Ht7V7qpACUTVu7IJzwwbJUXuxblHSrmHNUCajeqk; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=aF0alOp2ocaDp8IgwKesKh7farzPtxeAUhyc28IF; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -32341,7 +31844,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=z9QIVR09zOjzp4SfQ6PnSyHPmMBgIdL6rWPk4LtG; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=yvmceFpSYfSsG4CbvhhMs2cBhFlHEqvGVKDevoDG; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -32527,7 +32030,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=UW9ov1LkpK1Z1YliskXZEW6plEgpQW1YZuYsdica; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=IYg40ZEyQBdflyTTVSdA6PDnYUm7TgE9JH3IZfKU; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -32840,7 +32343,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=ReQua8ijyQpft7NDUog7TgQclP19t4LEGrFQNt1b; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=4fGnpY6Knc6SJS5TS7WkNHK5Ec5qPilO6DhNftpy; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -33324,7 +32827,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=BR6PeveVGsilxq1FP5fT6WAioeCFDL1gUs6Ym9rZ; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=65C7TW1PiGjeaD2y6hvRsGYfeIbw6nlsoiJ0xwP6; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -33546,7 +33049,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=GIWthbIGeD8hOuFNzuVJJexwmXJT7t1Lu2iovTWr; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=Ygwy1qbumTs3btIGwY6tegcN8o9isTe6KzDLCsCz; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -34035,7 +33538,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=u3CtCeJlscwNdonOQgzzRAz7L5b7PUJA5QGFugkY; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=toyAMs6CPONOBpGPTaErVBrkQmGal9vH0b3ZBo3s; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -34519,7 +34022,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=fFeEpKb9M61WnUEMGDCSuV4kfzkJcCXWsnUeIGee; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=kC65uNZYirk9MpUgY1qQWRkj8R3yUD1VsJxETu8o; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -34820,7 +34323,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=fZJPTXSFdFjqLShHjCZ9g1GFuEMP6MVXn0DqT1QF; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=nXikZnt2yCTS1oU2rDLd5ug3LCWqkpnmTqdOdsHi; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -35304,7 +34807,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=JC6ltPDEnZt7b2BKD6p43Hf6gJpbvexFKPt1vVbv; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=kw28HZIT52r8jz3Sbo6hnarUjf8SBB3clQMub2dP; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -35744,7 +35247,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=v6Cb1rLm3mlkNzuAF1e9YU4OfC74Iqhj4N9H03fv; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=LmY8gP1mxEcxwQkzCIEl6Jjry5STc3MsQZzeBHCB; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -35822,6 +35325,180 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <p>Example: <code>application/json</code></p>
             </div>
                         </form>
+
+                    <h2 id="users-GETapi-v1-users--user_id--eulas">User EULAs</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Gets the lst of accepted EULAs for a user,</p>
+
+<span id="example-requests-GETapi-v1-users--user_id--eulas">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://snipe-it.test/api/v1/users/2/eulas" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://snipe-it.test/api/v1/users/2/eulas"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'https://snipe-it.test/api/v1/users/2/eulas';
+$response = $client-&gt;get(
+    $url,
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'https://snipe-it.test/api/v1/users/2/eulas'
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('GET', url, headers=headers)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-users--user_id--eulas">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: max-age=0, must-revalidate, no-cache, no-store, private
+content-type: application/json
+vary: Origin
+pragma: no-cache
+expires: Sun, 02 Jan 1990 00:00:00 GMT
+x-content-type-options: nosniff
+feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
+referrer-policy: same-origin
+content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
+set-cookie: snipe-dev_local=x1EHM0OT00cWXn3wkfghPYlJTB9zt8rzQF4tfUzH; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;error&quot;: &quot;Unauthorized or unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-users--user_id--eulas" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-users--user_id--eulas"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-users--user_id--eulas"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-users--user_id--eulas" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-users--user_id--eulas">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-users--user_id--eulas" data-method="GET"
+      data-path="api/v1/users/{user_id}/eulas"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-users--user_id--eulas', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-users--user_id--eulas"
+                    onclick="tryItOut('GETapi-v1-users--user_id--eulas');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-users--user_id--eulas"
+                    onclick="cancelTryOut('GETapi-v1-users--user_id--eulas');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-users--user_id--eulas"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/users/{user_id}/eulas</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-users--user_id--eulas"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-users--user_id--eulas"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>user_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="user_id"                data-endpoint="GETapi-v1-users--user_id--eulas"
+               value="2"
+               data-component="url">
+    <br>
+<p>The ID of the user. Example: <code>2</code></p>
+            </div>
+                    </form>
 
                     <h2 id="users-GETapi-v1-users--user--assets">List Assets Assigned to User</h2>
 
@@ -35906,7 +35583,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=NM7fi7M9rXZA4UsxLSrlxCrnhqup454f060pIp2G; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=ljzGjKMqRjPz4VlUKPgAJwPJJH3mwnnME1G4oWLz; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -36231,7 +35908,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=KCloddtglY2T8yjhIKUdghLKpNfXla9kNHBZ43ov; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=VIlQixrYDtsKUoezxmmxC394ECo9BEQREUTKa9u1; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -36405,7 +36082,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=eUKLUGZlhjIQ7LBaXgHhnmtV2ULOtAixNSPaoUj5; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=GYgntzVmH8K85tM7eOtGuJ8isoBo8dTIYsydB8oI; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -36820,7 +36497,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=s07zlyGGJd59cbeYkhBsNL77mOqzDJopVBTzIxnO; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=QJt4tI6q4BEnSsQdQidC0TRd8hJ4EnWZ0DrL84VE; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -37439,7 +37116,7 @@ x-content-type-options: nosniff
 feature-policy: accelerometer &#039;none&#039;;autoplay &#039;none&#039;;camera &#039;none&#039;;display-capture &#039;none&#039;;document-domain &#039;none&#039;;encrypted-media &#039;none&#039;;fullscreen &#039;none&#039;;geolocation &#039;none&#039;;sync-xhr &#039;none&#039;;usb &#039;none&#039;;xr-spatial-tracking &#039;none&#039;
 referrer-policy: same-origin
 content-security-policy: default-src &#039;self&#039;;style-src &#039;self&#039; &#039;unsafe-inline&#039;;script-src &#039;self&#039; &#039;unsafe-inline&#039; &#039;unsafe-eval&#039;;connect-src &#039;self&#039;;object-src &#039;none&#039;;font-src &#039;self&#039; data:;img-src &#039;self&#039; data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com
-set-cookie: snipe-dev_local=xbTJ0W206Ov3xctFXMSvwEt61rFFMK3phcqDGQ0s; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
+set-cookie: snipe-dev_local=00onEwBFqp7htmXXtBhRhhAGNJHnlo87YcbqKB1Z; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{

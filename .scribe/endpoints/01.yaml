@@ -1,1030 +1,16 @@
-name: Assets
+name: Misc
 description: ''
 endpoints:
   -
     httpMethods:
-      - GET
-    uri: api/v1/account/requestable/hardware
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Show Requestable Assets'
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"error":"Unauthorized or unauthenticated."}'
-        headers:
-          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
-          content-type: application/json
-          vary: Origin
-          pragma: no-cache
-          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
-          x-content-type-options: nosniff
-          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-          referrer-policy: same-origin
-          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-          set-cookie: 'snipe-dev_local=zbA3woO9t2FDFaBsCrozokcWxsnmbRff3VR6q67x; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
-        description: null
-        custom: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - GET
-    uri: api/v1/reports/depreciation
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'List Assets'
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters:
-      action:
-        name: action
-        description: 'The action to filter by.'
-        required: false
-        example: 'audits, checkins'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      upcoming_status:
-        name: upcoming_status
-        description: 'The status to filter by.'
-        required: false
-        example: 'due, overdue, due-or-overdue'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      status:
-        name: status
-        description: 'The asset status to filter by.'
-        required: false
-        example: 'RTD, Deployed, Pending, Undeployable, Archived, Requestable'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      status_id:
-        name: status_id
-        description: 'The asset status ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      asset_tag:
-        name: asset_tag
-        description: 'The asset tag to filter by.'
-        required: false
-        example: ABC123
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      serial:
-        name: serial
-        description: 'The serial number to filter by.'
-        required: false
-        example: SN123456
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      requestable:
-        name: requestable
-        description: 'Filter by requestable assets.'
-        required: false
-        example: true
-        type: boolean
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      model_id:
-        name: model_id
-        description: 'int|array The model ID or IDs to filter by.'
-        required: false
-        example: '1 or model_id[]=1&model_id[]=2'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      category_id:
-        name: category_id
-        description: 'The category ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      location_id:
-        name: location_id
-        description: 'The location ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      rtd_location_id:
-        name: rtd_location_id
-        description: 'The RTD location ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      supplier_id:
-        name: supplier_id
-        description: 'The supplier ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      asset_eol_date:
-        name: asset_eol_date
-        description: 'date The asset end-of-life date to filter by.'
-        required: false
-        example: '2023-12-31'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      assigned_to:
-        name: assigned_to
-        description: 'The user ID or department ID the asset is assigned to.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      assigned_type:
-        name: assigned_type
-        description: "The type of assignment, either 'user' or 'department'."
-        required: false
-        example: user
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      company_id:
-        name: company_id
-        description: 'The company ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      manufacturer_id:
-        name: manufacturer_id
-        description: 'The manufacturer ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      depreciation_id:
-        name: depreciation_id
-        description: 'The depreciation ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      byod:
-        name: byod
-        description: 'Filter by BYOD assets.'
-        required: false
-        example: true
-        type: boolean
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      order_number:
-        name: order_number
-        description: 'The order number to filter by.'
-        required: false
-        example: PO12345
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      search:
-        name: search
-        description: 'A text string to search for.'
-        required: false
-        example: laptop
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      filter:
-        name: filter
-        description: 'A JSON object of key/value pairs to filter by.'
-        required: false
-        example: '{"status_label":"RTD","location":"Headquarters"}'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-    cleanQueryParameters:
-      action: 'audits, checkins'
-      upcoming_status: 'due, overdue, due-or-overdue'
-      status: 'RTD, Deployed, Pending, Undeployable, Archived, Requestable'
-      status_id: 1
-      asset_tag: ABC123
-      serial: SN123456
-      requestable: true
-      model_id: '1 or model_id[]=1&model_id[]=2'
-      category_id: 1
-      location_id: 1
-      rtd_location_id: 1
-      supplier_id: 1
-      asset_eol_date: '2023-12-31'
-      assigned_to: 1
-      assigned_type: user
-      company_id: 1
-      manufacturer_id: 1
-      depreciation_id: 1
-      byod: true
-      order_number: PO12345
-      search: laptop
-      filter: '{"status_label":"RTD","location":"Headquarters"}'
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"error":"Unauthorized or unauthenticated."}'
-        headers:
-          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
-          content-type: application/json
-          vary: Origin
-          pragma: no-cache
-          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
-          x-content-type-options: nosniff
-          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-          referrer-policy: same-origin
-          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-          set-cookie: 'snipe-dev_local=JG7zDn5PXHPIEticUUTUZ6UYyVdD8tXbVulOATER; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
-        description: null
-        custom: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - GET
-    uri: api/v1/hardware/selectlist
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: Selectlist
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"error":"Unauthorized or unauthenticated."}'
-        headers:
-          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
-          content-type: application/json
-          vary: Origin
-          pragma: no-cache
-          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
-          x-content-type-options: nosniff
-          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-          referrer-policy: same-origin
-          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-          set-cookie: 'snipe-dev_local=16OzihBU0h4xmW2JUW0vkz5ZNEFBqsf4j0VouuKJ; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
-        description: null
-        custom: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - GET
-    uri: 'api/v1/hardware/bytag/{tag}'
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Lookup by Tag'
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      tag:
-        name: tag
-        description: ''
-        required: true
-        example: architecto
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        custom: []
-    cleanUrlParameters:
-      tag: architecto
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"error":"Unauthorized or unauthenticated."}'
-        headers:
-          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
-          content-type: application/json
-          vary: Origin
-          pragma: no-cache
-          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
-          x-content-type-options: nosniff
-          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-          referrer-policy: same-origin
-          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-          set-cookie: 'snipe-dev_local=kwE3gnKCzQnr1FQa17AIvOYCbsRx7EeG4NWpBmPS; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
-        description: null
-        custom: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - GET
-    uri: 'api/v1/hardware/bytag/{any}'
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Lookup by Tag'
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      any:
-        name: any
-        description: ''
-        required: true
-        example: '|{+-0p'
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        custom: []
-    cleanUrlParameters:
-      any: '|{+-0p'
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"error":"Unauthorized or unauthenticated."}'
-        headers:
-          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
-          content-type: application/json
-          vary: Origin
-          pragma: no-cache
-          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
-          x-content-type-options: nosniff
-          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-          referrer-policy: same-origin
-          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-          set-cookie: 'snipe-dev_local=OvqgWEoNT96szHavg4rG0fw2ALfqiKoxLoKsii5j; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
-        description: null
-        custom: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
       - POST
-    uri: 'api/v1/hardware/bytag/{any}/checkout'
+    uri: 'api/v1/account/request/{asset_id}'
     metadata:
-      groupName: Assets
+      groupName: Misc
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Checkout by Asset Tag'
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      any:
-        name: any
-        description: ''
-        required: true
-        example: architecto
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        custom: []
-    cleanUrlParameters:
-      any: architecto
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - POST
-    uri: 'api/v1/hardware/bytag/{any}/checkin'
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Checkin by Asset Tag'
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      any:
-        name: any
-        description: ''
-        required: true
-        example: architecto
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        custom: []
-    cleanUrlParameters:
-      any: architecto
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - POST
-    uri: api/v1/hardware/checkinbytag
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Checkin by Asset Tag'
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - GET
-    uri: 'api/v1/hardware/byserial/{any}'
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Lookup by Serial'
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      any:
-        name: any
-        description: ''
-        required: true
-        example: '|{+-0p'
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        custom: []
-    cleanUrlParameters:
-      any: '|{+-0p'
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"error":"Unauthorized or unauthenticated."}'
-        headers:
-          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
-          content-type: application/json
-          vary: Origin
-          pragma: no-cache
-          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
-          x-content-type-options: nosniff
-          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-          referrer-policy: same-origin
-          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-          set-cookie: 'snipe-dev_local=l28ShBmk00D1YpPW9K2z6e0a6sV1PgdTWAP6E97g; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
-        description: null
-        custom: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - GET
-    uri: 'api/v1/hardware/{action}/{upcoming_status}'
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'List Assets'
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      action:
-        name: action
-        description: ''
-        required: true
-        example: audit|audits|checkins
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        custom: []
-      upcoming_status:
-        name: upcoming_status
-        description: ''
-        required: true
-        example: due|overdue|due-or-overdue
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        custom: []
-    cleanUrlParameters:
-      action: audit|audits|checkins
-      upcoming_status: due|overdue|due-or-overdue
-    queryParameters:
-      action:
-        name: action
-        description: 'The action to filter by.'
-        required: false
-        example: 'audits, checkins'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      upcoming_status:
-        name: upcoming_status
-        description: 'The status to filter by.'
-        required: false
-        example: 'due, overdue, due-or-overdue'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      status:
-        name: status
-        description: 'The asset status to filter by.'
-        required: false
-        example: 'RTD, Deployed, Pending, Undeployable, Archived, Requestable'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      status_id:
-        name: status_id
-        description: 'The asset status ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      asset_tag:
-        name: asset_tag
-        description: 'The asset tag to filter by.'
-        required: false
-        example: ABC123
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      serial:
-        name: serial
-        description: 'The serial number to filter by.'
-        required: false
-        example: SN123456
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      requestable:
-        name: requestable
-        description: 'Filter by requestable assets.'
-        required: false
-        example: true
-        type: boolean
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      model_id:
-        name: model_id
-        description: 'int|array The model ID or IDs to filter by.'
-        required: false
-        example: '1 or model_id[]=1&model_id[]=2'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      category_id:
-        name: category_id
-        description: 'The category ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      location_id:
-        name: location_id
-        description: 'The location ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      rtd_location_id:
-        name: rtd_location_id
-        description: 'The RTD location ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      supplier_id:
-        name: supplier_id
-        description: 'The supplier ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      asset_eol_date:
-        name: asset_eol_date
-        description: 'date The asset end-of-life date to filter by.'
-        required: false
-        example: '2023-12-31'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      assigned_to:
-        name: assigned_to
-        description: 'The user ID or department ID the asset is assigned to.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      assigned_type:
-        name: assigned_type
-        description: "The type of assignment, either 'user' or 'department'."
-        required: false
-        example: user
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      company_id:
-        name: company_id
-        description: 'The company ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      manufacturer_id:
-        name: manufacturer_id
-        description: 'The manufacturer ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      depreciation_id:
-        name: depreciation_id
-        description: 'The depreciation ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      byod:
-        name: byod
-        description: 'Filter by BYOD assets.'
-        required: false
-        example: true
-        type: boolean
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      order_number:
-        name: order_number
-        description: 'The order number to filter by.'
-        required: false
-        example: PO12345
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      search:
-        name: search
-        description: 'A text string to search for.'
-        required: false
-        example: laptop
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      filter:
-        name: filter
-        description: 'A JSON object of key/value pairs to filter by.'
-        required: false
-        example: '{"status_label":"RTD","location":"Headquarters"}'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-    cleanQueryParameters:
-      action: 'audits, checkins'
-      upcoming_status: 'due, overdue, due-or-overdue'
-      status: 'RTD, Deployed, Pending, Undeployable, Archived, Requestable'
-      status_id: 1
-      asset_tag: ABC123
-      serial: SN123456
-      requestable: true
-      model_id: '1 or model_id[]=1&model_id[]=2'
-      category_id: 1
-      location_id: 1
-      rtd_location_id: 1
-      supplier_id: 1
-      asset_eol_date: '2023-12-31'
-      assigned_to: 1
-      assigned_type: user
-      company_id: 1
-      manufacturer_id: 1
-      depreciation_id: 1
-      byod: true
-      order_number: PO12345
-      search: laptop
-      filter: '{"status_label":"RTD","location":"Headquarters"}'
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"error":"Unauthorized or unauthenticated."}'
-        headers:
-          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
-          content-type: application/json
-          vary: Origin
-          pragma: no-cache
-          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
-          x-content-type-options: nosniff
-          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-          referrer-policy: same-origin
-          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-          set-cookie: 'snipe-dev_local=po1MHUpzMVPhyFW97gr5Evw2gERZ28qPLmm2o3xG; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
-        description: null
-        custom: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - POST
-    uri: api/v1/hardware/audit
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Audit Asset'
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - POST
-    uri: 'api/v1/hardware/{asset_id}/audit'
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Audit Asset'
+      title: ''
       description: ''
       authenticated: true
       deprecated: false
@@ -1060,13 +46,13 @@ endpoints:
   -
     httpMethods:
       - POST
-    uri: 'api/v1/hardware/{id}/checkin'
+    uri: 'api/v1/account/request/{asset_id}/cancel'
     metadata:
-      groupName: Assets
+      groupName: Misc
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Checkin Asset'
+      title: ''
       description: ''
       authenticated: true
       deprecated: false
@@ -1075,18 +61,18 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      id:
-        name: id
-        description: 'The ID of the hardware.'
+      asset_id:
+        name: asset_id
+        description: 'The ID of the asset.'
         required: true
-        example: architecto
-        type: string
+        example: 1
+        type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: architecto
+      asset_id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1102,13 +88,13 @@ endpoints:
   -
     httpMethods:
       - POST
-    uri: 'api/v1/hardware/{id}/checkout'
+    uri: 'api/v1/accessories/{accessory}/checkin'
     metadata:
-      groupName: Assets
+      groupName: Misc
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Checkout Asset'
+      title: 'Checkin Accessory'
       description: ''
       authenticated: true
       deprecated: false
@@ -1117,18 +103,18 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      id:
-        name: id
-        description: 'The ID of the hardware.'
+      accessory:
+        name: accessory
+        description: 'The accessory.'
         required: true
-        example: architecto
-        type: string
+        example: 1
+        type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: architecto
+      accessory: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1143,14 +129,61 @@ endpoints:
     custom: []
   -
     httpMethods:
-      - POST
-    uri: 'api/v1/hardware/{asset_id}/restore'
+      - GET
+    uri: api/v1/accessories/selectlist
     metadata:
-      groupName: Assets
+      groupName: Misc
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Restore Asset'
+      title: 'Gets a paginated collection for the select2 menus'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=sHPMC2SqAZ5cAOx1UvXW3elAy3P3oiipptk2p0FZ; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/hardware/{asset_id}/licenses'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
       description: ''
       authenticated: true
       deprecated: false
@@ -1176,6 +209,417 @@ endpoints:
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=KyijYcHB8a6W2I03kqLUp8Ca0jSq1NkkGSEAafJW; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/hardware/{asset_id}/assigned/components'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      asset_id:
+        name: asset_id
+        description: 'The ID of the asset.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      asset_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=DhLS17un2bga4hm36kDHWijjLccRe4D7qGWeertj; expires=Sat, 18 Oct 2025 01:30:59 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/models/{id}'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Show Model'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the model.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: architecto
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=jwgg1JDhWc8bhd88IkSMh8NrfSTdnbKXDnIvbazB; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/settings/login-attempts
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get a list of login attempts'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=PixSpuAiQcKGKevpNoGvcac0DIIlsvBhhwm35Sov; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/settings/backups
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Lists backup files'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=ZdyXnJL3ZjvVbGA20TL3YJvFVtvXfMSfnMxdR0u3; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/settings/backups/download/latest
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Determines and downloads the latest backup'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=12H7czcfvhzN41bMPpVZ6uJSv3ldPqeXqxYn3Hfx; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/settings/backups/download/{file}'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Downloads a backup file.'
+      description: |-
+        We use response()->download() here instead of Storage::download() because Storage::download()
+        exhausts memory on larger files.
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      file:
+        name: file
+        description: ''
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      file: architecto
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=7262fNrfUhCtn7FC7YV1iiIZzwoF2PrBqd6Axi1d; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/kits
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=9pbW3Lj27gqsdqjf9Onr74qGlwdQxRO7HKtgdSxR; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/kits
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
     responses: []
     responseFields: []
     auth: []
@@ -1186,13 +630,13 @@ endpoints:
   -
     httpMethods:
       - GET
-    uri: 'api/v1/hardware/{asset_id}/assigned/assets'
+    uri: 'api/v1/kits/{id}'
     metadata:
-      groupName: Assets
+      groupName: Misc
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'List Assets Assigned to Asset'
+      title: 'Display the specified resource.'
       description: ''
       authenticated: true
       deprecated: false
@@ -1201,18 +645,18 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      asset_id:
-        name: asset_id
-        description: 'The ID of the asset.'
+      id:
+        name: id
+        description: 'The ID of the kit.'
         required: true
-        example: 1
-        type: integer
+        example: architecto
+        type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      asset_id: 1
+      id: architecto
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1232,9 +676,94 @@ endpoints:
           feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
           referrer-policy: same-origin
           content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-          set-cookie: 'snipe-dev_local=ZsaGl6Ma2AaF2KPBgpJclGg2NWmArGyXM3dTS3Wf; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+          set-cookie: 'snipe-dev_local=uskGZUp3AzQqeC2JdKpRCiJjEIuCgDp8LHywERj6; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
         description: null
         custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/v1/kits/{id}'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the kit.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: architecto
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/kits/{id}'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the kit.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: architecto
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
     responseFields: []
     auth: []
     controller: null
@@ -1244,13 +773,13 @@ endpoints:
   -
     httpMethods:
       - GET
-    uri: 'api/v1/hardware/{asset_id}/assigned/accessories'
+    uri: 'api/v1/kits/{kit_id}/licenses'
     metadata:
-      groupName: Assets
+      groupName: Misc
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'List Accessories Assigned to Asset'
+      title: 'Display the specified resource.'
       description: ''
       authenticated: true
       deprecated: false
@@ -1259,18 +788,18 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      asset_id:
-        name: asset_id
-        description: 'The ID of the asset.'
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
         required: true
-        example: 1
-        type: integer
+        example: architecto
+        type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      asset_id: 1
+      kit_id: architecto
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1290,7 +819,7 @@ endpoints:
           feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
           referrer-policy: same-origin
           content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-          set-cookie: 'snipe-dev_local=fVNzF7g0DnBQWaCSscY3fjVAKeGUDI0Je0PiUdHS; expires=Sat, 18 Oct 2025 00:19:28 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+          set-cookie: 'snipe-dev_local=VXG7nhRBx0n9dmOU9H9g0JoiTzOuE2oWJn9foBNu; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
         description: null
         custom: []
     responseFields: []
@@ -1301,14 +830,14 @@ endpoints:
     custom: []
   -
     httpMethods:
-      - PATCH
-    uri: 'api/v1/hardware/{asset_id}'
+      - POST
+    uri: 'api/v1/kits/{kit_id}/licenses'
     metadata:
-      groupName: Assets
+      groupName: Misc
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Update Asset'
+      title: 'Store the specified resource.'
       description: ''
       authenticated: true
       deprecated: false
@@ -1317,75 +846,20 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      asset_id:
-        name: asset_id
-        description: 'The ID of the asset.'
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
         required: true
-        example: 1
-        type: integer
+        example: architecto
+        type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      asset_id: 1
-    queryParameters:
-      model_id:
-        name: model_id
-        description: 'The model ID to associate the asset with.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      company_id:
-        name: company_id
-        description: 'The company ID to associate the asset with.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      rtd_location_id:
-        name: rtd_location_id
-        description: 'The RTD location ID to associate the asset with.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      last_audit_date:
-        name: last_audit_date
-        description: 'date The last audit date for the asset.'
-        required: false
-        example: '2023-12-31'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      image:
-        name: image
-        description: 'file The image file to upload for the asset.'
-        required: false
-        example: (binary)
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-    cleanQueryParameters:
-      model_id: 1
-      company_id: 1
-      rtd_location_id: 1
-      last_audit_date: '2023-12-31'
-      image: (binary)
+      kit_id: architecto
+    queryParameters: []
+    cleanQueryParameters: []
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -1399,13 +873,13 @@ endpoints:
   -
     httpMethods:
       - PUT
-    uri: 'api/v1/hardware/{asset_id}'
+    uri: 'api/v1/kits/{kit_id}/licenses/{license_id}'
     metadata:
-      groupName: Assets
+      groupName: Misc
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Update Asset'
+      title: 'Update the specified resource in storage.'
       description: ''
       authenticated: true
       deprecated: false
@@ -1414,426 +888,9 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      asset_id:
-        name: asset_id
-        description: 'The ID of the asset.'
-        required: true
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        custom: []
-    cleanUrlParameters:
-      asset_id: 1
-    queryParameters:
-      model_id:
-        name: model_id
-        description: 'The model ID to associate the asset with.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      company_id:
-        name: company_id
-        description: 'The company ID to associate the asset with.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      rtd_location_id:
-        name: rtd_location_id
-        description: 'The RTD location ID to associate the asset with.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      last_audit_date:
-        name: last_audit_date
-        description: 'date The last audit date for the asset.'
-        required: false
-        example: '2023-12-31'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      image:
-        name: image
-        description: 'file The image file to upload for the asset.'
-        required: false
-        example: (binary)
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-    cleanQueryParameters:
-      model_id: 1
-      company_id: 1
-      rtd_location_id: 1
-      last_audit_date: '2023-12-31'
-      image: (binary)
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - GET
-    uri: api/v1/hardware
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'List Assets'
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters:
-      action:
-        name: action
-        description: 'The action to filter by.'
-        required: false
-        example: 'audits, checkins'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      upcoming_status:
-        name: upcoming_status
-        description: 'The status to filter by.'
-        required: false
-        example: 'due, overdue, due-or-overdue'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      status:
-        name: status
-        description: 'The asset status to filter by.'
-        required: false
-        example: 'RTD, Deployed, Pending, Undeployable, Archived, Requestable'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      status_id:
-        name: status_id
-        description: 'The asset status ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      asset_tag:
-        name: asset_tag
-        description: 'The asset tag to filter by.'
-        required: false
-        example: ABC123
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      serial:
-        name: serial
-        description: 'The serial number to filter by.'
-        required: false
-        example: SN123456
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      requestable:
-        name: requestable
-        description: 'Filter by requestable assets.'
-        required: false
-        example: true
-        type: boolean
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      model_id:
-        name: model_id
-        description: 'int|array The model ID or IDs to filter by.'
-        required: false
-        example: '1 or model_id[]=1&model_id[]=2'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      category_id:
-        name: category_id
-        description: 'The category ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      location_id:
-        name: location_id
-        description: 'The location ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      rtd_location_id:
-        name: rtd_location_id
-        description: 'The RTD location ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      supplier_id:
-        name: supplier_id
-        description: 'The supplier ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      asset_eol_date:
-        name: asset_eol_date
-        description: 'date The asset end-of-life date to filter by.'
-        required: false
-        example: '2023-12-31'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      assigned_to:
-        name: assigned_to
-        description: 'The user ID or department ID the asset is assigned to.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      assigned_type:
-        name: assigned_type
-        description: "The type of assignment, either 'user' or 'department'."
-        required: false
-        example: user
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      company_id:
-        name: company_id
-        description: 'The company ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      manufacturer_id:
-        name: manufacturer_id
-        description: 'The manufacturer ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      depreciation_id:
-        name: depreciation_id
-        description: 'The depreciation ID to filter by.'
-        required: false
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      byod:
-        name: byod
-        description: 'Filter by BYOD assets.'
-        required: false
-        example: true
-        type: boolean
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      order_number:
-        name: order_number
-        description: 'The order number to filter by.'
-        required: false
-        example: PO12345
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      search:
-        name: search
-        description: 'A text string to search for.'
-        required: false
-        example: laptop
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-      filter:
-        name: filter
-        description: 'A JSON object of key/value pairs to filter by.'
-        required: false
-        example: '{"status_label":"RTD","location":"Headquarters"}'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        custom: []
-    cleanQueryParameters:
-      action: 'audits, checkins'
-      upcoming_status: 'due, overdue, due-or-overdue'
-      status: 'RTD, Deployed, Pending, Undeployable, Archived, Requestable'
-      status_id: 1
-      asset_tag: ABC123
-      serial: SN123456
-      requestable: true
-      model_id: '1 or model_id[]=1&model_id[]=2'
-      category_id: 1
-      location_id: 1
-      rtd_location_id: 1
-      supplier_id: 1
-      asset_eol_date: '2023-12-31'
-      assigned_to: 1
-      assigned_type: user
-      company_id: 1
-      manufacturer_id: 1
-      depreciation_id: 1
-      byod: true
-      order_number: PO12345
-      search: laptop
-      filter: '{"status_label":"RTD","location":"Headquarters"}'
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"error":"Unauthorized or unauthenticated."}'
-        headers:
-          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
-          content-type: application/json
-          vary: Origin
-          pragma: no-cache
-          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
-          x-content-type-options: nosniff
-          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-          referrer-policy: same-origin
-          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-          set-cookie: 'snipe-dev_local=kg9RTUdMrEHyhN5Bd6bZItA5CzuWdzUopKkOGLxn; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
-        description: null
-        custom: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - POST
-    uri: api/v1/hardware
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Create Asset'
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - GET
-    uri: 'api/v1/hardware/{hardware}'
-    metadata:
-      groupName: Assets
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Show Asset'
-      description: ''
-      authenticated: true
-      deprecated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      hardware:
-        name: hardware
-        description: 'The hardware.'
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
         required: true
         example: architecto
         type: string
@@ -1841,30 +898,25 @@ endpoints:
         exampleWasSpecified: false
         nullable: false
         custom: []
+      license_id:
+        name: license_id
+        description: 'The ID of the license.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
     cleanUrlParameters:
-      hardware: architecto
+      kit_id: architecto
+      license_id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"error":"Unauthorized or unauthenticated."}'
-        headers:
-          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
-          content-type: application/json
-          vary: Origin
-          pragma: no-cache
-          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
-          x-content-type-options: nosniff
-          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
-          referrer-policy: same-origin
-          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
-          set-cookie: 'snipe-dev_local=VY9cDTvWn46QRUoErwcIjYLl770M2MwMI42Pg9xm; expires=Sat, 18 Oct 2025 00:19:29 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
-        description: null
-        custom: []
+    responses: []
     responseFields: []
     auth: []
     controller: null
@@ -1874,13 +926,13 @@ endpoints:
   -
     httpMethods:
       - DELETE
-    uri: 'api/v1/hardware/{hardware}'
+    uri: 'api/v1/kits/{kit_id}/licenses/{license_id}'
     metadata:
-      groupName: Assets
+      groupName: Misc
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Delete Asset'
+      title: 'Remove the specified resource from storage.'
       description: ''
       authenticated: true
       deprecated: false
@@ -1889,9 +941,9 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      hardware:
-        name: hardware
-        description: 'The hardware.'
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
         required: true
         example: architecto
         type: string
@@ -1899,8 +951,19 @@ endpoints:
         exampleWasSpecified: false
         nullable: false
         custom: []
+      license_id:
+        name: license_id
+        description: 'The ID of the license.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
     cleanUrlParameters:
-      hardware: architecto
+      kit_id: architecto
+      license_id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1915,14 +978,526 @@ endpoints:
     custom: []
   -
     httpMethods:
-      - POST
-    uri: api/v1/hardware/labels
+      - GET
+    uri: 'api/v1/kits/{kit_id}/models'
     metadata:
-      groupName: Assets
+      groupName: Misc
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Generate Label by Asset Tag'
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      kit_id: architecto
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=KrrLKfzDmsdlm5LulANZUYoCPy9sh7nNRx3HCSmt; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/v1/kits/{kit_id}/models'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store the specified resource.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      kit_id: architecto
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/kits/{kit_id}/accessories'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      kit_id: architecto
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=Ymdsfjt4VVVhtRDZjt1vEh8ftmFUrewMizYO5VZg; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/v1/kits/{kit_id}/accessories'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store the specified resource.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      kit_id: architecto
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+    uri: 'api/v1/kits/{kit_id}/accessories/{accessory_id}'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      accessory_id:
+        name: accessory_id
+        description: 'The ID of the accessory.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      kit_id: architecto
+      accessory_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/kits/{kit_id}/accessories/{accessory_id}'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      accessory_id:
+        name: accessory_id
+        description: 'The ID of the accessory.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      kit_id: architecto
+      accessory_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/kits/{kit_id}/consumables'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      kit_id: architecto
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=Ofw7nV48LnTp8SAN2B8W7nWuAw1jpI7GuFCRxc6B; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/v1/kits/{kit_id}/consumables'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store the specified resource.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      kit_id: architecto
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+    uri: 'api/v1/kits/{kit_id}/consumables/{consumable_id}'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      consumable_id:
+        name: consumable_id
+        description: 'The ID of the consumable.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      kit_id: architecto
+      consumable_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/kits/{kit_id}/consumables/{consumable_id}'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      kit_id:
+        name: kit_id
+        description: 'The ID of the kit.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      consumable_id:
+        name: consumable_id
+        description: 'The ID of the consumable.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      kit_id: architecto
+      consumable_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/reports/activity
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Returns Activity Report JSON.'
       description: ''
       authenticated: true
       deprecated: false
@@ -1937,7 +1512,128 @@ endpoints:
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
-    responses: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=zBZCXN8IrVhp0gmWImh45OcrU6cQm00sPVHDni5M; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/version
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Version API routes'
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=6Cmpyzc2mOwZhTp7cE5pqa2YsN7c3q0lR8gZIOZ7; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/{fallbackPlaceholder}'
+    metadata:
+      groupName: Misc
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      fallbackPlaceholder:
+        name: fallbackPlaceholder
+        description: ''
+        required: true
+        example: '|{+-0p'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      fallbackPlaceholder: '|{+-0p'
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized or unauthenticated."}'
+        headers:
+          cache-control: 'max-age=0, must-revalidate, no-cache, no-store, private'
+          content-type: application/json
+          vary: Origin
+          pragma: no-cache
+          expires: 'Sun, 02 Jan 1990 00:00:00 GMT'
+          x-content-type-options: nosniff
+          feature-policy: "accelerometer 'none';autoplay 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';sync-xhr 'none';usb 'none';xr-spatial-tracking 'none'"
+          referrer-policy: same-origin
+          content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';connect-src 'self';object-src 'none';font-src 'self' data:;img-src 'self' data: https://snipe-it.test https://avatars.githubusercontent.com/u/ https://www.google.com/images/branding/googlelogo/2x/ https://snipe-flysystem-public-test.s3-us-west-2.amazonaws.com https://secure.gravatar.com http://gravatar.com maps.google.com maps.gstatic.com *.googleapis.com"
+          set-cookie: 'snipe-dev_local=t71KbEhwD7gcUBoIZY7GnisT1MghbetA8AdH2CZo; expires=Sat, 18 Oct 2025 01:31:00 GMT; Max-Age=720000; path=/; secure; httponly; samesite=lax'
+        description: null
+        custom: []
     responseFields: []
     auth: []
     controller: null

@@ -53,28 +53,28 @@ class AssetsController extends Controller
      * List Assets
      *
      * @group Assets
-     * @queryParam action string The action to filter by. Example: audits, checkins
-     * @queryParam upcoming_status string The status to filter by. Example: due, overdue, due-or-overdue
-     * @queryParam status string The asset status to filter by. Example: RTD, Deployed, Pending, Undeployable, Archived, Requestable
-     * @queryParam status_id int The asset status ID to filter by. Example: 1
-     * @queryParam asset_tag string The asset tag to filter by. Example: ABC123
-     * @queryParam serial string The serial number to filter by. Example: SN123456
-     * @queryParam requestable boolean Filter by requestable assets. Example: true
-     * @queryParam model_id int|array The model ID or IDs to filter by. Example: 1 or model_id[]=1&model_id[]=2
-     * @queryParam category_id int The category ID to filter by. Example: 1
-     * @queryParam location_id int The location ID to filter by. Example: 1
-     * @queryParam rtd_location_id int The RTD location ID to filter by. Example: 1
-     * @queryParam supplier_id int The supplier ID to filter by. Example: 1
-     * @queryParam asset_eol_date date The asset end-of-life date to filter by. Example: 2023-12-31
-     * @queryParam assigned_to int The user ID or department ID the asset is assigned to. Example: 1
-     * @queryParam assigned_type string The type of assignment, either 'user' or 'department'. Example: user
-     * @queryParam company_id int The company ID to filter by. Example: 1
-     * @queryParam manufacturer_id int The manufacturer ID to filter by. Example: 1
-     * @queryParam depreciation_id int The depreciation ID to filter by. Example: 1
+     * @queryParam action string The action to filter by: audits, checkins. No-example
+     * @queryParam upcoming_status string The status to filter by: `due`, `overdue`, `due-or-overdue`. No-example
+     * @queryParam status string The asset status to filter by: `RTD`, `Deployed`, `Pending`, `Undeployable`, `Archived`, `Requestable`. No-example
+     * @queryParam status_id int The asset status ID to filter by. No-example
+     * @queryParam asset_tag string The asset tag to filter by. No-example
+     * @queryParam serial string The serial number to filter by. No-example
+     * @queryParam requestable boolean Filter by requestable assets. No-example
+     * @queryParam model_id int The model ID or IDs to filter by. No-example
+     * @queryParam category_id int The category ID to filter by. No-example
+     * @queryParam location_id int The location ID to filter by. No-example
+     * @queryParam rtd_location_id int The RTD location ID to filter by. No-example
+     * @queryParam supplier_id int The supplier ID to filter by. No-example
+     * @queryParam asset_eol_date date The asset end-of-life date to filter by. No-example
+     * @queryParam assigned_to int The user ID or department ID the asset is assigned to. No-example
+     * @queryParam assigned_type string The type of assignment, either 'user' or 'asset' or 'location'. Example: user
+     * @queryParam company_id int The company ID to filter by. No-example
+     * @queryParam manufacturer_id int The manufacturer ID to filter by. No-example
+     * @queryParam depreciation_id int The depreciation ID to filter by. No-example
      * @queryParam byod boolean Filter by BYOD assets. Example: true
-     * @queryParam order_number string The order number to filter by. Example: PO12345
-     * @queryParam search string A text string to search for. Example: laptop
-     * @queryParam filter string A JSON object of key/value pairs to filter by. Example: {"status_label":"RTD","location":"Headquarters"}
+     * @queryParam order_number string The order number to filter by. Example: No-example
+     * @queryParam search string A text string to search for. Example: No-example
+     * @queryParam filter string A JSON object of key/value pairs to filter by. No-example
      * @author [A. Gianotto] [<snipe@snipe.net>]
      * @since [v4.0]
      */
