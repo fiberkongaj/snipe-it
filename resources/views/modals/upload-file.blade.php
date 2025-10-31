@@ -32,15 +32,16 @@
                         <p class="help-block" id="uploadFile-status">{{ trans('general.upload_filetypes_help', ['allowed_filetypes' => config('filesystems.allowed_upload_extensions'), 'size' => Helper::file_upload_max_size_readable()]) }}</p>
                     </div>
 
-                    <div class="col-md-12">
-                        <x-input.textarea
-                            name="notes"
-                            :value="old('notes')"
-                            placeholder="Notes (Optional)"
-                            rows="3"
-                            aria-label="file"
-                        />
-                    </div>
+                    <!-- Notes -->
+                    <x-form-row name="notes">
+                        <x-form-label>{{ trans('general.notes') }}</x-form-label>
+                        <x-form-input>
+                            <x-input.textarea
+                                    :value="old('notes')"
+                                    placeholder="{{ trans('general.placeholders.notes') }}"
+                            />
+                        </x-form-input>
+                    </x-form-row>
                 </div>
 
             </div> <!-- /.modal-body-->
