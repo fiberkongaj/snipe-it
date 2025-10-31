@@ -68,6 +68,12 @@ class MaintenancesController extends Controller
     {
         $this->authorize('update', Asset::class);
 
+        // dd($request->input('selected_assets'));
+        if (!$request->filled('selected_assets')) {
+            return redirect()->back()->withInput()->with('error', 'No assets were selected.');
+
+        }
+
         $assets = Asset::whereIn('id', $request->input('selected_assets'))->get();
 
         // Loop through the selected assets
