@@ -1,7 +1,11 @@
 @aware(['name'])
 
 @props([
-    'class' => 'col-md-8',
+    'class' => null,
+    'new_model' => false,
+    'category_type' => null,
+    'modal_type' => false,
+    'modal_id' => false,
 ])
 
 <?php
@@ -12,7 +16,7 @@ switch ($name) {
     case 'qty':
     case 'min_amt':
     case 'seats':
-        $class = 'col-md-3';
+        $class_override = $new_model ? 'col-md-3' : 'col-md-4';
         break;
     case 'purchase_cost':
     case 'purchase_date':
@@ -20,24 +24,39 @@ switch ($name) {
     case 'expiration_date':
     case 'start_date':
     case 'end_date':
-        $class = 'col-md-5';
+    $class_override = $new_model ? 'col-md-4' : 'col-md-5';
         break;
     case 'model_number':
     case 'item_no':
     case 'order_number':
     case 'purchase_order':
-            $class = 'col-md-6';
+    $class_override = $new_model ? 'col-md-5' : 'col-md-6';
             break;
     default:
-        $class = 'col-md-8';
+        $class_override = $new_model ? 'col-md-7' : 'col-md-8';
         break;
 }
 
+// Use the explicit override if one is set
+if ($class) {
+    $class_override = $class;
+}
 ?>
 <!-- form-input blade component -->
-<div {{ $attributes->merge(['class' => $class]) }}>
+<div {{ $attributes->merge(['class' => $class_override]) }}>
     {{ $slot }}
 </div>
+
+@if ($new_model)
+<div class="col-md-1 col-sm-1">
+    @can('create', $new_model)
+        <a href='{{ route('modal.show',[
+            'type' => $modal_type ?? null,
+            'category_type' => $category_type ?? null
+            ]) }}' data-toggle="modal"  data-target="#createModal" data-select="{{ $modal_id }}" class="btn btn-sm btn-primary text-left">{{ trans('button.new') }}</a>
+    @endcan
+</div>
+@endif
 
 
 @error($name)

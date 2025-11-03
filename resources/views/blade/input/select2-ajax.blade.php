@@ -8,6 +8,7 @@
     'multiple' => false,
     'item_model' => null,
     'name' => null,
+    'new_button' => false,
 ])
 
 @if (!$selected)
