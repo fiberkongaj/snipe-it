@@ -144,7 +144,7 @@ return [
     'generate'				=> 'Generate',
     'generate_labels'       => 'Generate Labels',
     'github_markdown'      => 'This field accepts <a href="https://help.github.com/articles/github-flavored-markdown/">Github flavored markdown</a>.',
-    'groups'				=> 'Groups',
+    'groups'				=> 'Permission Groups',
     'gravatar_email'        => 'Gravatar Email Address',
     'gravatar_url'          => '<a href="http://gravatar.com"><small>Change your avatar at Gravatar.com</small></a>.',
     'history'  			    => 'History',
@@ -661,6 +661,7 @@ return [
     ],
 
     'breadcrumb_button_actions' => [
+        'edit' => 'Edit',
         'edit_item' => 'Edit :name',
         'checkout_item' => 'Checkout :name',
         'checkin_item' => 'Checkin :name',

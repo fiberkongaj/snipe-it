@@ -256,7 +256,10 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
     protected function checkPermissionSection($section)
     {
         $user_groups = $this->groups;
-        if (($this->permissions == '') && (count($user_groups) == 0)) {
+
+
+        // The user has no permissions and is not in any groups
+        if ((($this->permissions == '') || ($this->permissions == 'null')) && (count($user_groups) == 0)) {
             return false;
         }
 
@@ -271,13 +274,17 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
         }
 
 
-        $is_user_section_permissions_set = ($user_permissions != '') && array_key_exists($section, $user_permissions);
-        //If the user is explicitly granted, return true
+        $is_user_section_permissions_set = array_key_exists($section, $user_permissions);
+
+
+        // If the user is explicitly granted, return true
         if ($is_user_section_permissions_set && ($user_permissions[$section] == '1')) {
+            \Log::debug('user '.$this->id.' is granted '.$section.' permission on the user model');
             return true;
         }
         // If the user is explicitly denied, return false
         if ($is_user_section_permissions_set && ($user_permissions[$section] == '-1')) {
+            \Log::debug('user '.$this->id.' is denied '.$section.' permission on the user model');
             return false;
         }
 
@@ -285,11 +292,29 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
         foreach ($user_groups as $user_group) {
             $group_permissions = (array) json_decode($user_group->permissions, true);
             if (((array_key_exists($section, $group_permissions)) && ($group_permissions[$section] == '1'))) {
+                \Log::debug('user '.$this->id.' is granted '.$section.' permission via group membership');
                 return true;
             }
         }
 
         return false;
+    }
+
+    // This gets the permissions including group associations
+
+    public function getEffectivePermissions() : array{
+
+        $effective_permissions_array = [];
+
+        foreach (config('permissions') as $section => $section_permissions) {
+
+            for ($x = 0; $x < count($section_permissions); $x++) {
+               $permission_from_config = $section_permissions[$x]['permission'];
+               $effective_permissions_array[$permission_from_config] = $this->hasAccess($permission_from_config) ? 1 : 0;
+            }
+        }
+
+        return $effective_permissions_array;
     }
 
     /**
@@ -305,6 +330,10 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
     public function hasAccess($section)
     {
         if ($this->isSuperUser()) {
+            return true;
+        }
+
+        if (($section!='superuser') && ($this->isAdmin())) {
             return true;
         }
 

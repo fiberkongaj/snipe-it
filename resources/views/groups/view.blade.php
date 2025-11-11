@@ -44,13 +44,18 @@
         </div>
         <div class="col-md-3">
 
+            <h3>{{ trans('general.permissions') }}</h3>
             @if (is_array($group->decodePermissions()))
-            <ul class="list-unstyled">
+
                 @foreach ($group->decodePermissions() as $permission_name => $permission)
-                   <li>{!! ($permission == '1') ? '<i class="fas fa-check text-success" aria-hidden="true"></i><span class="sr-only">'.trans('general.yes').': </span>' :  '<i class="fas fa-times text-danger" aria-hidden="true"></i><span class="sr-only">'.trans('general.no').': </span>' !!} {{ e(str_replace('.', ': ', ucwords($permission_name))) }} </li>
+
+                    <span class="label label-{{ ($permission == '1') ? 'success' : 'danger' }}" style="margin-left: 5px;">
+                        <x-icon type="{{ ($permission == '1') ? 'checkmark' : 'x' }}" class="text-white" />
+                        {{ trans('permissions.'.str_slug($permission_name).'.name') }}
+                    </span>
+
                 @endforeach
 
-            </ul>
             @else
                 <p>{{ trans('admin/groups/titles.no_permissions') }}</p>
             @endif

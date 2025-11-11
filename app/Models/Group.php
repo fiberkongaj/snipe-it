@@ -93,6 +93,9 @@ class Group extends SnipeModel
 
                 if (!is_integer($permission)) {
                     $permissions[$permission] = (int) $value;
+                    if ($permission == 'superuser') {
+                        break;
+                    }
                 } else {
                     \Log::info('Weird data here - skipping it');
                     unset($permissions[$permission]);

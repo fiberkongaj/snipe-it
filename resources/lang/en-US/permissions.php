@@ -34,6 +34,10 @@ return array(
         'note'       => 'Determines whether the user has access to the Reports section of the application.',
     ],
 
+    'reportsview' => [
+        'name' => 'Reports Access',
+    ],
+
     'assets' =>
         [
             'name' => 'Assets',

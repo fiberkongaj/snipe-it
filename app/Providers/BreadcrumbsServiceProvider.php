@@ -342,7 +342,8 @@ class BreadcrumbsServiceProvider extends ServiceProvider
 
         Breadcrumbs::for('groups.edit', fn (Trail $trail, Group $group) =>
         $trail->parent('groups.index', route('groups.index'))
-            ->push(trans('general.breadcrumb_button_actions.edit_item', ['name' => $group->name]), route('groups.edit', $group))
+            ->push($group->name, route('groups.show', $group))
+            ->push(trans('general.breadcrumb_button_actions.edit'), route('groups.edit', $group))
         );
 
 
@@ -590,7 +591,6 @@ class BreadcrumbsServiceProvider extends ServiceProvider
         );
 
 
-
         Breadcrumbs::for('users.show', fn (Trail $trail, User $user) =>
         $trail->parent('users.index', route('users.index'))
             ->push($user->display_name ?? 'Missing Username!', route('users.show', $user))
@@ -598,6 +598,7 @@ class BreadcrumbsServiceProvider extends ServiceProvider
 
         Breadcrumbs::for('users.edit', fn (Trail $trail, User $user) =>
         $trail->parent('users.index', route('users.index'))
+            ->push($user->display_name, route('users.show', $user))
             ->push(trans('general.breadcrumb_button_actions.edit_item', ['name' => $user->name]), route('users.edit', $user))
         );
 

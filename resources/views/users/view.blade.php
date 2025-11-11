@@ -418,29 +418,6 @@
 
                    @endif
 
-                     <!-- groups -->
-                     <div class="row">
-                        <div class="col-md-3">
-                          {{ trans('general.groups') }}
-                        </div>
-                        <div class="col-md-9">
-                          @if ($user->groups->count() > 0)
-                            @foreach ($user->groups as $group)
-                              @can('superadmin')
-                                  <a href="{{ route('groups.show', $group->id) }}" class="label label-default">{{ $group->name }}</a>
-                              @else
-                              {{ $group->name }}
-                              @endcan
-                            @endforeach
-                          @else
-                              --
-                          @endif
-
-                              @if ($user->hasIndividualPermissions())
-                                  <span class="text-warning"><x-icon type="warning" /> {{ trans('admin/users/general.individual_override') }}</span>
-                              @endif
-                        </div>
-                      </div>
 
                    <!-- start date -->
                    @if ($user->start_date)
@@ -787,7 +764,50 @@
                   @endif
 
 
-                    @if ($user->notes)
+                   <!-- groups -->
+                   <div class="row">
+                       <div class="col-md-3">
+                           {{ trans('general.groups') }}
+                       </div>
+                       <div class="col-md-9">
+                           @if ($user->groups->count() > 0)
+                               @foreach ($user->groups as $group)
+                                   @can('superadmin')
+                                       <a href="{{ route('groups.show', $group->id) }}" class="label label-default">{{ $group->name }}</a>
+                                   @else
+                                       {{ $group->name }}
+                                   @endcan
+                               @endforeach
+                           @else
+                               --
+                           @endif
+
+                           @if ($user->hasIndividualPermissions())
+                               <span class="text-warning"><x-icon type="warning" /> {{ trans('admin/users/general.individual_override') }}</span>
+                           @endif
+                       </div>
+                   </div>
+
+                   <!-- permissions -->
+                   <div class="row">
+                       <div class="col-md-3">
+                           {{ trans('general.permissions') }}
+                       </div>
+                       <div class="col-md-9">
+                           @if (($user->groups->count() > 0) || ($user->hasIndividualPermissions()))
+                               @foreach ($user->getEffectivePermissions(true) as $permission_name => $permissions_value)
+                                    <span class="label label-default label-{{ ($permissions_value == '1') ? 'success' : 'danger' }}">
+                                        <x-icon type="{{ ($permissions_value == '1') ? 'checkmark' : 'x' }}" class="text-white" /> {{ trans('permissions.'.str_slug($permission_name).'.name') }}
+                                    </span>
+                               @endforeach
+                           @else
+                               --
+                           @endif
+                       </div>
+                   </div>
+
+
+               @if ($user->notes)
                      <!-- empty -->
                      <div class="row">
 

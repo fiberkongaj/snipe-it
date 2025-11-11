@@ -1216,6 +1216,11 @@ Radio toggle styles for permission settings and check/uncheck all
 .js-copy-link {
   color: grey;
 }
+.label {
+  font-size: 11px;
+  line-height: 22px;
+  margin-left: 5px;
+}
 
 
 /*# sourceMappingURL=overrides.css.map*/
