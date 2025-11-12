@@ -308,6 +308,13 @@ class UsersController extends Controller
                 $permissions_array['superuser'] = $orig_superuser;
             }
 
+            // Unset any of the inherited user permissions (0), since that behavior is the default anyway
+            foreach ($permissions_array as $permission => $value) {
+                if ($value == '0') {
+                    unset($permissions_array[$permission]);
+                }
+
+            }
             $user->permissions = json_encode($permissions_array);
 
             // Only save groups if the user is a superuser

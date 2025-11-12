@@ -388,7 +388,7 @@ return array(
         'note'       => 'Allows users to create, view, and revoke their own API tokens. User tokens will have the same permissions as the user who created them.',
     ],
     'selfedit-location' => [
-        'name' => 'Edit Location',
+        'name' => 'Edit Own Location',
         'note'       => 'Allows users to edit the location associated with their own user account.',
     ],
     'selfcheckout-assets' => [

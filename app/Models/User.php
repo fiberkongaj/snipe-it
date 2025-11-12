@@ -253,7 +253,7 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
      *
      * @return bool
      */
-    protected function checkPermissionSection($section)
+    protected function checkPermissionSection($section, $return_explicit = false)
     {
         $user_groups = $this->groups;
 
@@ -279,12 +279,11 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
 
         // If the user is explicitly granted, return true
         if ($is_user_section_permissions_set && ($user_permissions[$section] == '1')) {
-            \Log::debug('user '.$this->id.' is granted '.$section.' permission on the user model');
             return true;
         }
+
         // If the user is explicitly denied, return false
         if ($is_user_section_permissions_set && ($user_permissions[$section] == '-1')) {
-            \Log::debug('user '.$this->id.' is denied '.$section.' permission on the user model');
             return false;
         }
 
@@ -302,7 +301,22 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
 
     // This gets the permissions including group associations
 
-    public function getEffectivePermissions() : array{
+    public function getEffectivePermissions($return_explicit = false) : array{
+
+        // The user has no permissions and is not in any groups
+        if (($this->permissions == '') || ($this->permissions == 'null')) {
+            return false;
+        }
+
+        $user_permissions = $this->permissions;
+
+        if (is_object($this->permissions)) {
+            $user_permissions = json_decode(json_encode($this->permissions), true);
+        }
+
+        if (is_string($this->permissions)) {
+            $user_permissions = json_decode($this->permissions, true);
+        }
 
         $effective_permissions_array = [];
 
@@ -310,7 +324,30 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
 
             for ($x = 0; $x < count($section_permissions); $x++) {
                $permission_from_config = $section_permissions[$x]['permission'];
-               $effective_permissions_array[$permission_from_config] = $this->hasAccess($permission_from_config) ? 1 : 0;
+
+               \Log::debug(print_r($user_permissions, true));
+               if ($user_permissions && array_key_exists($permission_from_config, $user_permissions)) {
+
+                   // If the user has an explicit permission set, use that
+                   if ($return_explicit) {
+                       \Log::debug('using explicit');
+                       if ($user_permissions[$permission_from_config] == '1') {
+                           $effective_permissions_array[$permission_from_config] = 'grant';
+                       } elseif ($user_permissions[$permission_from_config] == '-1') {
+                           $effective_permissions_array[$permission_from_config] = 'inherit';
+                       } else {
+                           $effective_permissions_array[$permission_from_config] = 'deny';
+                       }
+
+                   } else {
+                       $effective_permissions_array[$permission_from_config] = $this->hasAccess($permission_from_config) ? 1 : 0;
+                   }
+
+               } else {
+                   \Log::debug('fallthrough');
+                   $effective_permissions_array[$permission_from_config] = $this->hasAccess($permission_from_config) ? 1 : 0;
+               }
+                // $effective_permissions_array[$permission_from_config] = $this->hasAccess($permission_from_config) ? 1 : 0;
             }
         }
 
@@ -327,7 +364,7 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
      * @since  [v1.0]
      * @return bool
      */
-    public function hasAccess($section)
+    public function hasAccess($section, $return_explicit = false)
     {
         if ($this->isSuperUser()) {
             return true;
@@ -337,7 +374,7 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
             return true;
         }
 
-        return $this->checkPermissionSection($section);
+        return $this->checkPermissionSection($section, $return_explicit);
     }
 
     /**
